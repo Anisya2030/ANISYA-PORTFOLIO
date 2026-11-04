@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Primary Meta Tags -->
-  <title>Anisya — Personal Portfolio &amp; Academic Dossier</title>
-  <meta name="title" content="Anisya — Personal Portfolio & Academic Dossier">
-  <meta name="description" content="Personal portfolio and academic dossier of Anisya, undergraduate Informatics student at Universitas Harapan Bangsa. Exploring Software Development, Artificial Intelligence, and Data Science.">
-  <meta name="keywords" content="Anisya, Informatics, Universitas Harapan Bangsa, Software Engineering, Machine Learning, Artificial Intelligence, Data Science, EEG Research, Portfolio, Indonesia">
+  <title>Anisya — Portofolio Personal &amp; Berkas Akademik</title>
+  <meta name="title" content="Anisya — Portofolio Personal & Berkas Akademik | Personal Portfolio & Academic Dossier">
+  <meta name="description" content="Portofolio personal dan berkas akademik Anisya, mahasiswa sarjana Informatika Universitas Harapan Bangsa. Berfokus pada Rekayasa Perangkat Lunak, Kecerdasan Buatan, dan Sains Data.">
+  <meta name="keywords" content="Anisya, Informatika, Universitas Harapan Bangsa, Rekayasa Perangkat Lunak, Machine Learning, Kecerdasan Buatan, Sains Data, EEG, XAI, Portfolio, Indonesia">
   <meta name="author" content="Anisya">
 
-  <!-- Open Graph / Facebook / LinkedIn -->
+  <!-- Open Graph / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Anisya — Personal Portfolio & Academic Dossier">
   <meta property="og:description" content="Undergraduate Informatics student at Universitas Harapan Bangsa specializing in Software Development, Artificial Intelligence, and Data Science.">
   <meta property="og:image" content="assets/images/profile-placeholder.svg">
 
   <!-- Favicon Monogram SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FAF9F6'/><rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='%239BAFC0' stroke-width='4'/><text x='50' y='68' font-family='serif' font-size='56' font-weight='600' fill='%2330343B' text-anchor='middle'>A</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FFFFFF'/><rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='%23527A9C' stroke-width='4'/><text x='50' y='68' font-family='serif' font-size='56' font-weight='600' fill='%23303B48' text-anchor='middle'>A</text></svg>">
 
   <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
 <body>
 
   <!-- ========================================================================
-       Sticky Navigation Bar
+       Sticky Navigation Bar with Bilingual Switcher
        ======================================================================== -->
   <nav class="navbar navbar-expand-lg navbar-editorial" id="mainNav" aria-label="Main Navigation">
     <div class="container">
@@ -47,49 +47,96 @@
         <span class="brand-mark" aria-hidden="true">A</span>
         <div>
           <span>Anisya</span>
-          <span class="brand-sub">Informatics &bull; AI &bull; Research</span>
+          <span class="brand-sub">
+            <span data-lang="id">Informatika &bull; AI &bull; Riset</span>
+            <span data-lang="en">Informatics &bull; AI &bull; Research</span>
+          </span>
         </div>
       </a>
 
-      <!-- Clean Mobile Hamburger Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEditorialContent" aria-controls="navbarEditorialContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-4 text-dark"></i>
-      </button>
+      <!-- Clean Mobile Controls Wrap -->
+      <div class="d-flex align-items-center d-lg-none gap-2">
+        <div class="lang-switcher" role="group" aria-label="Pilih Bahasa / Select Language">
+          <button type="button" class="lang-btn active" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEditorialContent" aria-controls="navbarEditorialContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-4 text-dark"></i>
+        </button>
+      </div>
 
       <!-- Nav Links -->
       <div class="collapse navbar-collapse" id="navbarEditorialContent">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial active" href="#home">Home</a>
+            <a class="nav-link nav-link-editorial active" href="#home">
+              <span data-lang="id">Beranda</span>
+              <span data-lang="en">Home</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#about">About</a>
+            <a class="nav-link nav-link-editorial" href="#about">
+              <span data-lang="id">Tentang</span>
+              <span data-lang="en">About</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#education">Education</a>
+            <a class="nav-link nav-link-editorial" href="#education">
+              <span data-lang="id">Pendidikan</span>
+              <span data-lang="en">Education</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#skills">Skills</a>
+            <a class="nav-link nav-link-editorial" href="#skills">
+              <span data-lang="id">Keahlian</span>
+              <span data-lang="en">Skills</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#projects">Projects</a>
+            <a class="nav-link nav-link-editorial" href="#projects">
+              <span data-lang="id">Proyek</span>
+              <span data-lang="en">Projects</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#experience">Experience</a>
+            <a class="nav-link nav-link-editorial" href="#experience">
+              <span data-lang="id">Pengalaman</span>
+              <span data-lang="en">Experience</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#research">Research</a>
+            <a class="nav-link nav-link-editorial" href="#research">
+              <span data-lang="id">Riset</span>
+              <span data-lang="en">Research</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#activities">Activities</a>
+            <a class="nav-link nav-link-editorial" href="#activities">
+              <span data-lang="id">Aktivitas</span>
+              <span data-lang="en">Activities</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-editorial" href="#contact">Contact</a>
+            <a class="nav-link nav-link-editorial" href="#contact">
+              <span data-lang="id">Kontak</span>
+              <span data-lang="en">Contact</span>
+            </a>
           </li>
+
+          <!-- Desktop Language Switcher (ID / EN) -->
+          <li class="nav-item d-none d-lg-block ms-lg-2">
+            <div class="lang-switcher" role="group" aria-label="Pilih Bahasa / Select Language">
+              <button type="button" class="lang-btn active" data-lang="id" aria-pressed="true">ID</button>
+              <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+          </li>
+
+          <!-- Download CV Action Button -->
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
             <a class="btn-editorial-primary btn-sm-editorial btn-download-cv" href="assets/documents/CV_Anisya.pdf" download="CV_Anisya.pdf" role="button">
               <i class="bi bi-file-earmark-arrow-down"></i>
-              <span>Download CV</span>
+              <span data-lang="id">Unduh CV</span>
+              <span data-lang="en">Download CV</span>
             </a>
           </li>
         </ul>
@@ -98,9 +145,9 @@
   </nav>
 
   <!-- ========================================================================
-       A. HOME / HERO SECTION
+       A. HOME / HERO SECTION (Pure White: #FFFFFF)
        ======================================================================== -->
-  <section id="home" class="hero-section">
+  <section id="home" class="hero-section section-hero">
     <div class="container">
       <div class="row align-items-center g-5">
         
@@ -108,7 +155,8 @@
         <div class="col-lg-7 reveal-on-scroll">
           <div class="hero-meta-badge">
             <span class="status-dot"></span>
-            <span>Undergraduate Candidate &bull; Universitas Harapan Bangsa</span>
+            <span data-lang="id">Kandidat Sarjana &bull; Universitas Harapan Bangsa</span>
+            <span data-lang="en">Undergraduate Candidate &bull; Universitas Harapan Bangsa</span>
           </div>
 
           <h1 class="hero-title">
@@ -116,39 +164,50 @@
           </h1>
 
           <p class="hero-headline">
-            Informatics Student | Software Development | Artificial Intelligence | Data Science
+            <span data-lang="id">Mahasiswa Informatika | Rekayasa Perangkat Lunak | Kecerdasan Buatan | Sains Data</span>
+            <span data-lang="en">Informatics Student | Software Development | Artificial Intelligence | Data Science</span>
           </p>
 
           <p class="hero-intro">
-            Exploring technology through software development, artificial intelligence, and data-driven solutions.
+            <span data-lang="id">Mengeksplorasi teknologi melalui pengembangan perangkat lunak, kecerdasan buatan, dan solusi berbasis data.</span>
+            <span data-lang="en">Exploring technology through software development, artificial intelligence, and data-driven solutions.</span>
           </p>
 
           <div class="d-flex flex-wrap align-items-center gap-3">
             <a href="#projects" class="btn-editorial-primary">
-              <span>View My Projects</span>
+              <span data-lang="id">Lihat Proyek Saya</span>
+              <span data-lang="en">View My Projects</span>
               <i class="bi bi-arrow-right"></i>
             </a>
 
             <a href="assets/documents/CV_Anisya.pdf" download="CV_Anisya.pdf" class="btn-editorial-secondary btn-download-cv">
               <i class="bi bi-download"></i>
-              <span>Download CV</span>
+              <span data-lang="id">Unduh CV</span>
+              <span data-lang="en">Download CV</span>
             </a>
 
             <a href="#contact" class="btn-editorial-ghost">
-              <span>Contact Me</span>
+              <span data-lang="id">Hubungi Saya</span>
+              <span data-lang="en">Contact Me</span>
               <i class="bi bi-arrow-up-right"></i>
             </a>
           </div>
 
-          <!-- Dual Purpose Pillars for Recruitment & Graduate Studies -->
+          <!-- Dual Purpose Pillars -->
           <div class="hero-pillars">
             <div class="pillar-item">
               <div class="pillar-icon" aria-hidden="true">
                 <i class="bi bi-briefcase"></i>
               </div>
               <div class="pillar-content">
-                <h6>Professional Focus</h6>
-                <p>Industrial internships, software engineering, and applied machine learning systems.</p>
+                <h6>
+                  <span data-lang="id">Fokus Profesional</span>
+                  <span data-lang="en">Professional Focus</span>
+                </h6>
+                <p>
+                  <span data-lang="id">Magang industri, rekayasa perangkat lunak, dan penerapan sistem machine learning.</span>
+                  <span data-lang="en">Industrial internships, software engineering, and applied machine learning systems.</span>
+                </p>
               </div>
             </div>
 
@@ -157,8 +216,14 @@
                 <i class="bi bi-mortarboard"></i>
               </div>
               <div class="pillar-content">
-                <h6>Academic Pathway</h6>
-                <p>International postgraduate preparation, EEG signal analysis, and Explainable AI (XAI).</p>
+                <h6>
+                  <span data-lang="id">Jalur Akademik</span>
+                  <span data-lang="en">Academic Pathway</span>
+                </h6>
+                <p>
+                  <span data-lang="id">Persiapan studi lanjut magister internasional, analisis sinyal EEG, dan Explainable AI (XAI).</span>
+                  <span data-lang="en">International postgraduate preparation, EEG signal analysis, and Explainable AI (XAI).</span>
+                </p>
               </div>
             </div>
           </div>
@@ -174,7 +239,10 @@
             <div class="hero-portrait-caption">
               <div>
                 <span class="d-block font-serif fw-bold text-dark fs-6">Anisya</span>
-                <span class="d-block text-muted" style="font-size: 0.78rem;">S1 Informatics &bull; Class of 2023</span>
+                <span class="d-block text-muted" style="font-size: 0.78rem;">
+                  <span data-lang="id">S1 Informatika &bull; Angkatan 2023</span>
+                  <span data-lang="en">B.Sc. Informatics &bull; Class of 2023</span>
+                </span>
               </div>
               <span class="badge bg-light text-dark border py-2 px-3 fw-semibold" style="font-size: 0.75rem;">
                 <i class="bi bi-geo-alt me-1 text-primary"></i> Indonesia
@@ -187,19 +255,26 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       B. ABOUT ME SECTION
+       B. ABOUT ME SECTION (Ice Blue: #E8EFF5)
        ======================================================================== -->
-  <section id="about" class="py-5" style="background-color: var(--bg-surface);">
+  <section id="about" class="py-5 section-about">
     <div class="container py-lg-4">
       
       <div class="row mb-4 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Biographical Overview</span>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-lead">A perspective on technical foundation, interdisciplinary interests, and long-term academic aspirations.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Profil Biografis</span>
+            <span data-lang="en">Biographical Overview</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Tentang Saya</span>
+            <span data-lang="en">About Me</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Fondasi teknis, minat interdisipliner, dan aspirasi akademik jangka panjang.</span>
+            <span data-lang="en">A perspective on technical foundation, interdisciplinary interests, and long-term academic aspirations.</span>
+          </p>
         </div>
       </div>
 
@@ -208,57 +283,110 @@
         <!-- Main Profile Narrative -->
         <div class="col-lg-7 reveal-on-scroll">
           <div class="about-quote-box h-100">
-            <p>
-              I am an undergraduate Informatics student at Universitas Harapan Bangsa, Indonesia, with an interest in software development, artificial intelligence, machine learning, and data science.
-            </p>
-            <p>
-              Throughout my academic journey, I have explored various areas of technology, including web development, mobile application development, database management, machine learning, and user interface design.
-            </p>
-            <p>
-              I have worked on several academic and independent projects that have strengthened my technical knowledge, problem-solving abilities, and experience in developing technology-based solutions.
-            </p>
-            <p>
-              I am continuously seeking opportunities to expand my knowledge, gain practical experience, and contribute to innovative projects. My long-term goal is to pursue further studies and develop expertise in the field of technology.
-            </p>
+            <!-- Indonesian Narrative -->
+            <div data-lang="id">
+              <p>
+                Saya adalah mahasiswa sarjana Informatika di Universitas Harapan Bangsa, Indonesia, dengan minat dalam pengembangan perangkat lunak, kecerdasan buatan, machine learning, dan sains data.
+              </p>
+              <p>
+                Sepanjang perjalanan akademik saya, saya telah mengeksplorasi berbagai bidang teknologi, termasuk pengembangan web, pengembangan aplikasi seluler, manajemen basis data, machine learning, dan desain antarmuka pengguna.
+              </p>
+              <p>
+                Saya telah mengerjakan beberapa proyek akademik dan mandiri yang memperkuat pengetahuan teknis, kemampuan pemecahan masalah, dan pengalaman saya dalam membangun solusi berbasis teknologi.
+              </p>
+              <p>
+                Saya senantiasa mencari peluang untuk memperluas pengetahuan, memperoleh pengalaman praktis, dan berkontribusi dalam proyek-proyek inovatif. Tujuan jangka panjang saya adalah melanjutkan studi ke jenjang yang lebih tinggi dan mengembangkan keahlian di bidang teknologi.
+              </p>
+            </div>
+
+            <!-- English Narrative -->
+            <div data-lang="en">
+              <p>
+                I am an undergraduate Informatics student at Universitas Harapan Bangsa, Indonesia, with an interest in software development, artificial intelligence, machine learning, and data science.
+              </p>
+              <p>
+                Throughout my academic journey, I have explored various areas of technology, including web development, mobile application development, database management, machine learning, and user interface design.
+              </p>
+              <p>
+                I have worked on several academic and independent projects that have strengthened my technical knowledge, problem-solving abilities, and experience in developing technology-based solutions.
+              </p>
+              <p>
+                I am continuously seeking opportunities to expand my knowledge, gain practical experience, and contribute to innovative projects. My long-term goal is to pursue further studies and develop expertise in the field of technology.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Academic Dossier Snapshot -->
         <div class="col-lg-5 reveal-on-scroll">
           <div class="editorial-card">
-            <h5 class="font-serif fw-bold mb-3 pb-2 border-bottom">Academic Profile Snapshot</h5>
+            <h5 class="font-serif fw-bold mb-3 pb-2 border-bottom">
+              <span data-lang="id">Ringkasan Profil Akademik</span>
+              <span data-lang="en">Academic Profile Snapshot</span>
+            </h5>
             
             <ul class="dossier-list">
               <li>
-                <span class="dossier-label">Current Status</span>
-                <span class="dossier-value">Undergraduate Student (S1)</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Status Terkini</span>
+                  <span data-lang="en">Current Status</span>
+                </span>
+                <span class="dossier-value">
+                  <span data-lang="id">Mahasiswa Sarjana (S1)</span>
+                  <span data-lang="en">Undergraduate Student (S1)</span>
+                </span>
               </li>
               <li>
-                <span class="dossier-label">Department</span>
-                <span class="dossier-value">Informatics (Teknik Informatika)</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Program Studi</span>
+                  <span data-lang="en">Department</span>
+                </span>
+                <span class="dossier-value">
+                  <span data-lang="id">Informatika (Teknik Informatika)</span>
+                  <span data-lang="en">Informatics (Computer Science)</span>
+                </span>
               </li>
               <li>
-                <span class="dossier-label">Institution</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Institusi</span>
+                  <span data-lang="en">Institution</span>
+                </span>
                 <span class="dossier-value">Universitas Harapan Bangsa</span>
               </li>
               <li>
-                <span class="dossier-label">Location</span>
-                <span class="dossier-value">Purwokerto, Central Java, Indonesia</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Lokasi</span>
+                  <span data-lang="en">Location</span>
+                </span>
+                <span class="dossier-value">
+                  <span data-lang="id">Purwokerto, Jawa Tengah, Indonesia</span>
+                  <span data-lang="en">Purwokerto, Central Java, Indonesia</span>
+                </span>
               </li>
               <li>
-                <span class="dossier-label">Active Research</span>
-                <span class="dossier-value text-primary">Hybrid CNN-LSTM in EEG &amp; XAI</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Riset Aktif</span>
+                  <span data-lang="en">Active Research</span>
+                </span>
+                <span class="dossier-value" style="color: var(--steel-blue);">Hybrid CNN-LSTM (EEG &amp; XAI)</span>
               </li>
               <li>
-                <span class="dossier-label">Career Trajectory</span>
-                <span class="dossier-value">Software Dev &amp; Postgraduate Studies</span>
+                <span class="dossier-label">
+                  <span data-lang="id">Arah Karier</span>
+                  <span data-lang="en">Career Trajectory</span>
+                </span>
+                <span class="dossier-value">
+                  <span data-lang="id">Software Dev &bull; Pascasarjana</span>
+                  <span data-lang="en">Software Dev &bull; Postgraduate</span>
+                </span>
               </li>
             </ul>
 
-            <div class="p-3 mt-4 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
+            <div class="p-3 mt-4 rounded-2" style="background-color: var(--ice-blue); border: 1px solid var(--border-medium);">
               <small class="text-secondary d-block lh-sm">
-                <i class="bi bi-info-circle me-1 text-primary"></i>
-                Prepared as an academic dossier for international master's degree and scholarship evaluation.
+                <i class="bi bi-info-circle me-1" style="color: var(--steel-blue);"></i>
+                <span data-lang="id">Disiapkan sebagai berkas portofolio profesional dan evaluasi beasiswa magister internasional.</span>
+                <span data-lang="en">Prepared as an academic dossier for international master's degree and scholarship evaluation.</span>
               </small>
             </div>
           </div>
@@ -269,19 +397,26 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       C. EDUCATION SECTION
+       C. EDUCATION SECTION (Pure White: #FFFFFF)
        ======================================================================== -->
-  <section id="education" class="py-5">
+  <section id="education" class="py-5 section-education">
     <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Academic History</span>
-          <h2 class="section-title">Education</h2>
-          <p class="section-lead">Formal academic qualifications, institutional affiliations, and foundational subject coursework.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Riwayat Akademik</span>
+            <span data-lang="en">Academic History</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Pendidikan</span>
+            <span data-lang="en">Education</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Kualifikasi formal, institusi pendidikan, dan fokus keilmuan akademik.</span>
+            <span data-lang="en">Formal academic qualifications, institutional affiliations, and foundational subject coursework.</span>
+          </p>
         </div>
       </div>
 
@@ -291,33 +426,65 @@
         <div class="col-lg-7 reveal-on-scroll">
           <div class="editorial-card">
             <div class="education-item">
-              <span class="education-period">2023 – Present &bull; In Progress</span>
+              <span class="education-period">
+                <span data-lang="id">2023 – Sekarang &bull; Sedang Ditempuh</span>
+                <span data-lang="en">2023 – Present &bull; In Progress</span>
+              </span>
               <h3 class="education-institution">Universitas Harapan Bangsa</h3>
-              <p class="education-degree">Bachelor of Informatics (S1)</p>
+              <p class="education-degree">
+                <span data-lang="id">Sarjana Informatika (S1)</span>
+                <span data-lang="en">Bachelor of Informatics (S1)</span>
+              </p>
               
               <h6 class="font-sans fw-bold text-dark mt-4 mb-2" style="font-size: 0.88rem; letter-spacing: 0.05em; text-transform: uppercase;">
-                Relevant Academic Interests:
+                <span data-lang="id">Fokus &amp; Minat Akademik Relevan:</span>
+                <span data-lang="en">Relevant Academic Interests:</span>
               </h6>
               
-              <ul class="list-unstyled mb-0" style="font-size: 0.94rem; line-height: 1.8;">
+              <!-- Indonesian list -->
+              <ul class="list-unstyled mb-0" data-lang="id" style="font-size: 0.94rem; line-height: 1.8;">
                 <li class="mb-2">
-                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
+                  <strong>Pemrograman dan Rekayasa Perangkat Lunak:</strong> Pemrograman Berorientasi Objek, prinsip clean code, arsitektur perangkat lunak.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
+                  <strong>Sistem Manajemen Basis Data:</strong> Pemodelan skema relasional, normalisasi SQL, pemrosesan transaksi.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
+                  <strong>Kecerdasan Buatan dan Machine Learning:</strong> Supervised learning, pengenalan pola, jaringan saraf tiruan.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
+                  <strong>Sains Data:</strong> Analisis data eksploratif, rekayasa fitur, dan pemodelan statistik.
+                </li>
+                <li class="mb-0">
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
+                  <strong>Pengembangan Aplikasi Web dan Mobile:</strong> Arsitektur responsif, integrasi REST API, antarmuka lintas platform.
+                </li>
+              </ul>
+
+              <!-- English list -->
+              <ul class="list-unstyled mb-0" data-lang="en" style="font-size: 0.94rem; line-height: 1.8;">
+                <li class="mb-2">
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
                   <strong>Programming and Software Engineering:</strong> Object-Oriented Programming, clean code principles, software architecture.
                 </li>
                 <li class="mb-2">
-                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
                   <strong>Database Management Systems:</strong> Relational schema modeling, SQL normalization, transaction processing.
                 </li>
                 <li class="mb-2">
-                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
                   <strong>Artificial Intelligence and Machine Learning:</strong> Supervised learning, pattern recognition, neural networks.
                 </li>
                 <li class="mb-2">
-                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
                   <strong>Data Science:</strong> Exploratory data analysis, feature engineering, and statistical modeling.
                 </li>
                 <li class="mb-0">
-                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <i class="bi bi-check2 me-2" style="color: var(--steel-blue);"></i>
                   <strong>Web and Mobile Application Development:</strong> Responsive architectures, RESTful API integrations, cross-platform UI.
                 </li>
               </ul>
@@ -329,19 +496,29 @@
         <div class="col-lg-5 reveal-on-scroll">
           <div class="editorial-card">
             <div class="education-item">
-              <span class="education-period">Graduated 2022</span>
+              <span class="education-period">
+                <span data-lang="id">Lulus 2022</span>
+                <span data-lang="en">Graduated 2022</span>
+              </span>
               <h3 class="education-institution">SMA Negeri 1 Bawang, Banjarnegara</h3>
-              <p class="education-degree">Social Sciences (IPS)</p>
+              <p class="education-degree">
+                <span data-lang="id">Ilmu Pengetahuan Sosial (IPS)</span>
+                <span data-lang="en">Social Sciences (IPS)</span>
+              </p>
               
               <div class="mt-4 pt-2 border-top">
                 <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em;">
-                  Foundational Strengths:
+                  <span data-lang="id">Fondasi Karakter &amp; Analisis:</span>
+                  <span data-lang="en">Foundational Strengths:</span>
                 </h6>
                 <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.65;">
-                  Developed analytical inquiry, socioeconomic context evaluation, structured communication, and extracurricular leadership prior to specializing in computational informatics.
+                  <span data-lang="id">Membangun pemikiran analitis, pemahaman konteks sosio-ekonomi, komunikasi terstruktur, serta kepemimpinan ekstrakurikuler sebelum melanjutkan spesialisasi di bidang informatika komputasi.</span>
+                  <span data-lang="en">Developed analytical inquiry, socioeconomic context evaluation, structured communication, and extracurricular leadership prior to specializing in computational informatics.</span>
                 </p>
                 <span class="badge bg-light text-secondary border px-3 py-2 fw-medium">
-                  <i class="bi bi-mortarboard me-1"></i> Senior High School Diploma
+                  <i class="bi bi-mortarboard me-1"></i>
+                  <span data-lang="id">Ijazah Sekolah Menengah Atas</span>
+                  <span data-lang="en">Senior High School Diploma</span>
                 </span>
               </div>
             </div>
@@ -353,19 +530,26 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       D. TECHNICAL SKILLS SECTION (No Fake Percentages)
+       D. TECHNICAL SKILLS SECTION (Warm White: #F8F7F3)
        ======================================================================== -->
-  <section id="skills" class="py-5" style="background-color: var(--bg-surface);">
+  <section id="skills" class="py-5 section-skills">
     <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Technical Competencies</span>
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-lead">Curated technical proficiencies across programming languages, frameworks, analytical tools, and design environments.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Kompetensi Teknis</span>
+            <span data-lang="en">Technical Competencies</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Keahlian Teknis</span>
+            <span data-lang="en">Technical Skills</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Kompilasi keahlian teknis mencakup bahasa pemrograman, framework, alat analisis, dan lingkungan desain.</span>
+            <span data-lang="en">Curated technical proficiencies across programming languages, frameworks, analytical tools, and design environments.</span>
+          </p>
         </div>
       </div>
 
@@ -378,7 +562,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <h5 class="skills-category-title">Programming</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Pemrograman</span>
+                <span data-lang="en">Programming</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">Python</span>
@@ -398,7 +585,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-globe"></i>
               </div>
-              <h5 class="skills-category-title">Web Development</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Pengembangan Web</span>
+                <span data-lang="en">Web Development</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">Laravel</span>
@@ -416,7 +606,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-phone"></i>
               </div>
-              <h5 class="skills-category-title">Mobile Development</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Pengembangan Mobile</span>
+                <span data-lang="en">Mobile Development</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">Flutter</span>
@@ -432,7 +625,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-database"></i>
               </div>
-              <h5 class="skills-category-title">Database</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Basis Data</span>
+                <span data-lang="en">Database</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">MySQL</span>
@@ -464,7 +660,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-bar-chart-line"></i>
               </div>
-              <h5 class="skills-category-title">Data Processing</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Pemrosesan Data</span>
+                <span data-lang="en">Data Processing</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">Pandas</span>
@@ -480,7 +679,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-tools"></i>
               </div>
-              <h5 class="skills-category-title">Development Tools</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Alat Pengembangan</span>
+                <span data-lang="en">Development Tools</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">GitHub</span>
@@ -498,7 +700,10 @@
               <div class="skills-category-icon" aria-hidden="true">
                 <i class="bi bi-vector-pen"></i>
               </div>
-              <h5 class="skills-category-title">Design</h5>
+              <h5 class="skills-category-title">
+                <span data-lang="id">Desain</span>
+                <span data-lang="en">Design</span>
+              </h5>
             </div>
             <div class="skills-chips-wrapper">
               <span class="skill-chip">Figma</span>
@@ -512,28 +717,47 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       E. SELECTED PROJECTS SECTION
+       E. SELECTED PROJECTS SECTION (Pure White: #FFFFFF with Differentiated Cards)
        ======================================================================== -->
-  <section id="projects" class="py-5">
+  <section id="projects" class="py-5 section-projects">
     <div class="container py-lg-4">
       
       <div class="row mb-4 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Portfolio Works</span>
-          <h2 class="section-title">Selected Projects</h2>
-          <p class="section-lead">A catalog of academic and applied software engineering, machine learning pipelines, and mobile applications.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Karya Portofolio</span>
+            <span data-lang="en">Portfolio Works</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Proyek Pilihan</span>
+            <span data-lang="en">Selected Projects</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Katalog rekayasa perangkat lunak, pipeline machine learning, dan aplikasi mobile baik akademik maupun terapan.</span>
+            <span data-lang="en">A catalog of academic and applied software engineering, machine learning pipelines, and mobile applications.</span>
+          </p>
         </div>
       </div>
 
       <!-- Filter Controls -->
       <div class="project-filter-bar reveal-on-scroll">
-        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
-        <button class="filter-btn" data-filter="ml">Machine Learning &amp; AI (3)</button>
-        <button class="filter-btn" data-filter="web">Web Development (2)</button>
-        <button class="filter-btn" data-filter="mobile">Mobile Development (1)</button>
+        <button class="filter-btn active" data-filter="all">
+          <span data-lang="id">Semua Proyek (6)</span>
+          <span data-lang="en">All Projects (6)</span>
+        </button>
+        <button class="filter-btn" data-filter="ml">
+          <span data-lang="id">Machine Learning &amp; AI (3)</span>
+          <span data-lang="en">Machine Learning &amp; AI (3)</span>
+        </button>
+        <button class="filter-btn" data-filter="web">
+          <span data-lang="id">Pengembangan Web (2)</span>
+          <span data-lang="en">Web Development (2)</span>
+        </button>
+        <button class="filter-btn" data-filter="mobile">
+          <span data-lang="id">Pengembangan Mobile (1)</span>
+          <span data-lang="en">Mobile Development (1)</span>
+        </button>
       </div>
 
       <!-- Projects Grid (6 Cards) -->
@@ -550,9 +774,13 @@
                 <span class="project-index">01</span>
                 <span class="project-category-badge">ML / NLP</span>
               </div>
-              <h3 class="project-title">Indonesian Emotion Classification</h3>
+              <h3 class="project-title">
+                <span data-lang="id">Klasifikasi Emosi Teks Bahasa Indonesia</span>
+                <span data-lang="en">Indonesian Emotion Classification</span>
+              </h3>
               <p class="project-description">
-                A text classification project designed to identify emotions in Indonesian-language text using machine learning algorithms. Tuned model accuracy of 65.25% on the test dataset.
+                <span data-lang="id">Proyek klasifikasi teks yang dirancang untuk mengidentifikasi emosi pada teks berbahasa Indonesia menggunakan algoritma machine learning. Akurasi model hasil tuning 65,25% pada dataset pengujian.</span>
+                <span data-lang="en">A text classification project designed to identify emotions in Indonesian-language text using machine learning algorithms. Tuned model accuracy of 65.25% on the test dataset.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Python</span>
@@ -562,7 +790,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-01">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-01">
@@ -583,11 +812,18 @@
             <div class="project-card-body">
               <div class="project-meta-top">
                 <span class="project-index">02</span>
-                <span class="project-category-badge">ML / DSS</span>
+                <span class="project-category-badge">
+                  <span data-lang="id">ML / SPK</span>
+                  <span data-lang="en">ML / DSS</span>
+                </span>
               </div>
-              <h3 class="project-title">Skincare Recommendation System</h3>
+              <h3 class="project-title">
+                <span data-lang="id">Sistem Rekomendasi Skincare</span>
+                <span data-lang="en">Skincare Recommendation System</span>
+              </h3>
               <p class="project-description">
-                A skincare recommendation system combining a Decision Support System (SAW) and machine learning to support skin-type identification and customized skincare recommendations.
+                <span data-lang="id">Sistem rekomendasi perawatan kulit yang menggabungkan Sistem Pendukung Keputusan (SAW) dan machine learning untuk mendukung identifikasi jenis kulit serta rekomendasi produk.</span>
+                <span data-lang="en">A skincare recommendation system combining a Decision Support System (SAW) and machine learning to support skin-type identification and customized skincare recommendations.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Python</span>
@@ -597,7 +833,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-02">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-02">
@@ -618,11 +855,18 @@
             <div class="project-card-body">
               <div class="project-meta-top">
                 <span class="project-index">03</span>
-                <span class="project-category-badge">Web Development</span>
+                <span class="project-category-badge">
+                  <span data-lang="id">Pengembangan Web</span>
+                  <span data-lang="en">Web Development</span>
+                </span>
               </div>
-              <h3 class="project-title">Laundry Management System</h3>
+              <h3 class="project-title">
+                <span data-lang="id">Sistem Manajemen Laundry</span>
+                <span data-lang="en">Laundry Management System</span>
+              </h3>
               <p class="project-description">
-                A web-based laundry management application designed to manage operational data, simplify administrative processes, and deliver REST API integration tested using Postman.
+                <span data-lang="id">Aplikasi manajemen laundry berbasis web untuk mengelola data operasional, menyederhanakan proses administrasi, serta mengintegrasikan REST API yang teruji via Postman.</span>
+                <span data-lang="en">A web-based laundry management application designed to manage operational data, simplify administrative processes, and deliver REST API integration tested using Postman.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Laravel</span>
@@ -632,7 +876,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-03">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-03">
@@ -653,11 +898,18 @@
             <div class="project-card-body">
               <div class="project-meta-top">
                 <span class="project-index">04</span>
-                <span class="project-category-badge">Mobile Development</span>
+                <span class="project-category-badge">
+                  <span data-lang="id">Pengembangan Mobile</span>
+                  <span data-lang="en">Mobile Development</span>
+                </span>
               </div>
-              <h3 class="project-title">SITUGAS – Academic Reminder</h3>
+              <h3 class="project-title">
+                <span data-lang="id">SITUGAS – Pengingat Tugas Kuliah</span>
+                <span data-lang="en">SITUGAS – Academic Reminder</span>
+              </h3>
               <p class="project-description">
-                A mobile application concept designed to help university students organize and monitor academic assignments with task management, timely reminders, and backend API connectivity.
+                <span data-lang="id">Konsep aplikasi mobile untuk membantu mahasiswa mengorganisasi dan memantau tugas-tugas perkuliahan dengan manajemen jadwal, pengingat tenggat waktu, dan koneksi API backend.</span>
+                <span data-lang="en">A mobile application concept designed to help university students organize and monitor academic assignments with task management, timely reminders, and backend API connectivity.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Flutter</span>
@@ -668,7 +920,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-04">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-04">
@@ -689,11 +942,18 @@
             <div class="project-card-body">
               <div class="project-meta-top">
                 <span class="project-index">05</span>
-                <span class="project-category-badge">Web Development</span>
+                <span class="project-category-badge">
+                  <span data-lang="id">Pengembangan Web</span>
+                  <span data-lang="en">Web Development</span>
+                </span>
               </div>
-              <h3 class="project-title">Library Management System</h3>
+              <h3 class="project-title">
+                <span data-lang="id">Sistem Informasi Perpustakaan</span>
+                <span data-lang="en">Library Management System</span>
+              </h3>
               <p class="project-description">
-                A web-based library information system developed to support book catalog management, member borrowing administration, and responsive CRUD workflows in Laravel.
+                <span data-lang="id">Sistem informasi perpustakaan berbasis web untuk mendukung manajemen katalog buku, sirkulasi peminjaman, serta alur kerja CRUD yang responsif dalam Laravel.</span>
+                <span data-lang="en">A web-based library information system developed to support book catalog management, member borrowing administration, and responsive CRUD workflows in Laravel.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Laravel</span>
@@ -703,7 +963,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-05">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-05">
@@ -726,9 +987,13 @@
                 <span class="project-index">06</span>
                 <span class="project-category-badge">Machine Learning</span>
               </div>
-              <h3 class="project-title">Breast Cancer Classification</h3>
+              <h3 class="project-title">
+                <span data-lang="id">Klasifikasi Kanker Payudara (WDBC)</span>
+                <span data-lang="en">Breast Cancer Classification</span>
+              </h3>
               <p class="project-description">
-                A machine learning project focused on breast cancer classification using the Wisconsin Diagnostic dataset, featuring SMOTE class balancing and Fuzzy K-Nearest Neighbors.
+                <span data-lang="id">Proyek machine learning yang berfokus pada klasifikasi kanker payudara menggunakan Wisconsin Diagnostic dataset, dilengkapi penyeimbangan kelas SMOTE dan algoritma Fuzzy K-Nearest Neighbors.</span>
+                <span data-lang="en">A machine learning project focused on breast cancer classification using the Wisconsin Diagnostic dataset, featuring SMOTE class balancing and Fuzzy K-Nearest Neighbors.</span>
               </p>
               <div class="project-tech-tags">
                 <span class="tech-tag">Python</span>
@@ -738,7 +1003,8 @@
               </div>
               <div class="project-actions">
                 <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-06">
-                  <span>View Details</span>
+                  <span data-lang="id">Lihat Detail</span>
+                  <span data-lang="en">View Details</span>
                   <i class="bi bi-box-arrow-up-right"></i>
                 </button>
                 <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-06">
@@ -755,85 +1021,103 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       F. PROFESSIONAL EXPERIENCE SECTION
+       F. PROFESSIONAL EXPERIENCE SECTION (Ice Blue: #E8EFF5)
+       * PT Geo Dipa Energi (Persero) is highlighted as the professional internship.
        ======================================================================== -->
-  <section id="experience" class="py-5" style="background-color: var(--bg-surface);">
+  <section id="experience" class="py-5 section-experience">
     <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Professional History</span>
-          <h2 class="section-title">Professional Experience</h2>
-          <p class="section-lead">Industry internships, enterprise project management exposure, and operational organizational roles.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Pengalaman Kerja</span>
+            <span data-lang="en">Professional History</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Pengalaman Profesional</span>
+            <span data-lang="en">Professional Experience</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Magang industri pada badan usaha energi terbarukan, pengelolaan proyek korporat, dan penerapan teknologi informasi.</span>
+            <span data-lang="en">Industry internships, enterprise project management exposure, and information technology applications in renewable energy.</span>
+          </p>
         </div>
       </div>
 
       <div class="row g-4">
         
-        <!-- Experience 1: PT Geo Dipa Energi (Persero) -->
-        <div class="col-lg-7 reveal-on-scroll">
-          <div class="experience-card">
-            <div class="d-flex justify-content-between align-items-start mb-3">
+        <!-- Experience: PT Geo Dipa Energi (Persero) – Unit Dieng -->
+        <div class="col-12 reveal-on-scroll">
+          <div class="experience-showcase-card">
+            
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
               <span class="exp-badge-ongoing">
                 <i class="bi bi-circle-fill" style="font-size: 0.45rem;"></i>
-                Ongoing Internship
+                <span data-lang="id">Sedang Berlangsung</span>
+                <span data-lang="en">Ongoing Internship</span>
               </span>
-              <span class="text-secondary font-mono" style="font-size: 0.8rem;">
-                05 Oct – 05 Dec 2026
+              <span class="text-secondary font-mono fw-semibold" style="font-size: 0.85rem;">
+                <span data-lang="id">05 Oktober – 05 Desember 2026</span>
+                <span data-lang="en">05 October – 05 December 2026</span>
               </span>
             </div>
 
             <h3 class="exp-company">PT Geo Dipa Energi (Persero) – Unit Dieng</h3>
-            <p class="exp-role-meta">Department: Project Management Unit &bull; Industrial Intern</p>
+            <p class="exp-role-meta">
+              <span data-lang="id">Departemen: Project Management Unit &bull; Magang Industri</span>
+              <span data-lang="en">Department: Project Management Unit &bull; Industrial Intern</span>
+            </p>
             
-            <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.75;">
-              "Participating in an industrial internship within the Project Management Unit, gaining exposure to professional working environments, project management processes, and the application of information technology in supporting organizational activities."
+            <p class="text-secondary mb-4" style="font-size: 1.02rem; line-height: 1.8;">
+              <span data-lang="id">"Mengikuti magang industri di dalam Project Management Unit, memperoleh eksposur terhadap lingkungan kerja profesional, proses manajemen proyek, dan penerapan teknologi informasi dalam mendukung kegiatan operasional organisasi."</span>
+              <span data-lang="en">"Participating in an industrial internship within the Project Management Unit, gaining exposure to professional working environments, project management processes, and the application of information technology in supporting organizational activities."</span>
             </p>
 
-            <div class="p-3 mt-3 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
-              <h6 class="font-sans fw-bold mb-1" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
-                Key Exposure Pillars:
-              </h6>
-              <ul class="mb-0 text-secondary ps-3" style="font-size: 0.85rem; line-height: 1.6;">
-                <li>Enterprise IT support in state-owned renewable geothermal operations.</li>
-                <li>Project Management Unit coordination, documentation, and reporting.</li>
-                <li>Professional workplace collaboration and stakeholder communication.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="p-3 rounded-2 h-100" style="background-color: var(--ice-blue); border: 1px solid var(--border-medium);">
+                  <h6 class="font-sans fw-bold mb-1" style="font-size: 0.85rem; color: var(--steel-blue); text-transform: uppercase; letter-spacing: 0.05em;">
+                    <i class="bi bi-hdd-network me-1"></i>
+                    <span data-lang="id">Dukungan TI Korporat</span>
+                    <span data-lang="en">Enterprise IT Support</span>
+                  </h6>
+                  <p class="text-secondary mb-0" style="font-size: 0.84rem; line-height: 1.5;">
+                    <span data-lang="id">Dukungan TI dalam operasional pembangkit panas bumi (geotermal) energi terbarukan BUMN.</span>
+                    <span data-lang="en">Enterprise IT support in state-owned renewable geothermal energy generation operations.</span>
+                  </p>
+                </div>
+              </div>
 
-        <!-- Experience 2: Rocket Chicken -->
-        <div class="col-lg-5 reveal-on-scroll">
-          <div class="experience-card">
-            <div class="d-flex justify-content-between align-items-start mb-3">
-              <span class="exp-badge-completed">
-                <i class="bi bi-check2"></i>
-                Completed
-              </span>
-              <span class="text-secondary font-mono" style="font-size: 0.8rem;">
-                July – September 2022
-              </span>
+              <div class="col-md-4">
+                <div class="p-3 rounded-2 h-100" style="background-color: var(--ice-blue); border: 1px solid var(--border-medium);">
+                  <h6 class="font-sans fw-bold mb-1" style="font-size: 0.85rem; color: var(--steel-blue); text-transform: uppercase; letter-spacing: 0.05em;">
+                    <i class="bi bi-kanban me-1"></i>
+                    <span data-lang="id">Koordinasi PMU</span>
+                    <span data-lang="en">PMU Coordination</span>
+                  </h6>
+                  <p class="text-secondary mb-0" style="font-size: 0.84rem; line-height: 1.5;">
+                    <span data-lang="id">Koordinasi Project Management Unit, dokumentasi berkas teknis, dan pelaporan berkala.</span>
+                    <span data-lang="en">Project Management Unit coordination, technical documentation, and milestone reporting.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="p-3 rounded-2 h-100" style="background-color: var(--ice-blue); border: 1px solid var(--border-medium);">
+                  <h6 class="font-sans fw-bold mb-1" style="font-size: 0.85rem; color: var(--steel-blue); text-transform: uppercase; letter-spacing: 0.05em;">
+                    <i class="bi bi-people me-1"></i>
+                    <span data-lang="id">Komunikasi Profesional</span>
+                    <span data-lang="en">Stakeholder Engagement</span>
+                  </h6>
+                  <p class="text-secondary mb-0" style="font-size: 0.84rem; line-height: 1.5;">
+                    <span data-lang="id">Kolaborasi lingkungan kerja industri dan komunikasi lintas pemangku kepentingan.</span>
+                    <span data-lang="en">Workplace collaboration in an industrial environment and cross-functional communication.</span>
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <h3 class="exp-company">Rocket Chicken</h3>
-            <p class="exp-role-meta">Position: Cashier &bull; Operations</p>
-            
-            <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.75;">
-              "Experience in customer service, transaction processing, cash handling, and daily operational activities."
-            </p>
-
-            <div class="p-3 mt-3 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
-              <h6 class="font-sans fw-bold mb-1" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
-                Operational Core Competencies:
-              </h6>
-              <span class="badge bg-white text-dark border me-1 mb-1">Customer Relationship</span>
-              <span class="badge bg-white text-dark border me-1 mb-1">POS &amp; Cash Reconciliation</span>
-              <span class="badge bg-white text-dark border me-1 mb-1">Operational Discipline</span>
-            </div>
           </div>
         </div>
 
@@ -842,19 +1126,26 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       G. RESEARCH INTERESTS & ONGOING RESEARCH SECTION
+       G. RESEARCH INTERESTS & ONGOING RESEARCH SECTION (Warm White: #F8F7F3)
        ======================================================================== -->
-  <section id="research" class="py-5">
+  <section id="research" class="py-5 section-research">
     <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Scholarly Focus</span>
-          <h2 class="section-title">Research Interests</h2>
-          <p class="section-lead">Foundations for postgraduate inquiry, specialized domains, and ongoing undergraduate scientific research.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Fokus Keilmuan</span>
+            <span data-lang="en">Scholarly Focus</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Minat Riset</span>
+            <span data-lang="en">Research Interests</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Landasan riset pascasarjana, domain spesialisasi, dan riset sarjana yang sedang berjalan.</span>
+            <span data-lang="en">Foundations for postgraduate inquiry, specialized domains, and ongoing undergraduate scientific research.</span>
+          </p>
         </div>
       </div>
 
@@ -863,7 +1154,10 @@
         <div class="col-md-4 col-sm-6">
           <div class="research-domain-pill">
             <div class="research-domain-icon"><i class="bi bi-cpu"></i></div>
-            <span class="fw-bold" style="font-size: 0.92rem;">Artificial Intelligence</span>
+            <span class="fw-bold" style="font-size: 0.92rem;">
+              <span data-lang="id">Kecerdasan Buatan</span>
+              <span data-lang="en">Artificial Intelligence</span>
+            </span>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
@@ -893,7 +1187,10 @@
         <div class="col-md-4 col-sm-6">
           <div class="research-domain-pill">
             <div class="research-domain-icon"><i class="bi bi-graph-up"></i></div>
-            <span class="fw-bold" style="font-size: 0.92rem;">Data Science</span>
+            <span class="fw-bold" style="font-size: 0.92rem;">
+              <span data-lang="id">Sains Data</span>
+              <span data-lang="en">Data Science</span>
+            </span>
           </div>
         </div>
       </div>
@@ -904,10 +1201,14 @@
           <div class="research-showcase-card">
             
             <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
-              <span class="section-kicker mb-0">Featured Undergraduate Research</span>
+              <span class="section-kicker mb-0">
+                <span data-lang="id">Riset Sarjana Unggulan</span>
+                <span data-lang="en">Featured Undergraduate Research</span>
+              </span>
               <span class="exp-badge-ongoing">
                 <i class="bi bi-arrow-repeat spin"></i>
-                Status: Research in Progress
+                <span data-lang="id">Status: Riset Sedang Berjalan</span>
+                <span data-lang="en">Status: Research in Progress</span>
               </span>
             </div>
 
@@ -918,9 +1219,31 @@
             <div class="row g-4 mt-2">
               <div class="col-lg-6">
                 <h6 class="font-sans fw-bold text-dark mb-3" style="text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">
-                  Core Research Focus Areas:
+                  <span data-lang="id">Fokus Utama Metodologi Riset:</span>
+                  <span data-lang="en">Core Research Focus Areas:</span>
                 </h6>
-                <ul class="research-focus-list">
+                
+                <!-- Indonesian list -->
+                <ul class="research-focus-list" data-lang="id">
+                  <li>
+                    <strong>Pemrosesan Sinyal EEG:</strong> Pra-pemrosesan, penyaringan (filtering), dan ekstraksi fitur kanal dari data deret waktu elektroensefalogram.
+                  </li>
+                  <li>
+                    <strong>Arsitektur Hybrid CNN-LSTM:</strong> Menggabungkan Convolutional Neural Network (CNN) untuk mengekstraksi pola spasial elektroda dengan Long Short-Term Memory (LSTM) untuk dinamika temporal.
+                  </li>
+                  <li>
+                    <strong>Klasifikasi Stimulus Kognitif:</strong> Membedakan respons saraf antara stimulus Wajah (Face), Pareidolia (persepsi ilusi wajah), dan Objek non-wajah.
+                  </li>
+                  <li>
+                    <strong>Explainability melalui SHAP:</strong> Menginterpretasikan batasan keputusan model dengan Shapley Additive Explanations untuk mengidentifikasi pola gelombang otak yang paling signifikan.
+                  </li>
+                  <li>
+                    <strong>Dataset Sains Terbuka:</strong> Validasi metodologi pada dataset peer-reviewed OpenNeuro DS005642.
+                  </li>
+                </ul>
+
+                <!-- English list -->
+                <ul class="research-focus-list" data-lang="en">
                   <li>
                     <strong>EEG Signal Processing:</strong> Preprocessing, filtering, and channel feature extraction from electroencephalogram timeseries signals.
                   </li>
@@ -940,16 +1263,21 @@
               </div>
 
               <div class="col-lg-6">
-                <div class="p-4 rounded-3 h-100" style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle);">
+                <div class="p-4 rounded-3 h-100" style="background-color: var(--warm-white); border: 1.5px solid var(--border-warm);">
                   <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em;">
-                    Academic Value &amp; Scholarship Relevance
+                    <span data-lang="id">Nilai Akademik &amp; Relevansi Beasiswa Pascasarjana</span>
+                    <span data-lang="en">Academic Value &amp; Scholarship Relevance</span>
                   </h6>
-                  <p class="text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
-                    This research bridges computational neuroscience and interpretable deep learning. By uncovering how human brains process illusory visual signals (pareidolia) versus real facial features, the study lays empirical ground for trustworthy AI applications in neuro-engineering and medical diagnostic interfaces.
+                  <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.7;">
+                    <span data-lang="id">Riset ini menjembatani neurosains komputasional dan deep learning yang dapat diinterpretasikan. Dengan mengungkap bagaimana otak manusia memproses sinyal visual ilusi (pareidolia) dibandingkan wajah asli, penelitian ini menjadi pijakan empiris bagi aplikasi AI tepercaya dalam antarmuka neuro-engineering dan diagnostik medis.</span>
+                    <span data-lang="en">This research bridges computational neuroscience and interpretable deep learning. By uncovering how human brains process illusory visual signals (pareidolia) versus real facial features, the study lays empirical ground for trustworthy AI applications in neuro-engineering and medical diagnostic interfaces.</span>
                   </p>
                   <div class="d-flex align-items-center gap-2 pt-2 border-top">
                     <i class="bi bi-shield-check text-primary fs-5"></i>
-                    <small class="text-secondary">Conforms to open-science benchmarks and reproducible research standards.</small>
+                    <small class="text-secondary">
+                      <span data-lang="id">Mematuhi standar riset sains terbuka (Open Science) dan reproduktifitas ilmiah.</span>
+                      <span data-lang="en">Conforms to open-science benchmarks and reproducible research standards.</span>
+                    </small>
                   </div>
                 </div>
               </div>
@@ -967,19 +1295,26 @@
     </div>
   </section>
 
-  <hr class="section-divider">
-
   <!-- ========================================================================
-       H. ACHIEVEMENTS AND ACTIVITIES SECTION
+       H. ACHIEVEMENTS AND ACTIVITIES SECTION (Pure White: #FFFFFF)
        ======================================================================== -->
-  <section id="activities" class="py-5" style="background-color: var(--bg-surface);">
+  <section id="activities" class="py-5 section-achievements">
     <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Extracurricular &amp; Leadership</span>
-          <h2 class="section-title">Achievements &amp; Activities</h2>
-          <p class="section-lead">Capacity building programs, leadership training, technical clubs, and creative pursuits.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Ekstrakurikuler &amp; Kepemimpinan</span>
+            <span data-lang="en">Extracurricular &amp; Leadership</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Prestasi &amp; Aktivitas</span>
+            <span data-lang="en">Achievements &amp; Activities</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Program pengembangan kapasitas, pelatihan kepemimpinan, komunitas teknologi, dan aktivitas seni.</span>
+            <span data-lang="en">Capacity building programs, leadership training, technical clubs, and creative pursuits.</span>
+          </p>
         </div>
       </div>
 
@@ -993,8 +1328,14 @@
             </div>
             <div>
               <h4 class="activity-title">Fest Go World Asia</h4>
-              <p class="activity-category">Futurepreneur Selection Program</p>
-              <small class="text-secondary mt-1 d-block">Competitive entrepreneurial development and regional innovation selection.</small>
+              <p class="activity-category">
+                <span data-lang="id">Program Seleksi Futurepreneur</span>
+                <span data-lang="en">Futurepreneur Selection Program</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Pengembangan kewirausahaan kompetitif dan seleksi inovasi tingkat regional.</span>
+                <span data-lang="en">Competitive entrepreneurial development and regional innovation selection.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1006,9 +1347,18 @@
               <i class="bi bi-mic"></i>
             </div>
             <div>
-              <h4 class="activity-title">Public Speaking Training</h4>
-              <p class="activity-category">Professional Communication</p>
-              <small class="text-secondary mt-1 d-block">Structured training in rhetoric, academic presentation, and stakeholder briefing.</small>
+              <h4 class="activity-title">
+                <span data-lang="id">Pelatihan Public Speaking</span>
+                <span data-lang="en">Public Speaking Training</span>
+              </h4>
+              <p class="activity-category">
+                <span data-lang="id">Komunikasi Profesional</span>
+                <span data-lang="en">Professional Communication</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Pelatihan terstruktur dalam retorika, presentasi akademik, dan komunikasi pemangku kepentingan.</span>
+                <span data-lang="en">Structured training in rhetoric, academic presentation, and stakeholder briefing.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1020,9 +1370,18 @@
               <i class="bi bi-lightbulb"></i>
             </div>
             <div>
-              <h4 class="activity-title">Entrepreneurship Training</h4>
-              <p class="activity-category">Venture &amp; Business Strategy</p>
-              <small class="text-secondary mt-1 d-block">Hands-on workshops in business model canvas, market fit, and project economics.</small>
+              <h4 class="activity-title">
+                <span data-lang="id">Pelatihan Kewirausahaan</span>
+                <span data-lang="en">Entrepreneurship Training</span>
+              </h4>
+              <p class="activity-category">
+                <span data-lang="id">Strategi Bisnis &amp; Usaha</span>
+                <span data-lang="en">Venture &amp; Business Strategy</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Lokakarya penyusunan business model canvas, analisis pasar, dan kelayakan proyek.</span>
+                <span data-lang="en">Hands-on workshops in business model canvas, market fit, and project economics.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1035,8 +1394,14 @@
             </div>
             <div>
               <h4 class="activity-title">Computer Science Club</h4>
-              <p class="activity-category">Technical Community</p>
-              <small class="text-secondary mt-1 d-block">Collaborative peer programming sessions, hackathons, and technology sharing.</small>
+              <p class="activity-category">
+                <span data-lang="id">Komunitas Teknologi</span>
+                <span data-lang="en">Technical Community</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Sesi pemrograman kolaboratif antar-rekan, hackathon, dan berbagi pengetahuan teknologi.</span>
+                <span data-lang="en">Collaborative peer programming sessions, hackathons, and technology sharing.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1048,9 +1413,18 @@
               <i class="bi bi-camera"></i>
             </div>
             <div>
-              <h4 class="activity-title">Photography Organization</h4>
-              <p class="activity-category">Creative Arts &amp; Visual Design</p>
-              <small class="text-secondary mt-1 d-block">Composition, lighting theory, and visual narrative storytelling.</small>
+              <h4 class="activity-title">
+                <span data-lang="id">Organisasi Fotografi</span>
+                <span data-lang="en">Photography Organization</span>
+              </h4>
+              <p class="activity-category">
+                <span data-lang="id">Seni Visual &amp; Desain</span>
+                <span data-lang="en">Creative Arts &amp; Visual Design</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Komposisi visual, teori pencahayaan, dan penyampaian cerita melalui narasi visual.</span>
+                <span data-lang="en">Composition, lighting theory, and visual narrative storytelling.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1062,9 +1436,18 @@
               <i class="bi bi-music-note-beamed"></i>
             </div>
             <div>
-              <h4 class="activity-title">Choir &bull; SMA Negeri 1 Bawang</h4>
-              <p class="activity-category">Artistic Ensemble &bull; Teamwork</p>
-              <small class="text-secondary mt-1 d-block">Vocal discipline, ensemble synchronization, and school ceremonial performances.</small>
+              <h4 class="activity-title">
+                <span data-lang="id">Paduan Suara &bull; SMAN 1 Bawang</span>
+                <span data-lang="en">Choir &bull; SMA Negeri 1 Bawang</span>
+              </h4>
+              <p class="activity-category">
+                <span data-lang="id">Ensembel Seni &bull; Kerja Sama Tim</span>
+                <span data-lang="en">Artistic Ensemble &bull; Teamwork</span>
+              </p>
+              <small class="text-secondary mt-1 d-block">
+                <span data-lang="id">Disiplin olah vokal, sinkronisasi ensembel, dan penampilan seremonial sekolah.</span>
+                <span data-lang="en">Vocal discipline, ensemble synchronization, and school ceremonial performances.</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1075,16 +1458,25 @@
   </section>
 
   <!-- ========================================================================
-       I. CONTACT SECTION
+       I. CONTACT SECTION (Steel Blue: #527A9C with White Text)
        ======================================================================== -->
-  <section id="contact" class="contact-section">
-    <div class="container">
+  <section id="contact" class="py-5 section-contact">
+    <div class="container py-lg-4">
       
       <div class="row mb-5 reveal-on-scroll">
         <div class="col-lg-8">
-          <span class="section-kicker">Inquiries &amp; Collaboration</span>
-          <h2 class="section-title">Get in Touch</h2>
-          <p class="section-lead">Open for industrial internships, software engineering roles, academic collaboration, and graduate school inquiries.</p>
+          <span class="section-kicker">
+            <span data-lang="id">Kolaborasi &amp; Pertanyaan</span>
+            <span data-lang="en">Inquiries &amp; Collaboration</span>
+          </span>
+          <h2 class="section-title">
+            <span data-lang="id">Hubungi Saya</span>
+            <span data-lang="en">Get in Touch</span>
+          </h2>
+          <p class="section-lead">
+            <span data-lang="id">Terbuka untuk peluang magang industri, posisi rekayasa perangkat lunak, kolaborasi riset akademik, dan studi pascasarjana.</span>
+            <span data-lang="en">Open for industrial internships, software engineering roles, academic collaboration, and graduate school inquiries.</span>
+          </p>
         </div>
       </div>
 
@@ -1099,10 +1491,13 @@
               <i class="bi bi-envelope"></i>
             </div>
             <div class="flex-grow-1">
-              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">Professional Email</span>
-              <span class="d-block fw-semibold text-dark" id="emailTextValue" style="font-size: 0.95rem;">anisya.student@example.com</span>
+              <span class="d-block text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em; opacity: 0.85;">
+                <span data-lang="id">Email Profesional</span>
+                <span data-lang="en">Professional Email</span>
+              </span>
+              <span class="d-block fw-semibold text-white" id="emailTextValue" style="font-size: 0.95rem;">anisya.student@example.com</span>
             </div>
-            <button class="btn btn-sm btn-outline-secondary" id="copyEmailBtn" title="Copy email address" aria-label="Copy Email">
+            <button class="btn btn-sm btn-outline-light" id="copyEmailBtn" title="Copy email address" aria-label="Copy Email">
               <i class="bi bi-clipboard"></i>
             </button>
           </div>
@@ -1113,10 +1508,13 @@
               <i class="bi bi-github"></i>
             </div>
             <div class="flex-grow-1">
-              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">GitHub Profile</span>
-              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">github.com/anisya-placeholder</span>
+              <span class="d-block text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em; opacity: 0.85;">
+                <span data-lang="id">Profil GitHub</span>
+                <span data-lang="en">GitHub Profile</span>
+              </span>
+              <span class="d-block fw-semibold text-white" style="font-size: 0.95rem;">github.com/anisya-placeholder</span>
             </div>
-            <i class="bi bi-box-arrow-up-right text-secondary"></i>
+            <i class="bi bi-box-arrow-up-right text-white" style="opacity: 0.75;"></i>
           </a>
 
           <!-- LinkedIn Info Card -->
@@ -1125,10 +1523,13 @@
               <i class="bi bi-linkedin"></i>
             </div>
             <div class="flex-grow-1">
-              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">LinkedIn Network</span>
-              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">linkedin.com/in/anisya-placeholder</span>
+              <span class="d-block text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em; opacity: 0.85;">
+                <span data-lang="id">Jejaring LinkedIn</span>
+                <span data-lang="en">LinkedIn Network</span>
+              </span>
+              <span class="d-block fw-semibold text-white" style="font-size: 0.95rem;">linkedin.com/in/anisya-placeholder</span>
             </div>
-            <i class="bi bi-box-arrow-up-right text-secondary"></i>
+            <i class="bi bi-box-arrow-up-right text-white" style="opacity: 0.75;"></i>
           </a>
 
           <!-- Location Info Card -->
@@ -1137,64 +1538,91 @@
               <i class="bi bi-geo-alt"></i>
             </div>
             <div>
-              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">Location</span>
-              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">Indonesia (UTC+7)</span>
+              <span class="d-block text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em; opacity: 0.85;">
+                <span data-lang="id">Lokasi Domisili</span>
+                <span data-lang="en">Location</span>
+              </span>
+              <span class="d-block fw-semibold text-white" style="font-size: 0.95rem;">
+                <span data-lang="id">Indonesia (WIB / UTC+7)</span>
+                <span data-lang="en">Indonesia (UTC+7)</span>
+              </span>
             </div>
           </div>
 
           <!-- Professional Closing Statement -->
           <div class="contact-closing-quote">
-            "Thank you for visiting my portfolio. I am always open to learning, collaboration, academic opportunities, and professional growth."
+            <span data-lang="id">"Terima kasih telah mengunjungi portofolio saya. Saya selalu terbuka untuk pembelajaran, kolaborasi, peluang akademik, dan pengembangan profesional."</span>
+            <span data-lang="en">"Thank you for visiting my portfolio. I am always open to learning, collaboration, academic opportunities, and professional growth."</span>
           </div>
 
         </div>
 
-        <!-- Right: Direct Message Inquiry Form -->
+        <!-- Right: Direct Message Inquiry Form (Pure White Card with Charcoal Text) -->
         <div class="col-lg-7 reveal-on-scroll">
           <div class="contact-form-card">
-            <h4 class="font-serif fw-bold mb-3">Send a Direct Message</h4>
+            <h4 class="font-serif fw-bold mb-2">
+              <span data-lang="id">Kirim Pesan Langsung</span>
+              <span data-lang="en">Send a Direct Message</span>
+            </h4>
             <p class="text-secondary mb-4" style="font-size: 0.9rem;">
-              Whether inquiring about internship availability, academic research collaboration, or scholarship dossiers, please feel free to send a message.
+              <span data-lang="id">Silakan kirimkan pesan untuk diskusi seputar peluang magang, kolaborasi riset, maupun berkas akademik beasiswa.</span>
+              <span data-lang="en">Whether inquiring about internship availability, academic research collaboration, or scholarship dossiers, please feel free to send a message.</span>
             </p>
 
             <div id="formSuccessAlert" class="alert alert-success d-none mb-4 py-2 px-3" role="alert" style="font-size: 0.88rem;">
-              <i class="bi bi-check-circle me-1"></i> Thank you! Your email client will now open with your formatted inquiry.
+              <i class="bi bi-check-circle me-1"></i>
+              <span data-lang="id">Terima kasih! Email client Anda akan terbuka dengan draf pesan terformat.</span>
+              <span data-lang="en">Thank you! Your email client will now open with your formatted inquiry.</span>
             </div>
 
             <form id="portfolioContactForm" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="senderName" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Full Name *</label>
-                  <input type="text" class="form-control-editorial" id="senderName" placeholder="e.g. Dr. Jane Smith / Recruiter" required>
+                  <label for="senderName" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">
+                    <span data-lang="id">Nama Lengkap *</span>
+                    <span data-lang="en">Full Name *</span>
+                  </label>
+                  <input type="text" class="form-control-editorial" id="senderName" placeholder="misal: Dr. Budi Santoso / Tim Rekruter" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label for="senderEmail" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Your Email *</label>
-                  <input type="email" class="form-control-editorial" id="senderEmail" placeholder="e.g. contact@institution.org" required>
+                  <label for="senderEmail" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">
+                    <span data-lang="id">Alamat Email *</span>
+                    <span data-lang="en">Your Email *</span>
+                  </label>
+                  <input type="email" class="form-control-editorial" id="senderEmail" placeholder="misal: kontak@instansi.id" required>
                 </div>
 
                 <div class="col-12">
-                  <label for="senderPurpose" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Subject / Inquiry Type</label>
+                  <label for="senderPurpose" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">
+                    <span data-lang="id">Subjek / Jenis Pertanyaan</span>
+                    <span data-lang="en">Subject / Inquiry Type</span>
+                  </label>
                   <select class="form-control-editorial" id="senderPurpose">
-                    <option value="Internship / Job Opportunity">Software Engineering / Internship Opportunity</option>
-                    <option value="Academic Research Collaboration">Academic / EEG Research Collaboration</option>
-                    <option value="Scholarship / Postgraduate Inquiry">Postgraduate Studies / Scholarship Inquiry</option>
-                    <option value="General Professional Inquiries">General Professional Inquiry</option>
+                    <option value="Peluang Rekayasa Perangkat Lunak / Magang">Peluang Rekayasa Perangkat Lunak / Magang</option>
+                    <option value="Kolaborasi Riset Akademik / Sinyal EEG">Kolaborasi Riset Akademik / Sinyal EEG</option>
+                    <option value="Studi Pascasarjana / Informasi Beasiswa">Studi Pascasarjana / Informasi Beasiswa</option>
+                    <option value="Pertanyaan Profesional Umum">Pertanyaan Profesional Umum</option>
                   </select>
                 </div>
 
                 <div class="col-12">
-                  <label for="senderMessage" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Message *</label>
-                  <textarea class="form-control-editorial" id="senderMessage" rows="4" placeholder="Write your message here..." required></textarea>
+                  <label for="senderMessage" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">
+                    <span data-lang="id">Pesan *</span>
+                    <span data-lang="en">Message *</span>
+                  </label>
+                  <textarea class="form-control-editorial" id="senderMessage" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                 </div>
 
                 <div class="col-12 pt-2">
                   <button type="submit" class="btn-editorial-primary w-100">
-                    <span>Send Message via Email Client</span>
+                    <span data-lang="id">Kirim Pesan via Email Client</span>
+                    <span data-lang="en">Send Message via Email Client</span>
                     <i class="bi bi-send"></i>
                   </button>
                   <small class="text-secondary mt-2 d-block text-center" style="font-size: 0.78rem;">
-                    Notice: This form generates a pre-formatted direct email addressed to Anisya's inbox.
+                    <span data-lang="id">Catatan: Formulir ini akan memformat pesan email yang ditujukan langsung ke inbox Anisya.</span>
+                    <span data-lang="en">Notice: This form generates a pre-formatted direct email addressed to Anisya's inbox.</span>
                   </small>
                 </div>
               </div>
@@ -1208,28 +1636,49 @@
   </section>
 
   <!-- ========================================================================
-       Footer
+       Footer (Charcoal: #303B48 Anchor)
        ======================================================================== -->
-  <footer class="footer-editorial border-top">
+  <footer class="footer-editorial section-footer py-4 border-top">
     <div class="container">
       <div class="row align-items-center g-3">
         <div class="col-md-6 text-center text-md-start">
-          <span class="font-serif fw-bold fs-5 text-dark">Anisya</span>
-          <span class="text-secondary ms-2" style="font-size: 0.84rem;">&copy; 2026. All rights reserved.</span>
-          <div class="text-muted mt-1" style="font-size: 0.78rem;">
-            Undergraduate Informatics &bull; Universitas Harapan Bangsa &bull; Indonesia
+          <span class="font-serif fw-bold fs-5 text-white">Anisya</span>
+          <span class="text-white-50 ms-2" style="font-size: 0.84rem;">&copy; 2026. All rights reserved.</span>
+          <div class="text-white-50 mt-1" style="font-size: 0.78rem;">
+            <span data-lang="id">S1 Informatika &bull; Universitas Harapan Bangsa &bull; Indonesia</span>
+            <span data-lang="en">Undergraduate Informatics &bull; Universitas Harapan Bangsa &bull; Indonesia</span>
           </div>
         </div>
 
         <div class="col-md-6 text-center text-md-end">
           <ul class="list-inline mb-0" style="font-size: 0.84rem;">
-            <li class="list-inline-item"><a href="#home" class="text-secondary">Home</a></li>
-            <li class="list-inline-item">&bull;</li>
-            <li class="list-inline-item"><a href="#projects" class="text-secondary">Projects</a></li>
-            <li class="list-inline-item">&bull;</li>
-            <li class="list-inline-item"><a href="#research" class="text-secondary">Research</a></li>
-            <li class="list-inline-item">&bull;</li>
-            <li class="list-inline-item"><a href="#contact" class="text-secondary">Contact</a></li>
+            <li class="list-inline-item">
+              <a href="#home" class="text-white-50">
+                <span data-lang="id">Beranda</span>
+                <span data-lang="en">Home</span>
+              </a>
+            </li>
+            <li class="list-inline-item text-white-50">&bull;</li>
+            <li class="list-inline-item">
+              <a href="#projects" class="text-white-50">
+                <span data-lang="id">Proyek</span>
+                <span data-lang="en">Projects</span>
+              </a>
+            </li>
+            <li class="list-inline-item text-white-50">&bull;</li>
+            <li class="list-inline-item">
+              <a href="#research" class="text-white-50">
+                <span data-lang="id">Riset</span>
+                <span data-lang="en">Research</span>
+              </a>
+            </li>
+            <li class="list-inline-item text-white-50">&bull;</li>
+            <li class="list-inline-item">
+              <a href="#contact" class="text-white-50">
+                <span data-lang="id">Kontak</span>
+                <span data-lang="en">Contact</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -1237,7 +1686,7 @@
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top" aria-label="Back to Top">
+  <button id="backToTopBtn" class="back-to-top-btn" title="Kembali ke Atas / Back to Top" aria-label="Back to Top">
     <i class="bi bi-arrow-up"></i>
   </button>
 
@@ -1247,7 +1696,12 @@
       <div class="d-flex">
         <div class="toast-body d-flex align-items-center gap-2">
           <i class="bi bi-check-circle-fill text-success fs-5"></i>
-          <span><strong>CV Download:</strong> Downloading <code>CV_Anisya.pdf</code>.</span>
+          <span>
+            <strong data-lang="id">Unduh CV:</strong>
+            <strong data-lang="en">CV Download:</strong>
+            <span data-lang="id">Mengunduh berkas <code>CV_Anisya.pdf</code>.</span>
+            <span data-lang="en">Downloading <code>CV_Anisya.pdf</code>.</span>
+          </span>
         </div>
         <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
@@ -1255,7 +1709,7 @@
   </div>
 
   <!-- ========================================================================
-       Project Details Modal (Dynamic Bootstrap 5 Modal)
+       Project Details Modal (Dynamic Bootstrap 5 Modal, Bilingual)
        ======================================================================== -->
   <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -1278,14 +1732,15 @@
         <!-- Body -->
         <div class="modal-body modal-body-editorial">
           <!-- Architecture Banner -->
-          <div class="mb-4 rounded-2 overflow-hidden border" style="background-color: var(--bg-secondary);">
+          <div class="mb-4 rounded-2 overflow-hidden border" style="background-color: var(--ice-blue);">
             <img id="modalProjectImage" src="assets/images/project-01.svg" alt="Project visual diagram" class="img-fluid w-100" width="800" height="240">
           </div>
 
           <!-- Project Overview -->
           <div class="mb-4">
             <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
-              Executive Overview
+              <span data-lang="id">Ringkasan Eksekutif</span>
+              <span data-lang="en">Executive Overview</span>
             </h6>
             <p id="modalProjectOverview" class="text-secondary" style="font-size: 0.94rem; line-height: 1.7;">
               Detailed overview text...
@@ -1295,7 +1750,8 @@
           <!-- Methodologies / Features -->
           <div class="mb-4">
             <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
-              Methodologies &amp; Architectural Features
+              <span data-lang="id">Metodologi &amp; Fitur Arsitektur</span>
+              <span data-lang="en">Methodologies &amp; Architectural Features</span>
             </h6>
             <ul id="modalProjectMethods" class="ps-3 text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
               <!-- Populated via JS -->
@@ -1303,9 +1759,10 @@
           </div>
 
           <!-- Evaluation / Results -->
-          <div class="mb-4 p-3 rounded-2" style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle);">
+          <div class="mb-4 p-3 rounded-2" style="background-color: var(--ice-blue); border: 1.5px solid var(--border-medium);">
             <h6 class="font-sans fw-bold text-dark mb-1" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
-              Key Results &amp; Evaluation
+              <span data-lang="id">Hasil Utama &amp; Evaluasi</span>
+              <span data-lang="en">Key Results &amp; Evaluation</span>
             </h6>
             <p id="modalProjectResult" class="text-secondary mb-0" style="font-size: 0.92rem; line-height: 1.6;">
               Evaluation result text...
@@ -1315,7 +1772,8 @@
           <!-- Technologies Used -->
           <div>
             <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
-              Technologies &amp; Frameworks
+              <span data-lang="id">Teknologi &amp; Framework</span>
+              <span data-lang="en">Technologies &amp; Frameworks</span>
             </h6>
             <div id="modalProjectTech" class="d-flex flex-wrap gap-2">
               <!-- Populated via JS -->
@@ -1329,10 +1787,12 @@
           <div class="d-flex gap-2">
             <button type="button" class="btn-editorial-secondary btn-sm-editorial" id="modalGithubBtn">
               <i class="bi bi-github"></i>
-              <span>GitHub Notice</span>
+              <span data-lang="id">Pemberitahuan GitHub</span>
+              <span data-lang="en">GitHub Notice</span>
             </button>
             <button type="button" class="btn-editorial-primary btn-sm-editorial" data-bs-dismiss="modal">
-              <span>Close Dossier</span>
+              <span data-lang="id">Tutup Berkas</span>
+              <span data-lang="en">Close Dossier</span>
             </button>
           </div>
         </div>

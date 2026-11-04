@@ -1,161 +1,135 @@
 # Anisya — Personal Portfolio & Academic Dossier
+### Portofolio Personal & Berkas Akademik
 
-> **Live Portfolio for Internship, Job Applications, and International Postgraduate Scholarships**  
+> **Live Bilingual Portfolio for Internship, Job Applications, and International Postgraduate Scholarships**  
 > *Undergraduate Informatics Student • Universitas Harapan Bangsa, Indonesia*
 
 ---
 
-## 1. Overview & Vision
+## 1. Overview & Vision / Gambaran Umum
 
-This repository hosts the personal brand and academic portfolio website of **Anisya**, an undergraduate Informatics student at **Universitas Harapan Bangsa (UHB)**, Indonesia.
+This repository hosts the personal brand and academic portfolio website of **Anisya**, an undergraduate Informatics student at **Universitas Harapan Bangsa (UHB)**, Central Java, Indonesia.
 
-The website serves two primary objectives:
-1. **Professional Industry Portfolio:** Tailored for software engineering, web/mobile development, machine learning, and IT project management internship and full-time applications.
-2. **Academic Research Dossier:** Engineered to meet the rigorous evaluation standards of international master's degree admission committees and prestigious global scholarship reviewers (e.g., LPDP, Erasmus Mundus, Fulbright, MEXT, Chevening, GKS).
+Website ini menyajikan dua tujuan strategis:
+1. **Professional Industry Portfolio:** Dirancang untuk aplikasi magang industri, posisi rekayasa perangkat lunak (software engineering), pengembangan aplikasi web/mobile, dan penerapan machine learning.
+2. **Academic Research Dossier:** Disusun untuk memenuhi standar evaluasi komite seleksi magister internasional serta beasiswa bergengsi global (seperti LPDP, Erasmus Mundus, Fulbright, MEXT, Chevening, dan GKS).
 
----
-
-## 2. Design System: Modern Editorial × Minimalist Corporate
-
-The visual identity embodies an academic journal meets high-end corporate editorial design:
-
-- **Strict Light Mode Palette:** Warm ivory, soft slate, dusty blue, and muted sage.
-  - **Background (Primary):** `#FAF9F6` (Warm ivory)
-  - **Secondary Background:** `#F1F0EB`
-  - **Card Background:** `#FFFFFF`
-  - **Primary Text:** `#30343B` (High-contrast slate charcoal)
-  - **Secondary Text:** `#777B80` (Balanced editorial grey)
-  - **Primary Accent:** `#9BAFC0` (Soft dusty blue)
-  - **Secondary Accent:** `#B8C5B5` (Muted sage)
-- **Typography:**
-  - **Editorial Display Headings:** *Newsreader* (Google Fonts serif with delicate italics)
-  - **Clean Modern Body Text:** *Plus Jakarta Sans* (Contemporary, highly legible geometric sans)
-  - **Code & Metadata:** System Monospace / *JetBrains Mono*
-- **Aesthetic Principles:**
-  - Generous whitespace and structured editorial grid.
-  - Hairline borders (`1px solid #E8E5DC`) and subtle layered elevation.
-  - No dark navy backgrounds, no neon colors, no excessive gradients, and no generic student templates.
+Website kini dilengkapi dengan **sistem dwibahasa (Bilingual: Bahasa Indonesia & English)** dengan Bahasa Indonesia sebagai bahasa utama.
 
 ---
 
-## 3. Technology Stack
+## 2. Updated Color System & Visual Hierarchy
 
-- **HTML5:** Semantic markup, accessibility (ARIA) attributes, and OpenGraph SEO meta tags.
-- **CSS3:** Custom properties (CSS variables), responsive flexbox/CSS grid, and editorial typography.
-- **JavaScript (Vanilla ES6+):** Lightweight interactivity, scroll-spy, category filter, dynamic modal populator, and clipboard copy.
-- **Bootstrap 5.3.3:** Responsive grid, modal component, and offcanvas/navbar collapse.
-- **Bootstrap Icons 1.11.3:** Vector iconography.
-- **Zero Heavy Dependencies:** Static site ready for instant GitHub Pages deployment with 0 build steps.
+The website follows a high-contrast **Modern Editorial × Minimalist Corporate** light aesthetic:
+
+### Color Palette:
+- **Pure White:** `#FFFFFF` — Latar bersih untuk kejelasan hierarki konten.
+- **Ice Blue:** `#E8EFF5` — Nuansa sejuk korporat untuk memisahkan bagian bio dan pengalaman.
+- **Dusty Blue:** `#A7C0D5` — Aksen sekunder untuk badge kategori dan border elemen.
+- **Steel Blue:** `#527A9C` — Warna aksen primer berkarakter untuk tombol, status, dan penekanan visual.
+- **Warm Sand:** `#D9BFA7` — Aksen hangat editorial untuk garis aksen dan penanda nomor proyek.
+- **Charcoal:** `#303B48` — Teks utama berbobot tinggi untuk keterbacaan optimal.
+- **Warm White:** `#F8F7F3` — Latar hangat untuk keahlian teknis dan riset.
+
+### Strategic Section Background Mapping:
+| Section | Background Color | Visual Treatment |
+|---|---|---|
+| **A. Hero** | **Pure White** (`#FFFFFF`) | High-contrast headline, dual career pillars, portrait frame. |
+| **B. About Me** | **Ice Blue** (`#E8EFF5`) | Editorial quote box with Steel Blue border, academic snapshot. |
+| **C. Education** | **Pure White** (`#FFFFFF`) | Timeline layout highlighting UHB & SMAN 1 Bawang. |
+| **D. Technical Skills** | **Warm White** (`#F8F7F3`) | 8 structured cards with Warm Sand icons and skill chips. |
+| **E. Selected Projects** | **Pure White** (`#FFFFFF`) | Distinct cards with Ice Blue image banners & Steel Blue badges. |
+| **F. Experience** | **Ice Blue** (`#E8EFF5`) | Showcase of PT Geo Dipa Energi (Persero) – Unit Dieng. |
+| **G. Research** | **Warm White** (`#F8F7F3`) | Hybrid CNN-LSTM EEG & XAI thesis showcase + domain pills. |
+| **H. Achievements** | **Pure White** (`#FFFFFF`) | Extracurricular, leadership, CS club, and arts cards. |
+| **I. Contact** | **Steel Blue** (`#527A9C`) | High-contrast section with pure white form card and white typography. |
+| **Footer** | **Charcoal** (`#303B48`) | Grounded anchor with copyright and navigation links. |
 
 ---
 
-## 4. Directory Structure
+## 3. Bilingual Language Switching (ID / EN)
+
+- **Primary Language:** Bahasa Indonesia (`ID`).
+- **Secondary Language:** English (`EN`).
+- **Interactive Switcher:** Terletak di navigation bar (tersedia di desktop maupun mobile).
+- **Cakupan Penerjemahan Komprehensif:**
+  - Label navigasi & footer.
+  - Teks pembuka dan pilar karir Hero section.
+  - Narasi biografi Profil Saya (About Me).
+  - Riwayat Pendidikan dan mata kuliah relevan.
+  - Kategori keahlian teknis.
+  - Seluruh 6 proyek pilihan (judul, kategori, deskripsi, hingga modal detail eksekutif).
+  - Pengalaman magang industri PT Geo Dipa Energi.
+  - Minat riset dan fokus metodologi tugas akhir EEG.
+  - Aktivitas dan prestasi organisasi.
+  - Bagian kontak, placeholder formulir, tombol, dan kutipan penutup.
+- Preferensi bahasa tersimpan secara persisten menggunakan `localStorage`.
+
+---
+
+## 4. Professional Experience
+
+- **PT Geo Dipa Energi (Persero) – Unit Dieng** ditampilkan secara terfokus sebagai pengalaman magang profesional dalam format kartu showcase yang mencakup:
+  - Status magang sedang berlangsung (*Ongoing Internship*).
+  - Periode: 05 Oktober – 05 Desember 2026.
+  - Departemen: *Project Management Unit*.
+  - 3 pilar eksposur utama: Dukungan TI Korporat Energi Terbarukan, Koordinasi PMU, dan Komunikasi Profesional.
+
+---
+
+## 5. Directory Structure
 
 ```text
 ANISYA-PORTFOLIO/
-├── index.html                  # Main portfolio single-page application
-├── README.md                   # Project documentation and deployment guide
+├── index.html                     # Bilingual single-page application
+├── README.md                      # Documentation & deployment guide
 └── assets/
     ├── css/
-    │   └── style.css           # Custom Modern Editorial styling
+    │   └── style.css              # Updated color palette, bilingual rules & hierarchy
     ├── js/
-    │   └── script.js           # Interactive functionality, modal data & filters
+    │   └── script.js              # Bilingual data, language switcher, filters & modals
     ├── images/
-    │   ├── profile-placeholder.svg      # Editorial profile silhouette & monogram
-    │   ├── project-01.svg               # Indonesian Emotion Classification diagram
-    │   ├── project-02.svg               # Skincare Recommendation System (SAW + ML)
-    │   ├── project-03.svg               # Laundry Management System (REST API)
-    │   ├── project-04.svg               # SITUGAS Mobile Reminder (Flutter UI)
-    │   ├── project-05.svg               # Library Management System (Laravel)
-    │   ├── project-06.svg               # Breast Cancer Classification (WDBC/SMOTE)
-    │   └── research-eeg.svg             # Hybrid CNN-LSTM EEG & Pareidolia XAI Pipeline
+    │   ├── profile-placeholder.svg # Editorial monogram & architectural silhouette
+    │   ├── project-01.svg          # Indonesian Emotion Classification diagram
+    │   ├── project-02.svg          # Skincare Recommendation System (SAW + ML)
+    │   ├── project-03.svg          # Laundry Management System (REST API)
+    │   ├── project-04.svg          # SITUGAS Mobile reminder Flutter UI mockup
+    │   ├── project-05.svg          # Library Management System (Laravel)
+    │   ├── project-06.svg          # Breast Cancer Classification (WDBC/SMOTE)
+    │   └── research-eeg.svg        # Hybrid CNN-LSTM EEG & Pareidolia XAI Pipeline
     └── documents/
-        └── CV_Anisya.pdf       # Curriculum Vitae document for direct download
+        └── CV_Anisya.pdf          # Curriculum Vitae document for direct download
 ```
-
----
-
-## 5. Website Sections
-
-| # | Section | Details |
-|---|---------|---------|
-| **A** | **Home / Hero** | Name, professional headline, dual-track career pillars, primary CTAs (*View Projects*, *Download CV*, *Contact Me*), and editorial profile placeholder. |
-| **B** | **About Me** | Exact biographical profile narrative, core competencies, and academic profile snapshot dossier. |
-| **C** | **Education** | Universitas Harapan Bangsa (S1 Informatics, 2023–Present) with curriculum areas, and SMA Negeri 1 Bawang (Social Sciences, 2022). |
-| **D** | **Technical Skills** | 8 structured categories (Programming, Web Dev, Mobile Dev, Database, Machine Learning, Data Processing, Dev Tools, Design) **without misleading fake percentage bars**. |
-| **E** | **Selected Projects** | 6 curated projects with category filtering, SVG technical diagrams, tech stack badges, and interactive "View Details" modal dossiers. |
-| **F** | **Professional Experience** | PT Geo Dipa Energi (Persero) – Unit Dieng (Ongoing PMU Internship) and Rocket Chicken (Operations). |
-| **G** | **Research Interests** | 6 scholarly focus areas + featured ongoing undergraduate thesis: *"Hybrid CNN-LSTM for EEG Signal Classification and Brain Activity Pattern Identification Using Explainable AI in Face Pareidolia"* on OpenNeuro DS005642. |
-| **H** | **Achievements & Activities** | Fest Go World Asia Futurepreneur Selection, Public Speaking, Entrepreneurship, CS Club, Photography, and Choir. |
-| **I** | **Contact & Inquiries** | Editable professional contact points (Email with 1-click clipboard copy, GitHub, LinkedIn, Indonesia location), direct message form with mailto generator, and professional closing statement. |
 
 ---
 
 ## 6. How to Run Locally
 
-You can run the portfolio locally using any static web server:
+### Option A: Using Laragon
+Buka browser dan akses:
+```text
+http://localhost/ANISYA-PORTFOLIO/   or   http://anisya-portfolio.test/
+```
 
-### Option A: Using Python (Built-in)
-Run the following command in the project directory:
+### Option B: Using Built-in Python Server
 ```bash
 python -m http.server 8000
 ```
-Then open your browser and navigate to `http://localhost:8000`.
-
-### Option B: Using Laragon / Apache
-Since the project is inside `c:\laragon\www\ANISYA-PORTFOLIO`, start Laragon and open:
-```text
-http://anisya-portfolio.test/   or   http://localhost/ANISYA-PORTFOLIO/
-```
-
-### Option C: VS Code Live Server
-Right-click on `index.html` in Visual Studio Code and select **"Open with Live Server"**.
+Buka `http://localhost:8000` di peramban web.
 
 ---
 
-## 7. How to Customize for Anisya
+## 7. How to Deploy to GitHub Pages
 
-1. **Replace Profile Photo:**
-   - Save your professional photo as `profile.jpg` or `profile.png` into `assets/images/`.
-   - In `index.html` (around Line 140), change:
-     ```html
-     <img src="assets/images/profile-placeholder.svg" alt="Profile Image" ...>
-     ```
-     to:
-     ```html
-     <img src="assets/images/profile.jpg" alt="Anisya" class="img-fluid rounded-2" ...>
-     ```
-
-2. **Replace CV Document:**
-   - Place your real PDF resume into `assets/documents/CV_Anisya.pdf`.
-
-3. **Update Contact Details & Links:**
-   - In `index.html` (under section `#contact`), update your email address, LinkedIn URL, and GitHub URL.
-   - In `assets/js/script.js`, update `recipient = 'your.email@example.com'`.
-
-4. **Add Real Project Screenshots / GitHub Links:**
-   - Place screenshots into `assets/images/`.
-   - Update repository URLs in `index.html` and `assets/js/script.js`.
-
----
-
-## 8. Deployment to GitHub Pages
-
-1. Initialize git and commit:
+1. Commit perubahan terbaru:
    ```bash
-   git init
    git add .
-   git commit -m "feat: initial commit of Anisya personal portfolio website"
+   git commit -m "feat: implement bilingual support, revised color hierarchy, and updated experience section"
    ```
-2. Create a repository on GitHub (e.g. `anisya-portfolio` or `<your-username>.github.io`).
-3. Push to GitHub:
+2. Hubungkan ke repositori GitHub:
    ```bash
-   git remote add origin https://github.com/<your-username>/anisya-portfolio.git
+   git remote add origin https://github.com/<username>/<repo-name>.git
    git branch -M main
    git push -u origin main
    ```
-4. In your GitHub repository:
-   - Go to **Settings** > **Pages**.
-   - Under **Source**, select **Deploy from a branch**.
-   - Choose branch **`main`** and folder **`/ (root)`**, then click **Save**.
-5. Your website will be live in a few minutes at `https://<your-username>.github.io/anisya-portfolio/`!
+3. Di GitHub: **Settings** > **Pages** > **Source**: Deploy from a branch (`main` / root).
