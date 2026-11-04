@@ -1,0 +1,178 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page
+   /Parent 2 0 R
+   /MediaBox [0 0 595.28 841.89]
+   /Contents 4 0 R
+   /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >>
+>>
+endobj
+4 0 obj
+<< /Length 2150 >>
+stream
+BT
+/F2 26 Tf
+50 780 Td
+(ANISYA) Tj
+ET
+BT
+/F1 11 Tf
+50 762 Td
+(Informatics Student | Universitas Harapan Bangsa | Indonesia) Tj
+ET
+BT
+/F1 9 Tf
+50 748 Td
+(Email: contact@anisya.dev  |  GitHub: github.com/anisya  |  LinkedIn: linkedin.com/in/anisya) Tj
+ET
+
+BT
+/F2 13 Tf
+50 710 Td
+(EXECUTIVE PROFILE) Tj
+ET
+BT
+/F1 9.5 Tf
+50 692 Td
+(Undergraduate Informatics student at Universitas Harapan Bangsa, Indonesia, focusing on software) Tj
+50 678 Td
+(development, artificial intelligence, machine learning, and data science. Aspiring for international) Tj
+50 664 Td
+(postgraduate research opportunities and professional software engineering internships.) Tj
+ET
+
+BT
+/F2 13 Tf
+50 630 Td
+(EDUCATION) Tj
+ET
+BT
+/F2 10.5 Tf
+50 612 Td
+(Universitas Harapan Bangsa) Tj
+/F1 10 Tf
+250 612 Td
+(Bachelor of Informatics (S1)) Tj
+470 612 Td
+(2023 - Present) Tj
+ET
+BT
+/F1 9 Tf
+50 598 Td
+(Focus: Software Engineering, Database Systems, Artificial Intelligence, Machine Learning, Data Science) Tj
+ET
+BT
+/F2 10.5 Tf
+50 575 Td
+(SMA Negeri 1 Bawang, Banjarnegara) Tj
+/F1 10 Tf
+250 575 Td
+(Social Sciences (IPS)) Tj
+470 575 Td
+(Graduated 2022) Tj
+ET
+
+BT
+/F2 13 Tf
+50 540 Td
+(TECHNICAL SKILLS) Tj
+ET
+BT
+/F1 9 Tf
+50 522 Td
+(Programming: Python, PHP, Java, Dart, JavaScript, SQL) Tj
+50 508 Td
+(Frameworks & Libraries: Laravel, Flutter, Scikit-learn, TensorFlow, Pandas, NumPy, Bootstrap 5) Tj
+50 494 Td
+(Databases & Tools: MySQL, SQLite, GitHub, Postman, Google Colab, VS Code, Figma) Tj
+ET
+
+BT
+/F2 13 Tf
+50 460 Td
+(ONGOING RESEARCH & EXPERIENCE) Tj
+ET
+BT
+/F2 10 Tf
+50 442 Td
+(Undergraduate Thesis Research (In Progress)) Tj
+ET
+BT
+/F1 9 Tf
+50 428 Td
+("Hybrid CNN-LSTM for EEG Signal Classification and Brain Activity Pattern Identification Using XAI") Tj
+50 414 Td
+(Focus: EEG signal processing, CNN-LSTM, SHAP explainability, OpenNeuro dataset DS005642) Tj
+ET
+BT
+/F2 10 Tf
+50 390 Td
+(PT Geo Dipa Energi (Persero) - Unit Dieng) Tj
+/F1 9.5 Tf
+320 390 Td
+(Project Management Unit Intern (Oct - Dec 2026)) Tj
+ET
+BT
+/F1 9 Tf
+50 376 Td
+(Exposure to project management operations, enterprise workflows, and IT system implementations.) Tj
+ET
+
+BT
+/F2 13 Tf
+50 342 Td
+(SELECTED PROJECTS) Tj
+ET
+BT
+/F1 9 Tf
+50 324 Td
+(- Indonesian Emotion Classification: Machine Learning NLP (NLTK, Sastrawi, TF-IDF, SVM, 65.25% acc)) Tj
+50 308 Td
+(- Skincare Recommendation System: Decision Support System (SAW) + Machine Learning) Tj
+50 292 Td
+(- Laundry Management System: Web app with Laravel, REST API integration, and SQLite) Tj
+50 276 Td
+(- SITUGAS Academic Reminder: Mobile app built with Flutter, Dart, MySQL and REST API) Tj
+50 260 Td
+(- Library Management System: Web information system with Laravel and MySQL) Tj
+50 244 Td
+(- Breast Cancer Classification: WDBC dataset with SMOTE balancing and Fuzzy KNN) Tj
+ET
+
+BT
+/F1 8 Tf
+50 80 Td
+([OFFICIAL CURRICULUM VITAE PLACEHOLDER - Replace with your personalized PDF in assets/documents/]) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000282 00000 n 
+0000002500 00000 n 
+0000002574 00000 n 
+0000002653 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2733
+%%EOF

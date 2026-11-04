@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <pattern id="grid_04" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#EAE8E1" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="240" fill="#FAF9F6"/>
+  <rect width="800" height="240" fill="url(#grid_04)"/>
+
+  <!-- Top bar / Editorial Header -->
+  <line x1="30" y1="26" x2="770" y2="26" stroke="#E2E0D8" stroke-width="1"/>
+  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 04 // MOBILE DEVELOPMENT</text>
+  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Portfolio Dossier</text>
+
+  <!-- Center Graphic Diagram -->
+  
+        <!-- Mobile App Flutter Visual -->
+        <g transform="translate(230, 110)">
+          <!-- Phone Silhouette -->
+          <rect x="-55" y="-65" width="110" height="130" rx="16" fill="#FFFFFF" stroke="#30343B" stroke-width="2"/>
+          <!-- Notch/Speaker -->
+          <rect x="-15" y="-58" width="30" height="4" rx="2" fill="#777B80"/>
+          <!-- App Header -->
+          <rect x="-45" y="-45" width="90" height="16" rx="3" fill="#9BAFC0" opacity="0.3"/>
+          <text x="-40" y="-34" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="bold" fill="#30343B">SITUGAS</text>
+          <!-- Task Cards -->
+          <rect x="-45" y="-22" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <rect x="-40" y="-16" width="4" height="10" rx="2" fill="#B8C5B5"/>
+          <text x="-32" y="-9" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#30343B">AI Assignment #3</text>
+          
+          <rect x="-45" y="4" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <rect x="-40" y="10" width="4" height="10" rx="2" fill="#9BAFC0"/>
+          <text x="-32" y="17" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#30343B">Database Exam Prep</text>
+
+          <rect x="-45" y="30" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="-32" y="43" font-family="sans-serif" font-size="6.5" fill="#777B80">Software Eng. Sprint</text>
+        </g>
+        <!-- Arrow -->
+        <path d="M 315 110 L 365 110 M 355 102 L 365 110 L 355 118" stroke="#9BAFC0" stroke-width="2" fill="none"/>
+        <!-- Architecture Info -->
+        <g transform="translate(480, 110)">
+          <rect x="-100" y="-60" width="200" height="120" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+          <text x="0" y="-32" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#30343B">Flutter Provider State</text>
+          <line x1="-80" y1="-18" x2="80" y2="-18" stroke="#F1F0EB" stroke-width="1"/>
+          <text x="0" y="2" text-anchor="middle" font-family="monospace" font-size="10" fill="#777B80">JSON REST API Client</text>
+          <rect x="-70" y="16" width="140" height="22" rx="11" fill="#F1F0EB"/>
+          <text x="0" y="31" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#30343B">MySQL • PHP API Backend</text>
+        </g>
+        
+
+  <!-- Footer Tag Strip -->
+  <line x1="30" y1="195" x2="770" y2="195" stroke="#E2E0D8" stroke-width="1"/>
+  
+        <g transform="translate(40, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Flutter</text>
+        </g>
+        <g transform="translate(150, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Dart</text>
+        </g>
+        <g transform="translate(260, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">MySQL</text>
+        </g>
+        <g transform="translate(370, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">PHP API</text>
+        </g>
+  <text x="760" y="222" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#777B80">Academic &amp; Applied Project</text>
+</svg>

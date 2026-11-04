@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="100%" height="100%">
+  <defs>
+    <pattern id="resGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#777B80" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="380" fill="#FAF9F6"/>
+  <rect width="900" height="380" fill="url(#resGrid)"/>
+  <rect x="20" y="20" width="860" height="340" rx="8" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+
+  <!-- Academic Header -->
+  <text x="50" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9BAFC0" letter-spacing="1.5">RESEARCH METHODOLOGY ARCHITECTURE</text>
+  <text x="50" y="80" font-family="'Newsreader', Georgia, serif" font-size="18" font-weight="600" fill="#30343B">Hybrid CNN-LSTM for EEG Signal Classification &amp; XAI in Face Pareidolia</text>
+  <line x1="50" y1="95" x2="850" y2="95" stroke="#EAE8E1" stroke-width="1"/>
+
+  <!-- Pipeline Stages -->
+  <!-- 1. Input -->
+  <g transform="translate(60, 120)">
+    <rect width="130" height="150" rx="6" fill="#FAF9F6" stroke="#9BAFC0" stroke-width="1.2"/>
+    <text x="65" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#30343B">1. Dataset</text>
+    <text x="65" y="45" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#777B80">OpenNeuro DS005642</text>
+    <!-- Waveform line -->
+    <path d="M 15 85 Q 35 60 45 85 T 75 85 T 105 85 T 115 85" fill="none" stroke="#9BAFC0" stroke-width="2"/>
+    <text x="65" y="115" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Multi-channel EEG</text>
+    <text x="65" y="130" text-anchor="middle" font-family="monospace" font-size="8.5" fill="#30343B">Preprocessed &amp; Filtered</text>
+  </g>
+
+  <!-- Flow Arrow -->
+  <path d="M 205 195 L 225 195 M 220 188 L 227 195 L 220 202" stroke="#777B80" stroke-width="1.5" fill="none"/>
+
+  <!-- 2. Stimuli Classification Target -->
+  <g transform="translate(240, 120)">
+    <rect width="140" height="150" rx="6" fill="#FAF9F6" stroke="#E2E0D8" stroke-width="1.2"/>
+    <text x="70" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#30343B">2. Visual Stimuli</text>
+    <!-- 3 pills -->
+    <rect x="15" y="42" width="110" height="24" rx="4" fill="#FFFFFF" stroke="#9BAFC0"/>
+    <text x="70" y="58" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#30343B">Face</text>
+    <rect x="15" y="74" width="110" height="24" rx="4" fill="#FFFFFF" stroke="#B8C5B5"/>
+    <text x="70" y="90" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#30343B">Pareidolia</text>
+    <rect x="15" y="106" width="110" height="24" rx="4" fill="#FFFFFF" stroke="#E2E0D8"/>
+    <text x="70" y="122" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#777B80">Object / Non-face</text>
+  </g>
+
+  <!-- Flow Arrow -->
+  <path d="M 395 195 L 415 195 M 410 188 L 417 195 L 410 202" stroke="#777B80" stroke-width="1.5" fill="none"/>
+
+  <!-- 3. Hybrid CNN-LSTM -->
+  <g transform="translate(430, 120)">
+    <rect width="210" height="150" rx="6" fill="#FAF9F6" stroke="#9BAFC0" stroke-width="1.5"/>
+    <text x="105" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#30343B">3. Hybrid Architecture</text>
+    
+    <rect x="20" y="42" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#9BAFC0"/>
+    <text x="105" y="57" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#30343B">Spatial Feature Extraction</text>
+    <text x="105" y="70" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">1D / 2D CNN Layers + Pooling</text>
+
+    <rect x="20" y="86" width="170" height="34" rx="4" fill="#FFFFFF" stroke="#B8C5B5"/>
+    <text x="105" y="101" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#30343B">Temporal Dynamics</text>
+    <text x="105" y="114" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">Bidirectional LSTM Sequence</text>
+
+    <text x="105" y="138" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Dense Classifier • Softmax</text>
+  </g>
+
+  <!-- Flow Arrow -->
+  <path d="M 655 195 L 675 195 M 670 188 L 677 195 L 670 202" stroke="#777B80" stroke-width="1.5" fill="none"/>
+
+  <!-- 4. XAI (SHAP) -->
+  <g transform="translate(690, 120)">
+    <rect width="150" height="150" rx="6" fill="#FAF9F6" stroke="#B8C5B5" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#30343B">4. Explainable AI</text>
+    <text x="75" y="45" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="600" fill="#9BAFC0">SHAP Analysis</text>
+    <!-- Heatmap representation -->
+    <rect x="20" y="58" width="110" height="14" rx="2" fill="#9BAFC0" opacity="0.8"/>
+    <rect x="20" y="76" width="110" height="14" rx="2" fill="#B8C5B5" opacity="0.8"/>
+    <rect x="20" y="94" width="110" height="14" rx="2" fill="#E2E0D8" opacity="0.8"/>
+    <text x="75" y="125" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#30343B">Brain Wave Pattern</text>
+    <text x="75" y="138" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">Interpretability</text>
+  </g>
+
+  <!-- Footer Academic Note -->
+  <rect x="50" y="300" width="800" height="34" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+  <text x="70" y="321" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#30343B">Status: Research in Progress</text>
+  <text x="830" y="321" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#777B80">Supervised by Informatics Faculty • Target: Academic Publication / International Conference</text>
+</svg>

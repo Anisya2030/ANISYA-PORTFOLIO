@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <pattern id="grid_01" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#EAE8E1" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="240" fill="#FAF9F6"/>
+  <rect width="800" height="240" fill="url(#grid_01)"/>
+
+  <!-- Top bar / Editorial Header -->
+  <line x1="30" y1="26" x2="770" y2="26" stroke="#E2E0D8" stroke-width="1"/>
+  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 01 // MACHINE LEARNING / NLP</text>
+  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Portfolio Dossier</text>
+
+  <!-- Center Graphic Diagram -->
+  
+        <!-- NLP Visual -->
+        <g transform="translate(180, 110)">
+          <!-- Document Card -->
+          <rect x="-110" y="-60" width="220" height="120" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+          <text x="-90" y="-35" font-family="monospace" font-size="11" fill="#777B80">"Teks input Bahasa Indonesia..."</text>
+          <line x1="-90" y1="-15" x2="20" y2="-15" stroke="#E2E0D8" stroke-width="2"/>
+          <line x1="-90" y1="5" x2="60" y2="5" stroke="#E2E0D8" stroke-width="2"/>
+          <!-- Preprocessing tokens -->
+          <g transform="translate(-90, 30)">
+            <rect x="0" y="-10" width="55" height="18" rx="9" fill="#F1F0EB"/>
+            <text x="27" y="3" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Sastrawi</text>
+            <rect x="62" y="-10" width="48" height="18" rx="9" fill="#F1F0EB"/>
+            <text x="86" y="3" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">TF-IDF</text>
+            <rect x="117" y="-10" width="56" height="18" rx="9" fill="#9BAFC0" opacity="0.3"/>
+            <text x="145" y="3" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#30343B">NLTK</text>
+          </g>
+        </g>
+        <!-- Arrow -->
+        <path d="M 320 110 L 370 110 M 360 102 L 370 110 L 360 118" stroke="#9BAFC0" stroke-width="2" fill="none"/>
+        <!-- Classifiers & Metric -->
+        <g transform="translate(480, 110)">
+          <rect x="-90" y="-60" width="180" height="120" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
+          <text x="0" y="-35" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#777B80">MODEL ACCURACY</text>
+          <text x="0" y="5" text-anchor="middle" font-family="'Newsreader', Georgia, serif" font-size="36" font-weight="bold" fill="#30343B">65.25%</text>
+          <rect x="-70" y="20" width="140" height="20" rx="10" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="0" y="34" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">SVM • Logistic Reg • Naive Bayes</text>
+        </g>
+        
+
+  <!-- Footer Tag Strip -->
+  <line x1="30" y1="195" x2="770" y2="195" stroke="#E2E0D8" stroke-width="1"/>
+  
+        <g transform="translate(40, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Python</text>
+        </g>
+        <g transform="translate(150, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Scikit-learn</text>
+        </g>
+        <g transform="translate(260, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">NLTK</text>
+        </g>
+        <g transform="translate(370, 208)">
+          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
+          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Sastrawi</text>
+        </g>
+  <text x="760" y="222" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#777B80">Academic &amp; Applied Project</text>
+</svg>

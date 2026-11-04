@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF9F6"/>
+      <stop offset="100%" stop-color="#F1F0EB"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BAFC0"/>
+      <stop offset="100%" stop-color="#B8C5B5"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#777B80" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="620" fill="url(#bgGrad)"/>
+  <rect width="500" height="620" fill="url(#dotGrid)"/>
+
+  <!-- Editorial Geometric Frame -->
+  <rect x="25" y="25" width="450" height="570" rx="4" fill="none" stroke="#DCD9D0" stroke-width="1.5"/>
+  <rect x="35" y="35" width="430" height="550" rx="2" fill="#FFFFFF" opacity="0.85"/>
+
+  <!-- Decorative Architectural Arch -->
+  <path d="M 130 380 L 130 230 C 130 160, 370 160, 370 230 L 370 380 Z" fill="#F4F3EE" stroke="#E2E0D8" stroke-width="1.5"/>
+  
+  <!-- Silhouette / Monogram Art -->
+  <circle cx="250" cy="230" r="54" fill="#9BAFC0" opacity="0.25"/>
+  <circle cx="250" cy="230" r="46" fill="#FAF9F6" stroke="#9BAFC0" stroke-width="2"/>
+  <text x="250" y="246" text-anchor="middle" font-family="'Newsreader', Georgia, serif" font-size="44" font-weight="600" fill="#30343B">A</text>
+
+  <!-- Bust Silhouette Curve -->
+  <path d="M 175 370 C 175 300, 325 300, 325 370 Z" fill="#9BAFC0" opacity="0.18"/>
+  <path d="M 195 370 C 195 315, 305 315, 305 370 Z" fill="#B8C5B5" opacity="0.3"/>
+
+  <!-- Academic Badge -->
+  <g transform="translate(250, 420)">
+    <rect x="-130" y="-18" width="260" height="36" rx="18" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+    <circle cx="-105" cy="0" r="6" fill="#B8C5B5"/>
+    <text x="-90" y="5" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#30343B" letter-spacing="1">UNIVERSITAS HARAPAN BANGSA</text>
+  </g>
+
+  <!-- Typography Details -->
+  <text x="250" y="480" text-anchor="middle" font-family="'Newsreader', Georgia, serif" font-size="28" font-style="italic" fill="#30343B">Anisya</text>
+  <text x="250" y="505" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600" fill="#777B80" letter-spacing="1.5">BACHELOR OF INFORMATICS (S1)</text>
+  <text x="250" y="525" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" fill="#9BAFC0" letter-spacing="0.5">Software Dev • Machine Learning • Data Science</text>
+
+  <!-- Placeholder Note -->
+  <g transform="translate(250, 560)">
+    <rect x="-115" y="-12" width="230" height="24" rx="4" fill="#F1F0EB" stroke="#DCD9D0" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" fill="#777B80" letter-spacing="0.5">● Real Portrait Placeholder (assets/images/)</text>
+  </g>
+</svg>

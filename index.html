@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Anisya — Personal Portfolio &amp; Academic Dossier</title>
+  <meta name="title" content="Anisya — Personal Portfolio & Academic Dossier">
+  <meta name="description" content="Personal portfolio and academic dossier of Anisya, undergraduate Informatics student at Universitas Harapan Bangsa. Exploring Software Development, Artificial Intelligence, and Data Science.">
+  <meta name="keywords" content="Anisya, Informatics, Universitas Harapan Bangsa, Software Engineering, Machine Learning, Artificial Intelligence, Data Science, EEG Research, Portfolio, Indonesia">
+  <meta name="author" content="Anisya">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anisya — Personal Portfolio & Academic Dossier">
+  <meta property="og:description" content="Undergraduate Informatics student at Universitas Harapan Bangsa specializing in Software Development, Artificial Intelligence, and Data Science.">
+  <meta property="og:image" content="assets/images/profile-placeholder.svg">
+
+  <!-- Favicon Monogram SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FAF9F6'/><rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='%239BAFC0' stroke-width='4'/><text x='50' y='68' font-family='serif' font-size='56' font-weight='600' fill='%2330343B' text-anchor='middle'>A</text></svg>">
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Sticky Navigation Bar
+       ======================================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-editorial" id="mainNav" aria-label="Main Navigation">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-editorial" href="#home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <div>
+          <span>Anisya</span>
+          <span class="brand-sub">Informatics &bull; AI &bull; Research</span>
+        </div>
+      </a>
+
+      <!-- Clean Mobile Hamburger Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEditorialContent" aria-controls="navbarEditorialContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4 text-dark"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarEditorialContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-editorial" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn-editorial-primary btn-sm-editorial btn-download-cv" href="assets/documents/CV_Anisya.pdf" download="CV_Anisya.pdf" role="button">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       A. HOME / HERO SECTION
+       ======================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <!-- Left: Professional Headline & Actions -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="hero-meta-badge">
+            <span class="status-dot"></span>
+            <span>Undergraduate Candidate &bull; Universitas Harapan Bangsa</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="name-italic">Anisya</span>
+          </h1>
+
+          <p class="hero-headline">
+            Informatics Student | Software Development | Artificial Intelligence | Data Science
+          </p>
+
+          <p class="hero-intro">
+            Exploring technology through software development, artificial intelligence, and data-driven solutions.
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="#projects" class="btn-editorial-primary">
+              <span>View My Projects</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="assets/documents/CV_Anisya.pdf" download="CV_Anisya.pdf" class="btn-editorial-secondary btn-download-cv">
+              <i class="bi bi-download"></i>
+              <span>Download CV</span>
+            </a>
+
+            <a href="#contact" class="btn-editorial-ghost">
+              <span>Contact Me</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+          <!-- Dual Purpose Pillars for Recruitment & Graduate Studies -->
+          <div class="hero-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div class="pillar-content">
+                <h6>Professional Focus</h6>
+                <p>Industrial internships, software engineering, and applied machine learning systems.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <div class="pillar-content">
+                <h6>Academic Pathway</h6>
+                <p>International postgraduate preparation, EEG signal analysis, and Explainable AI (XAI).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Professional Profile Card Placeholder -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="hero-portrait-card">
+            <div class="hero-portrait-frame">
+              <img src="assets/images/profile-placeholder.svg" alt="Profile Image Placeholder for Anisya" class="img-fluid" width="500" height="620">
+            </div>
+            
+            <div class="hero-portrait-caption">
+              <div>
+                <span class="d-block font-serif fw-bold text-dark fs-6">Anisya</span>
+                <span class="d-block text-muted" style="font-size: 0.78rem;">S1 Informatics &bull; Class of 2023</span>
+              </div>
+              <span class="badge bg-light text-dark border py-2 px-3 fw-semibold" style="font-size: 0.75rem;">
+                <i class="bi bi-geo-alt me-1 text-primary"></i> Indonesia
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       B. ABOUT ME SECTION
+       ======================================================================== -->
+  <section id="about" class="py-5" style="background-color: var(--bg-surface);">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-4 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Biographical Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-lead">A perspective on technical foundation, interdisciplinary interests, and long-term academic aspirations.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        
+        <!-- Main Profile Narrative -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="about-quote-box h-100">
+            <p>
+              I am an undergraduate Informatics student at Universitas Harapan Bangsa, Indonesia, with an interest in software development, artificial intelligence, machine learning, and data science.
+            </p>
+            <p>
+              Throughout my academic journey, I have explored various areas of technology, including web development, mobile application development, database management, machine learning, and user interface design.
+            </p>
+            <p>
+              I have worked on several academic and independent projects that have strengthened my technical knowledge, problem-solving abilities, and experience in developing technology-based solutions.
+            </p>
+            <p>
+              I am continuously seeking opportunities to expand my knowledge, gain practical experience, and contribute to innovative projects. My long-term goal is to pursue further studies and develop expertise in the field of technology.
+            </p>
+          </div>
+        </div>
+
+        <!-- Academic Dossier Snapshot -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="editorial-card">
+            <h5 class="font-serif fw-bold mb-3 pb-2 border-bottom">Academic Profile Snapshot</h5>
+            
+            <ul class="dossier-list">
+              <li>
+                <span class="dossier-label">Current Status</span>
+                <span class="dossier-value">Undergraduate Student (S1)</span>
+              </li>
+              <li>
+                <span class="dossier-label">Department</span>
+                <span class="dossier-value">Informatics (Teknik Informatika)</span>
+              </li>
+              <li>
+                <span class="dossier-label">Institution</span>
+                <span class="dossier-value">Universitas Harapan Bangsa</span>
+              </li>
+              <li>
+                <span class="dossier-label">Location</span>
+                <span class="dossier-value">Purwokerto, Central Java, Indonesia</span>
+              </li>
+              <li>
+                <span class="dossier-label">Active Research</span>
+                <span class="dossier-value text-primary">Hybrid CNN-LSTM in EEG &amp; XAI</span>
+              </li>
+              <li>
+                <span class="dossier-label">Career Trajectory</span>
+                <span class="dossier-value">Software Dev &amp; Postgraduate Studies</span>
+              </li>
+            </ul>
+
+            <div class="p-3 mt-4 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
+              <small class="text-secondary d-block lh-sm">
+                <i class="bi bi-info-circle me-1 text-primary"></i>
+                Prepared as an academic dossier for international master's degree and scholarship evaluation.
+              </small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       C. EDUCATION SECTION
+       ======================================================================== -->
+  <section id="education" class="py-5">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Academic History</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-lead">Formal academic qualifications, institutional affiliations, and foundational subject coursework.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Higher Education: Universitas Harapan Bangsa -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="editorial-card">
+            <div class="education-item">
+              <span class="education-period">2023 – Present &bull; In Progress</span>
+              <h3 class="education-institution">Universitas Harapan Bangsa</h3>
+              <p class="education-degree">Bachelor of Informatics (S1)</p>
+              
+              <h6 class="font-sans fw-bold text-dark mt-4 mb-2" style="font-size: 0.88rem; letter-spacing: 0.05em; text-transform: uppercase;">
+                Relevant Academic Interests:
+              </h6>
+              
+              <ul class="list-unstyled mb-0" style="font-size: 0.94rem; line-height: 1.8;">
+                <li class="mb-2">
+                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <strong>Programming and Software Engineering:</strong> Object-Oriented Programming, clean code principles, software architecture.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <strong>Database Management Systems:</strong> Relational schema modeling, SQL normalization, transaction processing.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <strong>Artificial Intelligence and Machine Learning:</strong> Supervised learning, pattern recognition, neural networks.
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <strong>Data Science:</strong> Exploratory data analysis, feature engineering, and statistical modeling.
+                </li>
+                <li class="mb-0">
+                  <i class="bi bi-check2 text-primary me-2"></i>
+                  <strong>Web and Mobile Application Development:</strong> Responsive architectures, RESTful API integrations, cross-platform UI.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Education: SMA Negeri 1 Bawang -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="editorial-card">
+            <div class="education-item">
+              <span class="education-period">Graduated 2022</span>
+              <h3 class="education-institution">SMA Negeri 1 Bawang, Banjarnegara</h3>
+              <p class="education-degree">Social Sciences (IPS)</p>
+              
+              <div class="mt-4 pt-2 border-top">
+                <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em;">
+                  Foundational Strengths:
+                </h6>
+                <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.65;">
+                  Developed analytical inquiry, socioeconomic context evaluation, structured communication, and extracurricular leadership prior to specializing in computational informatics.
+                </p>
+                <span class="badge bg-light text-secondary border px-3 py-2 fw-medium">
+                  <i class="bi bi-mortarboard me-1"></i> Senior High School Diploma
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       D. TECHNICAL SKILLS SECTION (No Fake Percentages)
+       ======================================================================== -->
+  <section id="skills" class="py-5" style="background-color: var(--bg-surface);">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Technical Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-lead">Curated technical proficiencies across programming languages, frameworks, analytical tools, and design environments.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Programming -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h5 class="skills-category-title">Programming</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">PHP</span>
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">Dart</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h5 class="skills-category-title">Web Development</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Laravel</span>
+              <span class="skill-chip">HTML5</span>
+              <span class="skill-chip">CSS3</span>
+              <span class="skill-chip">Bootstrap 5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h5 class="skills-category-title">Mobile Development</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Flutter</span>
+              <span class="skill-chip">Dart</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-database"></i>
+              </div>
+              <h5 class="skills-category-title">Database</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h5 class="skills-category-title">Machine Learning</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Scikit-learn</span>
+              <span class="skill-chip">TensorFlow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Processing -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <h5 class="skills-category-title">Data Processing</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Tools -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h5 class="skills-category-title">Development Tools</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Postman</span>
+              <span class="skill-chip">Google Colab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design -->
+        <div class="col-md-6 col-lg-3 reveal-on-scroll">
+          <div class="skills-category-card">
+            <div class="skills-category-header">
+              <div class="skills-category-icon" aria-hidden="true">
+                <i class="bi bi-vector-pen"></i>
+              </div>
+              <h5 class="skills-category-title">Design</h5>
+            </div>
+            <div class="skills-chips-wrapper">
+              <span class="skill-chip">Figma</span>
+              <span class="skill-chip">Canva</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       E. SELECTED PROJECTS SECTION
+       ======================================================================== -->
+  <section id="projects" class="py-5">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-4 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Portfolio Works</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-lead">A catalog of academic and applied software engineering, machine learning pipelines, and mobile applications.</p>
+        </div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filter-bar reveal-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning &amp; AI (3)</button>
+        <button class="filter-btn" data-filter="web">Web Development (2)</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Development (1)</button>
+      </div>
+
+      <!-- Projects Grid (6 Cards) -->
+      <div class="row g-4" id="projectGridContainer">
+        
+        <!-- PROJECT 01: Indonesian Emotion Classification -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="ml">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-01.svg" alt="Indonesian Emotion Classification Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">01</span>
+                <span class="project-category-badge">ML / NLP</span>
+              </div>
+              <h3 class="project-title">Indonesian Emotion Classification</h3>
+              <p class="project-description">
+                A text classification project designed to identify emotions in Indonesian-language text using machine learning algorithms. Tuned model accuracy of 65.25% on the test dataset.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">NLTK</span>
+                <span class="tech-tag">Sastrawi</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-01">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-01">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 02: Skincare Recommendation System -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="ml">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-02.svg" alt="Skincare Recommendation System Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">02</span>
+                <span class="project-category-badge">ML / DSS</span>
+              </div>
+              <h3 class="project-title">Skincare Recommendation System</h3>
+              <p class="project-description">
+                A skincare recommendation system combining a Decision Support System (SAW) and machine learning to support skin-type identification and customized skincare recommendations.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">SAW</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-02">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-02">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 03: Laundry Management System -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="web">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-03.svg" alt="Laundry Management System Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">03</span>
+                <span class="project-category-badge">Web Development</span>
+              </div>
+              <h3 class="project-title">Laundry Management System</h3>
+              <p class="project-description">
+                A web-based laundry management application designed to manage operational data, simplify administrative processes, and deliver REST API integration tested using Postman.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Postman</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-03">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-03">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 04: SITUGAS – Academic Task Reminder -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="mobile">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-04.svg" alt="SITUGAS Mobile Reminder Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">04</span>
+                <span class="project-category-badge">Mobile Development</span>
+              </div>
+              <h3 class="project-title">SITUGAS – Academic Reminder</h3>
+              <p class="project-description">
+                A mobile application concept designed to help university students organize and monitor academic assignments with task management, timely reminders, and backend API connectivity.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">PHP API</span>
+                <span class="tech-tag">Provider</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-04">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-04">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 05: Library Management System -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="web">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-05.svg" alt="Library Management System Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">05</span>
+                <span class="project-category-badge">Web Development</span>
+              </div>
+              <h3 class="project-title">Library Management System</h3>
+              <p class="project-description">
+                A web-based library information system developed to support book catalog management, member borrowing administration, and responsive CRUD workflows in Laravel.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-05">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-05">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 06: Breast Cancer Classification -->
+        <div class="col-md-6 col-lg-4 project-grid-item" data-category="ml">
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/project-06.svg" alt="Breast Cancer Classification Diagram" width="800" height="240">
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-index">06</span>
+                <span class="project-category-badge">Machine Learning</span>
+              </div>
+              <h3 class="project-title">Breast Cancer Classification</h3>
+              <p class="project-description">
+                A machine learning project focused on breast cancer classification using the Wisconsin Diagnostic dataset, featuring SMOTE class balancing and Fuzzy K-Nearest Neighbors.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">SMOTE</span>
+                <span class="tech-tag">Fuzzy KNN</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-editorial-primary btn-sm-editorial btn-view-details" data-project="proj-06">
+                  <span>View Details</span>
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </button>
+                <button class="btn-editorial-secondary btn-sm-editorial btn-project-github" data-project="proj-06">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       F. PROFESSIONAL EXPERIENCE SECTION
+       ======================================================================== -->
+  <section id="experience" class="py-5" style="background-color: var(--bg-surface);">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Professional History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-lead">Industry internships, enterprise project management exposure, and operational organizational roles.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Experience 1: PT Geo Dipa Energi (Persero) -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="experience-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="exp-badge-ongoing">
+                <i class="bi bi-circle-fill" style="font-size: 0.45rem;"></i>
+                Ongoing Internship
+              </span>
+              <span class="text-secondary font-mono" style="font-size: 0.8rem;">
+                05 Oct – 05 Dec 2026
+              </span>
+            </div>
+
+            <h3 class="exp-company">PT Geo Dipa Energi (Persero) – Unit Dieng</h3>
+            <p class="exp-role-meta">Department: Project Management Unit &bull; Industrial Intern</p>
+            
+            <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.75;">
+              "Participating in an industrial internship within the Project Management Unit, gaining exposure to professional working environments, project management processes, and the application of information technology in supporting organizational activities."
+            </p>
+
+            <div class="p-3 mt-3 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
+              <h6 class="font-sans fw-bold mb-1" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
+                Key Exposure Pillars:
+              </h6>
+              <ul class="mb-0 text-secondary ps-3" style="font-size: 0.85rem; line-height: 1.6;">
+                <li>Enterprise IT support in state-owned renewable geothermal operations.</li>
+                <li>Project Management Unit coordination, documentation, and reporting.</li>
+                <li>Professional workplace collaboration and stakeholder communication.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Rocket Chicken -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="experience-card">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <span class="exp-badge-completed">
+                <i class="bi bi-check2"></i>
+                Completed
+              </span>
+              <span class="text-secondary font-mono" style="font-size: 0.8rem;">
+                July – September 2022
+              </span>
+            </div>
+
+            <h3 class="exp-company">Rocket Chicken</h3>
+            <p class="exp-role-meta">Position: Cashier &bull; Operations</p>
+            
+            <p class="text-secondary" style="font-size: 0.94rem; line-height: 1.75;">
+              "Experience in customer service, transaction processing, cash handling, and daily operational activities."
+            </p>
+
+            <div class="p-3 mt-3 rounded-2" style="background-color: var(--bg-secondary); border: 1px solid var(--border-subtle);">
+              <h6 class="font-sans fw-bold mb-1" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-primary);">
+                Operational Core Competencies:
+              </h6>
+              <span class="badge bg-white text-dark border me-1 mb-1">Customer Relationship</span>
+              <span class="badge bg-white text-dark border me-1 mb-1">POS &amp; Cash Reconciliation</span>
+              <span class="badge bg-white text-dark border me-1 mb-1">Operational Discipline</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       G. RESEARCH INTERESTS & ONGOING RESEARCH SECTION
+       ======================================================================== -->
+  <section id="research" class="py-5">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Scholarly Focus</span>
+          <h2 class="section-title">Research Interests</h2>
+          <p class="section-lead">Foundations for postgraduate inquiry, specialized domains, and ongoing undergraduate scientific research.</p>
+        </div>
+      </div>
+
+      <!-- Domain Pills Grid -->
+      <div class="row g-3 mb-5 reveal-on-scroll">
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-cpu"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Artificial Intelligence</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-diagram-3"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Machine &amp; Deep Learning</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-eye"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Computer Vision</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-chat-square-text"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Natural Language Processing</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-lightbulb"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Explainable AI (XAI)</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="research-domain-pill">
+            <div class="research-domain-icon"><i class="bi bi-graph-up"></i></div>
+            <span class="fw-bold" style="font-size: 0.92rem;">Data Science</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ongoing Undergraduate Research Showcase -->
+      <div class="row reveal-on-scroll">
+        <div class="col-12">
+          <div class="research-showcase-card">
+            
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+              <span class="section-kicker mb-0">Featured Undergraduate Research</span>
+              <span class="exp-badge-ongoing">
+                <i class="bi bi-arrow-repeat spin"></i>
+                Status: Research in Progress
+              </span>
+            </div>
+
+            <h3 class="research-title">
+              "Hybrid CNN-LSTM for EEG Signal Classification and Brain Activity Pattern Identification Using Explainable Artificial Intelligence in Face Pareidolia."
+            </h3>
+
+            <div class="row g-4 mt-2">
+              <div class="col-lg-6">
+                <h6 class="font-sans fw-bold text-dark mb-3" style="text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">
+                  Core Research Focus Areas:
+                </h6>
+                <ul class="research-focus-list">
+                  <li>
+                    <strong>EEG Signal Processing:</strong> Preprocessing, filtering, and channel feature extraction from electroencephalogram timeseries signals.
+                  </li>
+                  <li>
+                    <strong>Hybrid CNN-LSTM Architecture:</strong> Exploiting Convolutional Neural Networks (CNN) for spatial electrode patterns combined with Long Short-Term Memory (LSTM) for temporal dynamics.
+                  </li>
+                  <li>
+                    <strong>Cognitive Stimuli Classification:</strong> Discriminating neural responses across Face, Pareidolia (illusory face perception), and Object stimuli.
+                  </li>
+                  <li>
+                    <strong>Explainability via SHAP:</strong> Interpreting neural model decision boundaries with Shapley Additive Explanations to identify salient brainwave patterns.
+                  </li>
+                  <li>
+                    <strong>Open Science Dataset:</strong> Validating methodologies on the peer-reviewed OpenNeuro dataset DS005642.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="p-4 rounded-3 h-100" style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle);">
+                  <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.05em;">
+                    Academic Value &amp; Scholarship Relevance
+                  </h6>
+                  <p class="text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
+                    This research bridges computational neuroscience and interpretable deep learning. By uncovering how human brains process illusory visual signals (pareidolia) versus real facial features, the study lays empirical ground for trustworthy AI applications in neuro-engineering and medical diagnostic interfaces.
+                  </p>
+                  <div class="d-flex align-items-center gap-2 pt-2 border-top">
+                    <i class="bi bi-shield-check text-primary fs-5"></i>
+                    <small class="text-secondary">Conforms to open-science benchmarks and reproducible research standards.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Methodology Architecture SVG Diagram -->
+            <div class="research-diagram-wrap">
+              <img src="assets/images/research-eeg.svg" alt="Hybrid CNN-LSTM Research Methodology Pipeline" class="img-fluid w-100" width="900" height="380">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ========================================================================
+       H. ACHIEVEMENTS AND ACTIVITIES SECTION
+       ======================================================================== -->
+  <section id="activities" class="py-5" style="background-color: var(--bg-surface);">
+    <div class="container py-lg-4">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Extracurricular &amp; Leadership</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-lead">Capacity building programs, leadership training, technical clubs, and creative pursuits.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Activity 1 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-trophy"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Fest Go World Asia</h4>
+              <p class="activity-category">Futurepreneur Selection Program</p>
+              <small class="text-secondary mt-1 d-block">Competitive entrepreneurial development and regional innovation selection.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-mic"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Public Speaking Training</h4>
+              <p class="activity-category">Professional Communication</p>
+              <small class="text-secondary mt-1 d-block">Structured training in rhetoric, academic presentation, and stakeholder briefing.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Entrepreneurship Training</h4>
+              <p class="activity-category">Venture &amp; Business Strategy</p>
+              <small class="text-secondary mt-1 d-block">Hands-on workshops in business model canvas, market fit, and project economics.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 4 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-terminal"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Computer Science Club</h4>
+              <p class="activity-category">Technical Community</p>
+              <small class="text-secondary mt-1 d-block">Collaborative peer programming sessions, hackathons, and technology sharing.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 5 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-camera"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Photography Organization</h4>
+              <p class="activity-category">Creative Arts &amp; Visual Design</p>
+              <small class="text-secondary mt-1 d-block">Composition, lighting theory, and visual narrative storytelling.</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 6 -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="activity-card">
+            <div class="activity-icon" aria-hidden="true">
+              <i class="bi bi-music-note-beamed"></i>
+            </div>
+            <div>
+              <h4 class="activity-title">Choir &bull; SMA Negeri 1 Bawang</h4>
+              <p class="activity-category">Artistic Ensemble &bull; Teamwork</p>
+              <small class="text-secondary mt-1 d-block">Vocal discipline, ensemble synchronization, and school ceremonial performances.</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       I. CONTACT SECTION
+       ======================================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      
+      <div class="row mb-5 reveal-on-scroll">
+        <div class="col-lg-8">
+          <span class="section-kicker">Inquiries &amp; Collaboration</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-lead">Open for industrial internships, software engineering roles, academic collaboration, and graduate school inquiries.</p>
+        </div>
+      </div>
+
+      <div class="row g-5 align-items-start">
+        
+        <!-- Left: Contact Details & Statement -->
+        <div class="col-lg-5 reveal-on-scroll">
+          
+          <!-- Email Info Card -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon" aria-hidden="true">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="flex-grow-1">
+              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">Professional Email</span>
+              <span class="d-block fw-semibold text-dark" id="emailTextValue" style="font-size: 0.95rem;">anisya.student@example.com</span>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary" id="copyEmailBtn" title="Copy email address" aria-label="Copy Email">
+              <i class="bi bi-clipboard"></i>
+            </button>
+          </div>
+
+          <!-- GitHub Info Card -->
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-info-card text-decoration-none">
+            <div class="contact-info-icon" aria-hidden="true">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="flex-grow-1">
+              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">GitHub Profile</span>
+              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">github.com/anisya-placeholder</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right text-secondary"></i>
+          </a>
+
+          <!-- LinkedIn Info Card -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-info-card text-decoration-none">
+            <div class="contact-info-icon" aria-hidden="true">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="flex-grow-1">
+              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">LinkedIn Network</span>
+              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">linkedin.com/in/anisya-placeholder</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right text-secondary"></i>
+          </a>
+
+          <!-- Location Info Card -->
+          <div class="contact-info-card">
+            <div class="contact-info-icon" aria-hidden="true">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div>
+              <span class="d-block text-secondary text-uppercase fw-bold" style="font-size: 0.75rem; letter-spacing: 0.08em;">Location</span>
+              <span class="d-block fw-semibold text-dark" style="font-size: 0.95rem;">Indonesia (UTC+7)</span>
+            </div>
+          </div>
+
+          <!-- Professional Closing Statement -->
+          <div class="contact-closing-quote">
+            "Thank you for visiting my portfolio. I am always open to learning, collaboration, academic opportunities, and professional growth."
+          </div>
+
+        </div>
+
+        <!-- Right: Direct Message Inquiry Form -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="contact-form-card">
+            <h4 class="font-serif fw-bold mb-3">Send a Direct Message</h4>
+            <p class="text-secondary mb-4" style="font-size: 0.9rem;">
+              Whether inquiring about internship availability, academic research collaboration, or scholarship dossiers, please feel free to send a message.
+            </p>
+
+            <div id="formSuccessAlert" class="alert alert-success d-none mb-4 py-2 px-3" role="alert" style="font-size: 0.88rem;">
+              <i class="bi bi-check-circle me-1"></i> Thank you! Your email client will now open with your formatted inquiry.
+            </div>
+
+            <form id="portfolioContactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="senderName" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Full Name *</label>
+                  <input type="text" class="form-control-editorial" id="senderName" placeholder="e.g. Dr. Jane Smith / Recruiter" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="senderEmail" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Your Email *</label>
+                  <input type="email" class="form-control-editorial" id="senderEmail" placeholder="e.g. contact@institution.org" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="senderPurpose" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Subject / Inquiry Type</label>
+                  <select class="form-control-editorial" id="senderPurpose">
+                    <option value="Internship / Job Opportunity">Software Engineering / Internship Opportunity</option>
+                    <option value="Academic Research Collaboration">Academic / EEG Research Collaboration</option>
+                    <option value="Scholarship / Postgraduate Inquiry">Postgraduate Studies / Scholarship Inquiry</option>
+                    <option value="General Professional Inquiries">General Professional Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="senderMessage" class="form-label text-dark fw-semibold" style="font-size: 0.84rem;">Message *</label>
+                  <textarea class="form-control-editorial" id="senderMessage" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn-editorial-primary w-100">
+                    <span>Send Message via Email Client</span>
+                    <i class="bi bi-send"></i>
+                  </button>
+                  <small class="text-secondary mt-2 d-block text-center" style="font-size: 0.78rem;">
+                    Notice: This form generates a pre-formatted direct email addressed to Anisya's inbox.
+                  </small>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer-editorial border-top">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-6 text-center text-md-start">
+          <span class="font-serif fw-bold fs-5 text-dark">Anisya</span>
+          <span class="text-secondary ms-2" style="font-size: 0.84rem;">&copy; 2026. All rights reserved.</span>
+          <div class="text-muted mt-1" style="font-size: 0.78rem;">
+            Undergraduate Informatics &bull; Universitas Harapan Bangsa &bull; Indonesia
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+          <ul class="list-inline mb-0" style="font-size: 0.84rem;">
+            <li class="list-inline-item"><a href="#home" class="text-secondary">Home</a></li>
+            <li class="list-inline-item">&bull;</li>
+            <li class="list-inline-item"><a href="#projects" class="text-secondary">Projects</a></li>
+            <li class="list-inline-item">&bull;</li>
+            <li class="list-inline-item"><a href="#research" class="text-secondary">Research</a></li>
+            <li class="list-inline-item">&bull;</li>
+            <li class="list-inline-item"><a href="#contact" class="text-secondary">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification for CV Download -->
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 1090;">
+    <div id="cvFeedbackToast" class="toast align-items-center text-bg-light border shadow-sm" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi bi-check-circle-fill text-success fs-5"></i>
+          <span><strong>CV Download:</strong> Downloading <code>CV_Anisya.pdf</code>.</span>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Project Details Modal (Dynamic Bootstrap 5 Modal)
+       ======================================================================== -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-content-editorial">
+        
+        <!-- Header -->
+        <div class="modal-header modal-header-editorial">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span id="modalProjectIndex" class="project-index">PROJECT 01</span>
+              <span class="text-muted">&bull;</span>
+              <span id="modalProjectCategory" class="project-category-badge">Category</span>
+            </div>
+            <h3 class="modal-title font-serif fw-bold text-dark fs-4" id="modalProjectTitle">Project Title</h3>
+            <p id="modalProjectSubtitle" class="text-secondary mb-0" style="font-size: 0.88rem;">Project Subtitle</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body modal-body-editorial">
+          <!-- Architecture Banner -->
+          <div class="mb-4 rounded-2 overflow-hidden border" style="background-color: var(--bg-secondary);">
+            <img id="modalProjectImage" src="assets/images/project-01.svg" alt="Project visual diagram" class="img-fluid w-100" width="800" height="240">
+          </div>
+
+          <!-- Project Overview -->
+          <div class="mb-4">
+            <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
+              Executive Overview
+            </h6>
+            <p id="modalProjectOverview" class="text-secondary" style="font-size: 0.94rem; line-height: 1.7;">
+              Detailed overview text...
+            </p>
+          </div>
+
+          <!-- Methodologies / Features -->
+          <div class="mb-4">
+            <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
+              Methodologies &amp; Architectural Features
+            </h6>
+            <ul id="modalProjectMethods" class="ps-3 text-secondary" style="font-size: 0.92rem; line-height: 1.7;">
+              <!-- Populated via JS -->
+            </ul>
+          </div>
+
+          <!-- Evaluation / Results -->
+          <div class="mb-4 p-3 rounded-2" style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle);">
+            <h6 class="font-sans fw-bold text-dark mb-1" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
+              Key Results &amp; Evaluation
+            </h6>
+            <p id="modalProjectResult" class="text-secondary mb-0" style="font-size: 0.92rem; line-height: 1.6;">
+              Evaluation result text...
+            </p>
+          </div>
+
+          <!-- Technologies Used -->
+          <div>
+            <h6 class="font-sans fw-bold text-dark mb-2" style="font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.06em;">
+              Technologies &amp; Frameworks
+            </h6>
+            <div id="modalProjectTech" class="d-flex flex-wrap gap-2">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer modal-footer-editorial d-flex justify-content-between align-items-center">
+          <small id="modalProjectStatus" class="text-muted" style="font-size: 0.8rem;">Academic Project</small>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn-editorial-secondary btn-sm-editorial" id="modalGithubBtn">
+              <i class="bi bi-github"></i>
+              <span>GitHub Notice</span>
+            </button>
+            <button type="button" class="btn-editorial-primary btn-sm-editorial" data-bs-dismiss="modal">
+              <span>Close Dossier</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
