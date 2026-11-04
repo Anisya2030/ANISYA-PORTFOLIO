@@ -235,9 +235,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // --------------------------------------------------------------------------
-  // 2. Language State Management
+  // 2. Language State Management & Global Modal State
   // --------------------------------------------------------------------------
-  let currentLang = localStorage.getItem('anisya_portfolio_lang') || 'id';
+  let currentlyViewedProjectId = null;
+  let projectDetailModal = null;
+  let projectDetailModalEl = null;
+
+  let currentLang = 'id';
+  try {
+    currentLang = localStorage.getItem('anisya_portfolio_lang') || 'id';
+  } catch (e) {
+    console.warn('localStorage not accessible, defaulting to id:', e);
+  }
 
   function getCurrentLang() {
     return currentLang;
@@ -246,7 +255,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function setLanguage(lang) {
     if (lang !== 'id' && lang !== 'en') lang = 'id';
     currentLang = lang;
-    localStorage.setItem('anisya_portfolio_lang', lang);
+    try {
+      localStorage.setItem('anisya_portfolio_lang', lang);
+    } catch (e) {
+      // Ignore storage errors in private browsing
+    }
     document.documentElement.lang = lang;
 
     // Update active state on all language switcher buttons
@@ -406,14 +419,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, {
       root: null,
-      threshold: 0.08,
-      rootMargin: '0px 0px -30px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px 40px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
   } else {
     revealElements.forEach(el => el.classList.add('revealed'));
   }
+
+  // Fallback: Ensure elements in initial viewport are visible immediately
+  const revealInViewport = () => {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 80 && rect.bottom > -80) {
+        el.classList.add('revealed');
+      }
+    });
+  };
+  revealInViewport();
+  setTimeout(revealInViewport, 300);
+  setTimeout(() => {
+    revealElements.forEach(el => el.classList.add('revealed'));
+  }, 1200);
 
   // --------------------------------------------------------------------------
   // 6. Projects Category Filtering
@@ -448,11 +476,48 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
+  // 6b. Certifications Category Filtering
+  // --------------------------------------------------------------------------
+  const certFilterButtons = document.querySelectorAll('.cert-filter-btn');
+  const certCards = document.querySelectorAll('.cert-grid-item');
+
+  certFilterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      certFilterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      certCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (filterValue === 'all' || cardCategory === filterValue) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 200);
+        }
+      });
+    });
+  });
+
+  // --------------------------------------------------------------------------
   // 7. Dynamic Project Details Modal (Bilingual)
   // --------------------------------------------------------------------------
-  let currentlyViewedProjectId = null;
-  const projectDetailModalEl = document.getElementById('projectDetailModal');
-  const projectDetailModal = projectDetailModalEl ? new bootstrap.Modal(projectDetailModalEl) : null;
+  projectDetailModalEl = document.getElementById('projectDetailModal');
+  try {
+    if (typeof bootstrap !== 'undefined' && bootstrap.Modal && projectDetailModalEl) {
+      projectDetailModal = new bootstrap.Modal(projectDetailModalEl);
+    }
+  } catch (e) {
+    console.warn('Bootstrap modal init warning:', e);
+  }
 
   const modalIndex = document.getElementById('modalProjectIndex');
   const modalCategory = document.getElementById('modalProjectCategory');
@@ -589,9 +654,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
-  // 9. Download CV Toast Notification
+  // 9. Download CV & Certificate Toast Notification
   // --------------------------------------------------------------------------
-  const cvDownloadButtons = document.querySelectorAll('.btn-download-cv');
+  const cvDownloadButtons = document.querySelectorAll('.btn-download-cv, .btn-download-cert');
   cvDownloadButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const feedbackToast = document.getElementById('cvFeedbackToast');

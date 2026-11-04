@@ -190,6 +190,13 @@ html[lang="en"] [data-lang="id"] {
   background-color: var(--pure-white);
 }
 
+/* Certifications: Warm White */
+.section-certifications {
+  background-color: var(--warm-white);
+  border-top: 1px solid var(--border-warm);
+  border-bottom: 1px solid var(--border-warm);
+}
+
 /* Experience: Ice Blue */
 .section-experience {
   background-color: var(--ice-blue);
@@ -971,6 +978,137 @@ h1, h2, h3, h4, .font-serif {
   gap: 10px;
   padding-top: 14px;
   border-top: 1px solid var(--border-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   12b. Certifications & Professional Development Section
+   -------------------------------------------------------------------------- */
+.certificate-card {
+  background-color: var(--pure-white);
+  border: 1.5px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: var(--transition-smooth);
+}
+
+.certificate-card:hover {
+  border-color: var(--steel-blue);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.cert-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cert-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.cert-icon-language {
+  background-color: var(--ice-blue);
+  border: 1.5px solid var(--border-medium);
+  color: var(--steel-blue);
+}
+
+.cert-icon-technical {
+  background-color: var(--steel-blue-light);
+  border: 1.5px solid var(--dusty-blue);
+  color: var(--steel-blue-dark);
+}
+
+.cert-icon-professional {
+  background-color: var(--warm-sand-light);
+  border: 1.5px solid var(--warm-sand);
+  color: var(--charcoal);
+}
+
+.cert-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+}
+
+.cert-badge-language {
+  background-color: var(--ice-blue);
+  color: var(--steel-blue);
+  border: 1px solid var(--dusty-blue);
+}
+
+.cert-badge-technical {
+  background-color: #EBF1F7;
+  color: var(--charcoal);
+  border: 1px solid #C4D3E0;
+}
+
+.cert-badge-professional {
+  background-color: var(--warm-sand-light);
+  color: var(--charcoal);
+  border: 1px solid var(--warm-sand);
+}
+
+.cert-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.cert-issuer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--steel-blue);
+  margin-bottom: 12px;
+}
+
+.cert-meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--warm-white);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-sm);
+  padding: 5px 11px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 18px;
+}
+
+.cert-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
 }
 
 /* --------------------------------------------------------------------------
