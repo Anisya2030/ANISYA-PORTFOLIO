@@ -1,0 +1,28 @@
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+vendor/
+
+# IDE and editor
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local development
+*.local

@@ -4,69 +4,32 @@
       <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#EAE8E1" stroke-width="0.8"/>
     </pattern>
   </defs>
-
-  <!-- Background Base -->
   <rect width="800" height="240" fill="#FAF9F6"/>
   <rect width="800" height="240" fill="url(#grid_05)"/>
-
-  <!-- Top bar / Editorial Header -->
   <line x1="30" y1="26" x2="770" y2="26" stroke="#E2E0D8" stroke-width="1"/>
-  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 05 // WEB DEVELOPMENT</text>
-  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Portfolio Dossier</text>
-
-  <!-- Center Graphic Diagram -->
-  
-        <!-- Library Web System Visual -->
-        <g transform="translate(200, 110)">
-          <!-- Dashboard Window -->
-          <rect x="-130" y="-60" width="260" height="120" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
-          <rect x="-130" y="-60" width="260" height="22" rx="6" fill="#F1F0EB"/>
-          <circle cx="-115" cy="-49" r="3.5" fill="#777B80" opacity="0.4"/>
-          <circle cx="-105" cy="-49" r="3.5" fill="#777B80" opacity="0.4"/>
-          <circle cx="-95" cy="-49" r="3.5" fill="#777B80" opacity="0.4"/>
-          <text x="0" y="-45" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">Perpustakaan Digital Admin</text>
-          <!-- Book records -->
-          <g transform="translate(-115, -20)">
-            <text x="0" y="10" font-family="sans-serif" font-size="9" font-weight="bold" fill="#30343B">📚 Data Mining: Concepts &amp; Tech</text>
-            <text x="210" y="10" text-anchor="end" font-family="sans-serif" font-size="8" fill="#B8C5B5">Available</text>
-            <line x1="0" y1="18" x2="210" y2="18" stroke="#F1F0EB" stroke-width="1"/>
-            <text x="0" y="32" font-family="sans-serif" font-size="9" font-weight="bold" fill="#30343B">📖 Pattern Recognition &amp; ML</text>
-            <text x="210" y="32" text-anchor="end" font-family="sans-serif" font-size="8" fill="#9BAFC0">Borrowed</text>
-            <line x1="0" y1="40" x2="210" y2="40" stroke="#F1F0EB" stroke-width="1"/>
-            <text x="0" y="54" font-family="sans-serif" font-size="9" font-weight="bold" fill="#30343B">📘 Artificial Intelligence: A Modern Approach</text>
-          </g>
-        </g>
-        <!-- Arrow -->
-        <path d="M 355 110 L 405 110 M 395 102 L 405 110 L 395 118" stroke="#9BAFC0" stroke-width="2" fill="none"/>
-        <!-- Database Card -->
-        <g transform="translate(500, 110)">
-          <rect x="-80" y="-60" width="160" height="120" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
-          <text x="0" y="-30" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#30343B">Laravel + MySQL</text>
-          <!-- Cylinder icon -->
-          <ellipse cx="0" cy="-5" rx="28" ry="8" fill="#FAF9F6" stroke="#9BAFC0" stroke-width="1.2"/>
-          <path d="M -28 -5 L -28 15 C -28 20, 28 20, 28 15 L 28 -5 Z" fill="#FAF9F6" stroke="#9BAFC0" stroke-width="1.2"/>
-          <text x="0" y="38" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Relational CRUD Schema</text>
-        </g>
-        
-
-  <!-- Footer Tag Strip -->
+  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 05 // MOBILE DEVELOPMENT</text>
+  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">GitHub Repository</text>
+  <g transform="translate(200, 110)">
+    <rect x="-110" y="-55" width="220" height="110" rx="8" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#30343B">Flutter POS Client</text>
+    <rect x="-90" y="-15" width="180" height="20" rx="4" fill="#F1F0EB"/>
+    <text x="0" y="-1" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Cart &amp; Product Inventory</text>
+    <rect x="-90" y="12" width="180" height="24" rx="4" fill="#EAF3F8"/>
+    <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="bold" fill="#2C5B84">Real-Time Checkout Calc</text>
+  </g>
+  <path d="M 335 110 L 415 110 M 405 102 L 415 110 L 405 118" stroke="#B8C5B5" stroke-width="2" fill="none"/>
+  <g transform="translate(530, 110)">
+    <rect x="-100" y="-55" width="200" height="110" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#3ECF8E">Supabase Cloud Backend</text>
+    <rect x="-80" y="-12" width="160" height="20" rx="4" fill="#F8F7F3"/>
+    <text x="0" y="2" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">PostgreSQL Database</text>
+    <rect x="-80" y="15" width="160" height="22" rx="4" fill="#EAF3F8"/>
+    <text x="0" y="30" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#2C5B84">Cloud Data Sync &amp; Auth</text>
+  </g>
   <line x1="30" y1="195" x2="770" y2="195" stroke="#E2E0D8" stroke-width="1"/>
-  
-        <g transform="translate(40, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Laravel</text>
-        </g>
-        <g transform="translate(150, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">PHP</text>
-        </g>
-        <g transform="translate(260, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Bootstrap</text>
-        </g>
-        <g transform="translate(370, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">MySQL</text>
-        </g>
-  <text x="760" y="222" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#777B80">Academic &amp; Applied Project</text>
+  <g transform="translate(40, 208)"><rect x="0" y="0" width="80" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="40" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Flutter</text></g>
+  <g transform="translate(130, 208)"><rect x="0" y="0" width="70" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="35" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Dart</text></g>
+  <g transform="translate(210, 208)"><rect x="0" y="0" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="45" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Supabase</text></g>
+  <g transform="translate(310, 208)"><rect x="0" y="0" width="80" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="40" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">POS App</text></g>
+  <text x="760" y="222" text-anchor="end" font-family="sans-serif" font-size="9.5" fill="#777B80">Mobile Application Project</text>
 </svg>

@@ -7,249 +7,389 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   // --------------------------------------------------------------------------
-  // 1. Bilingual Projects Data Source
+  // 1. Bilingual Projects Data Source (6 Selected Projects)
   // --------------------------------------------------------------------------
-  const projectsData = {
+    const projectsData = {
     'proj-01': {
       number: '01',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/Klasifikasi-emotion-indobert',
       image: 'assets/images/project-01.svg',
-      technologies: ['Python', 'Scikit-learn', 'NLTK', 'Sastrawi', 'Pandas', 'NumPy'],
+      technologies: ['Python', 'IndoBERT', 'PyTorch', 'Transformers', 'Flask', 'NLP'],
       id: {
-        title: 'Klasifikasi Emosi Teks Bahasa Indonesia',
+        title: 'Emotion Classification using IndoBERT',
         category: 'Machine Learning / NLP',
-        subtitle: 'Pemrosesan Bahasa Alami & Penambangan Emosi Teks Bahasa Indonesia',
-        description: 'Proyek klasifikasi teks yang dirancang untuk mengidentifikasi emosi pada teks berbahasa Indonesia menggunakan algoritma machine learning.',
-        overview: 'Proyek ini berfokus pada analisis linguistik teks bahasa Indonesia (baik formal maupun percakapan) untuk mengklasifikasikan status afektif emosi (seperti senang, sedih, marah, dan takut). Menerapkan pipeline NLP terintegrasi mulai dari prapemrosesan teks, stemming morfologis, ekstraksi fitur TF-IDF, hingga benchmarking algoritma klasifikasi.',
+        subtitle: 'Klasifikasi Emosi Teks Berbahasa Indonesia Menggunakan Fine-Tuned IndoBERT',
+        description: 'Proyek klasifikasi emosi multi-kelas berbasis Natural Language Processing memanfaatkan pretrained model IndoBERT untuk mendeteksi emosi dari teks berbahasa Indonesia.',
+        overview: 'Proyek ini mengimplementasikan fine-tuning arsitektur IndoBERT (Indonesian BERT) untuk klasifikasi emosi multi-kelas pada teks berbahasa Indonesia. Mengintegrasikan pipeline tokenisasi BERT, penanganan teks informal, dan antarmuka web Flask untuk inferensi langsung.',
         methods: [
-          'Pra-pemrosesan teks memanfaatkan library NLTK dan Sastrawi untuk morphological stemming bahasa Indonesia serta pembersihan stopword.',
-          'Ekstraksi fitur Term Frequency-Inverse Document Frequency (TF-IDF) dengan optimasi parameter n-gram.',
-          'Pemodelan komparatif menggunakan Logistic Regression, Support Vector Machine (SVM dengan kernel linear & RBF), dan Multinomial Naive Bayes.',
-          'Evaluasi model dengan k-fold cross validation dan hyperparameter grid search tuning guna meminimalkan overfitting.'
+          'Fine-tuning pretrained model IndoBERT Base pada dataset teks berbahasa Indonesia.',
+          'Tokenisasi kontekstual dan normalisasi teks menggunakan Hugging Face Transformers.',
+          'Optimasi training loop dengan AdamW optimizer dan learning rate scheduler.',
+          'Deployment antarmuka web interaktif menggunakan Flask untuk pengujian prediksi emosi.'
         ],
-        result: 'Mencapai akurasi model hasil tuning sebesar 65,25% pada dataset pengujian, menunjukkan performa diskriminatif yang kokoh dalam membedakan nuansa emosional teks berbahasa Indonesia.',
-        status: 'Proyek Akademik • Universitas Harapan Bangsa',
-        githubNotice: 'Repositori akademik. Hubungi penyusun untuk akses eksperimen, log model, dan dataset lengkap.'
+        result: 'Mencapai akurasi dan pemahaman semantik kontekstual yang tinggi dalam mengenali nuansa emosi kompleks pada teks bahasa Indonesia.',
+        status: 'Proyek Akademik — Universitas Harapan Bangsa'
       },
       en: {
-        title: 'Indonesian Emotion Classification',
+        title: 'Emotion Classification using IndoBERT',
         category: 'Machine Learning / NLP',
-        subtitle: 'Natural Language Processing & Indonesian Sentiment/Emotion Mining',
-        description: 'A text classification project designed to identify emotions in Indonesian-language text using machine learning algorithms.',
-        overview: 'This project addresses the linguistic nuances of Indonesian colloquial and formal texts to classify affective states (e.g., joy, sadness, anger, fear). It implements end-to-end NLP pipelines from tokenization and morphological stemming to vectorization and multi-model benchmarking.',
+        subtitle: 'Indonesian Emotion Text Classification using Fine-Tuned IndoBERT',
+        description: 'A multi-class emotion classification project utilizing IndoBERT transformer architecture to detect nuanced affective states from Indonesian text corpora.',
+        overview: 'Implements fine-tuning of the IndoBERT (Indonesian BERT) transformer model for multi-class emotion classification on Indonesian text. Incorporates contextual tokenization, informal text handling, and a Flask web interface for live inference.',
         methods: [
-          'Text preprocessing utilizing NLTK and Sastrawi for formal and informal Indonesian morphological stemming and stopword removal.',
-          'Term Frequency-Inverse Document Frequency (TF-IDF) feature matrix extraction with n-gram parameter optimization.',
-          'Comparative classification using Logistic Regression, Support Vector Machine (SVM with linear and RBF kernels), and Multinomial Naive Bayes.',
-          'Cross-validation and hyperparameter grid search tuning to mitigate overfitting on imbalanced text samples.'
+          'Fine-tuning pretrained IndoBERT Base on curated Indonesian emotional text datasets.',
+          'Contextual tokenization and textual normalization using Hugging Face Transformers.',
+          'Training loop optimization with AdamW optimizer and linear learning rate scheduling.',
+          'Interactive web interface deployment with Flask for real-time model inference.'
         ],
-        result: 'Achieved a tuned model classification accuracy of 65.25% on the test dataset, demonstrating robust baseline discriminative capability across emotionally nuanced Indonesian phrasing.',
-        status: 'Academic Project • Universitas Harapan Bangsa',
-        githubNotice: 'Academic repository placeholder. Contact author for full experimental codebase and dataset access.'
+        result: 'Achieved high accuracy and superior contextual semantic understanding across complex Indonesian emotional nuances.',
+        status: 'Academic Project — Universitas Harapan Bangsa'
       }
     },
     'proj-02': {
       number: '02',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/SKINCARE-RECOMMENDATION',
       image: 'assets/images/project-02.svg',
-      technologies: ['Python', 'Pandas', 'Scikit-learn', 'SAW (Decision Support)', 'NumPy'],
+      technologies: ['Python', 'Pandas', 'Scikit-learn', 'SAW (Decision Support)', 'Flask', 'NumPy'],
       id: {
-        title: 'Sistem Rekomendasi Skincare',
+        title: 'Skincare Recommendation System (SAW + ML)',
         category: 'ML / Sistem Pendukung Keputusan',
-        subtitle: 'Sistem Pendukung Keputusan Multi-Kriteria & Prediksi Kecocokan Produk',
-        description: 'Sistem rekomendasi perawatan kulit yang menggabungkan Sistem Pendukung Keputusan (DSS) dan machine learning untuk mendukung identifikasi jenis kulit serta rekomendasi produk.',
-        overview: 'Dikembangkan untuk menjembatani pengambilan keputusan algoritmik dengan karakteristik dermatologis individual. Sistem mengharmonisasikan metrik kondisi kulit pengguna, pembobotan sensitivitas bahan aktif, dan pemodelan prediktif guna menghasilkan peringkat produk yang dipersonalisasi.',
+        subtitle: 'Sistem Rekomendasi Produk Skincare Berbasis Metode SAW dan Machine Learning',
+        description: 'Sistem rekomendasi skincare yang menggabungkan Sistem Pendukung Keputusan Multi-Kriteria (SAW) dan Machine Learning untuk kecocokan tipe kulit.',
+        overview: 'Dikembangkan untuk merekomendasikan produk perawatan kulit secara objektif berdasarkan jenis kulit, keluhan spesifik, dan analisis kandungan bahan aktif. Menggabungkan klasifikasi ML dengan pembobotan Simple Additive Weighting (SAW).',
         methods: [
-          'Pra-pemrosesan dataset produk perawatan kulit, penanganan nilai hilang (missing values), dan normalisasi matriks kriteria.',
-          'Implementasi metode Simple Additive Weighting (SAW) untuk menghasilkan matriks preferensi multi-kriteria yang transparan dan dapat dipertanggungjawabkan.',
-          'Integrasi machine learning berbasis klasifikasi untuk memprediksi kompatibilitas jenis kulit terhadap formulasi produk.',
-          'Penyusunan aturan constraint guna memastikan rekomendasi bebas dari bahan pemicu komedo atau iritasi kulit sensitif.'
+          'Pra-pemrosesan dataset produk perawatan kulit, ekstraksi fitur kandungan, dan pembersihan data.',
+          'Implementasi algoritma Simple Additive Weighting (SAW) untuk normalisasi matriks keputusan.',
+          'Integrasi klasifikasi Machine Learning untuk pemetaan kecocokan jenis kulit pengguna.',
+          'Pengembangan antarmuka web dengan Flask untuk memudahkan pengguna memilih kriteria.'
         ],
-        result: 'Menghasilkan rekomendasi produk dengan konkordansi tinggi antara profil dermatologis pengguna dan 3 rekomendasi produk teratas (Top-3 recommendations).',
-        status: 'Proyek Akademik Terapan',
-        githubNotice: 'Dokumentasi teknis dan laporan metodologi sistem tersedia melalui kontak akademik penyusun.'
+        result: 'Menghasilkan rekomendasi produk dengan skor preferensi terurut dan kecocokan formulasi bahan aktif yang tinggi.',
+        status: 'Proyek Akademik Terapan'
       },
       en: {
-        title: 'Skincare Recommendation System',
+        title: 'Skincare Recommendation System (SAW + ML)',
         category: 'ML / Decision Support System',
-        subtitle: 'Hybrid Multi-Criteria Decision Support & Predictive Modeling',
-        description: 'A skincare recommendation system combining a Decision Support System and machine learning to support skin-type identification and skincare recommendations.',
-        overview: 'Formulated to bridge algorithmic decision-making and dermatological considerations. The system harmonizes user-specific skin condition metrics, ingredient sensitivity weighting, and predictive models to generate personalized product rankings.',
+        subtitle: 'Skincare Recommendation System Based on SAW Multi-Criteria & Machine Learning',
+        description: 'A skincare recommendation system combining multi-criteria Decision Support System (SAW) with Machine Learning to identify optimal product compatibility.',
+        overview: 'Engineered to objectively recommend skincare products based on individual skin profiles, specific concerns, and ingredient efficacy. Bridges ML skin typing with Simple Additive Weighting (SAW) ranking.',
         methods: [
-          'Data preprocessing, handling missing ingredient properties, and feature normalization across cosmetic product datasets.',
-          'Implementation of the Simple Additive Weighting (SAW) method to establish transparent, multi-criteria preference matrices based on skin characteristics.',
-          'Machine learning-based classification to predict product compatibility scores.',
-          'Integration of recommendation rules ensuring safety constraints against known comedogenic or irritating ingredients.'
+          'Skincare product dataset preprocessing, active ingredient feature parsing, and curation.',
+          'Implementation of Simple Additive Weighting (SAW) algorithm for normalized decision matrices.',
+          'Integration of Machine Learning classification for accurate skin-type compatibility mapping.',
+          'Interactive Flask web interface facilitating user preference configuration and result visualization.'
         ],
-        result: 'Successfully evaluated multi-criteria ranking accuracy with consistent concordance between user dermatological profiles and top-3 recommended skincare regimens.',
-        status: 'Applied Academic Project',
-        githubNotice: 'Project documentation and methodology report available upon academic inquiry.'
+        result: 'Generated prioritized product recommendations with high ingredient concordance and user suitability.',
+        status: 'Applied Academic Project'
       }
     },
     'proj-03': {
       number: '03',
+      platform: 'colab',
+      url: 'https://colab.research.google.com/drive/1IorItsqvGfk2LoEbla_WM6Vg66e79SUH?usp=sharing',
       image: 'assets/images/project-03.svg',
-      technologies: ['Laravel', 'PHP', 'SQLite', 'Postman', 'Bootstrap', 'JavaScript'],
+      technologies: ['Python', 'Google Colab', 'Scikit-learn', 'SMOTE', 'Fuzzy KNN', 'Pandas'],
       id: {
-        title: 'Sistem Manajemen Laundry',
-        category: 'Pengembangan Web',
-        subtitle: 'Arsitektur Pengelolaan Operasional Bisnis & Integrasi RESTful API',
-        description: 'Aplikasi manajemen laundry berbasis web yang dirancang untuk mengelola data operasional dan menyederhanakan proses administrasi.',
-        overview: 'Platform pengelolaan operasional lengkap yang dibangun untuk mencatat transaksi harian, pelacakan status pesanan pelanggan, kalkulasi tarif berbasis berat/layanan, serta pelaporan keuangan administratif bisnis binatu.',
+        title: 'Breast Cancer Classification',
+        category: 'Machine Learning / Bioinformatika',
+        subtitle: 'Pemodelan Klasifikasi Kanker Payudara dengan Penanganan Imbalanced Data',
+        description: 'Notebook eksperimen Machine Learning untuk klasifikasi diagnostik kanker payudara menggunakan teknik penyeimbangan SMOTE dan Fuzzy KNN.',
+        overview: 'Eksperimen riset komputasi medis yang mengatasi ketidakseimbangan kelas pada dataset diagnostik biopsi. Mengombinasikan Synthetic Minority Over-sampling Technique (SMOTE) dan Fuzzy K-Nearest Neighbors (Fuzzy KNN) pada Google Colab.',
         methods: [
-          'Arsitektur operasi CRUD yang kokoh berpedoman pada pola desain Model-View-Controller (MVC) dalam framework Laravel.',
-          'Pemodelan basis data relasional menggunakan SQLite untuk portabilitas deployment yang ringan, terisolasi, dan andal.',
-          'Perancangan dan implementasi endpoint REST API terstruktur untuk kemudahan integrasi transaksi eksternal.',
-          'Pengujian dan validasi payload API secara komprehensif menggunakan collection test suite pada Postman.'
+          'Eksplorasi data, standarisasi fitur numerik, dan analisis korelasi fitur diagnostik.',
+          'Penanganan ketimpangan distribusi kelas menggunakan algoritma SMOTE.',
+          'Pemodelan klasifikasi menggunakan Fuzzy K-Nearest Neighbors (Fuzzy KNN).',
+          'Evaluasi menyeluruh mencakup Confusion Matrix, Precision, Recall, dan F1-Score.'
         ],
-        result: 'Mengoptimalkan siklus pencatatan pesanan dari penerimaan, pencucian, penyetrikaan, hingga notifikasi pengambilan pakaian secara sistematis tanpa ketergantungan dokumen fisik.',
-        status: 'Proyek Rekayasa Perangkat Lunak',
-        githubNotice: 'Repositori kode sumber dikelola secara privat untuk kepentingan evaluasi portofolio.'
+        result: 'Meningkatkan sensitivitas deteksi kelas minoritas (malignant) dengan performa generalisasi diagnostik yang optimal.',
+        status: 'Riset Komputasi Medis — Google Colab'
       },
       en: {
-        title: 'Laundry Management System',
-        category: 'Web Development',
-        subtitle: 'Enterprise Operation Management & RESTful Administrative Architecture',
-        description: 'A web-based laundry management application designed to manage operational data and simplify administrative processes.',
-        overview: 'A full-featured operational dashboard built to manage daily transactions, customer tracking, order statuses, weight-based tariff calculations, and administrative reporting for commercial laundry businesses.',
+        title: 'Breast Cancer Classification',
+        category: 'Machine Learning / Bioinformatics',
+        subtitle: 'Breast Cancer Diagnostic Modeling with SMOTE Imbalanced Data Balancing & Fuzzy KNN',
+        description: 'Machine Learning research notebook for breast cancer diagnostic classification utilizing SMOTE minority oversampling and Fuzzy KNN.',
+        overview: 'Medical computing research addressing diagnostic dataset class imbalance where non-representative sample distributions introduce clinical bias. Employs synthetic oversampling paired with fuzzy-set membership algorithms in Google Colab.',
         methods: [
-          'Robust CRUD architecture adhering to Model-View-Controller (MVC) design principles in Laravel.',
-          'Relational database modeling with SQLite for lightweight, isolated deployment and zero-configuration operational reliability.',
-          'Design and implementation of structured REST API endpoints for seamless data transactions and external system integration.',
-          'Comprehensive automated and manual API testing and payload validation using Postman collection test suites.'
+          'Data preprocessing, z-score feature normalization, and multicollinearity screening.',
+          'Class imbalance mitigation utilizing Synthetic Minority Over-sampling Technique (SMOTE).',
+          'Classification leveraging Fuzzy K-Nearest Neighbors (Fuzzy KNN) computing fuzzy boundary memberships.',
+          'Rigorous diagnostic evaluation via Confusion Matrix, Precision, Recall, and F1-Score metrics.'
         ],
-        result: 'Streamlined order lifecycle logging from intake, washing, ironing to customer pickup notification, eliminating manual spreadsheet bottlenecks.',
-        status: 'Software Development Project',
-        githubNotice: 'Source code repository hosted privately for academic evaluation.'
+        result: 'Demonstrated superior sensitivity and diagnostic classification stability on minority clinical samples.',
+        status: 'Medical ML Research — Google Colab'
       }
     },
     'proj-04': {
       number: '04',
+      platform: 'colab',
+      url: 'https://colab.research.google.com/drive/1ngJJY6xwp2Zw8SUfLvfp3O6glDNXh5wS?usp=sharing',
       image: 'assets/images/project-04.svg',
-      technologies: ['Flutter', 'Dart', 'MySQL', 'PHP API', 'Provider State Management'],
+      technologies: ['Python', 'Google Colab', 'TensorFlow/Keras', 'EfficientNetB0', 'CNN', 'Medical Imaging'],
       id: {
-        title: 'SITUGAS – Pengingat Tugas Akademik',
-        category: 'Pengembangan Mobile',
-        subtitle: 'Aplikasi Produktivitas Mahasiswa & Pengingat Batas Waktu Kuliah Lintas Platform',
-        description: 'Konsep aplikasi mobile yang dirancang untuk membantu mahasiswa mengorganisasi dan memantau tugas-tugas akademik perkuliahan.',
-        overview: 'Dirancang khusus menjawab kendala mahasiswa dalam melacak batas waktu penyerahan tugas perkuliahan yang tersebar di berbagai mata kuliah. Menghadirkan pelacakan siklus tugas yang intuitif, kategori mata kuliah, serta notifikasi penjadwalan.',
+        title: 'COVID-19 Classification using EfficientNetB0',
+        category: 'Deep Learning / Computer Vision',
+        subtitle: 'Klasifikasi Citra Radiologi Paru-Paru Menggunakan Arsitektur Transfer Learning EfficientNetB0',
+        description: 'Proyek Deep Learning untuk klasifikasi citra X-ray dada guna mendeteksi COVID-19, Normal, dan Pneumonia menggunakan transfer learning EfficientNetB0.',
+        overview: 'Penelitian Computer Vision medis berbasis Deep Learning pada Google Colab untuk mengklasifikasikan citra sinar-X dada (chest X-ray). Mengadopsi arsitektur transfer learning EfficientNetB0 yang efisien dengan akurasi dan konvergensi optimal.',
         methods: [
-          'Pengembangan antarmuka pengguna mobile lintas platform (Android/iOS) menggunakan Google Flutter dan bahasa pemrograman Dart.',
-          'Penerapan manajemen state reaktif menggunakan Provider pattern untuk pembaruan antarmuka yang efisien dan deterministik.',
-          'Komunikasi data aman dengan basis data terpusat MySQL melalui REST API berbasis PHP.',
-          'Penyimpanan lokal persisten serta scheduler pengingat otomatis menjelang tenggat waktu penyerahan tugas.'
+          'Pra-pemrosesan citra medis, augmentasi data (rotasi, zoom, flip), dan normalisasi piksel.',
+          'Transfer learning menggunakan base model EfficientNetB0 dengan pre-trained weights ImageNet.',
+          'Fine-tuning dense classification layers dengan regularization Dropout dan Batch Normalization.',
+          'Evaluasi kinerja multi-kelas dengan kurva Loss/Accuracy, ROC-AUC, dan Confusion Matrix.'
         ],
-        result: 'Diuji dalam lingkungan simulasi perangkat dengan respon antarmuka yang gegas, konsumsi memori yang efisien, dan sinkronisasi tugas yang presisi.',
-        status: 'Konsep & Prototipe Aplikasi Mobile',
-        githubNotice: 'Arsip kode Flutter dan spesifikasi kontrak API dapat ditinjau melalui kontak penyusun.'
+        result: 'Mencapai akurasi klasifikasi citra yang tinggi dalam membedakan pola infeksi radiologi COVID-19 dari kondisi paru lainnya.',
+        status: 'Riset Deep Learning Medis — Google Colab'
       },
       en: {
-        title: 'SITUGAS – Academic Task Reminder',
-        category: 'Mobile Development',
-        subtitle: 'Cross-Platform Student Productivity & Coursework Reminder Application',
-        description: 'A mobile application concept designed to help university students organize and monitor their academic assignments.',
-        overview: 'Engineered specifically for undergraduate university workflows to resolve missed assignment deadlines and fragmented communication. The application provides an intuitive task tracking lifecycle with scheduled notifications and course categorization.',
+        title: 'COVID-19 Classification using EfficientNetB0',
+        category: 'Deep Learning / Computer Vision',
+        subtitle: 'Chest Radiograph Image Classification via EfficientNetB0 Transfer Learning Architecture',
+        description: 'Deep Learning research project classifying chest X-ray radiographs into COVID-19, Normal, and Viral Pneumonia utilizing EfficientNetB0 transfer learning.',
+        overview: 'Medical Computer Vision study implemented in Google Colab classifying chest X-ray radiographs into diagnostic categories. Leverages EfficientNetB0 compound scaling architecture for optimal parameter efficiency and fast convergence.',
         methods: [
-          'Cross-platform mobile user interface developed using Google Flutter and Dart.',
-          'Reactive application state management implemented using the Provider pattern for deterministic UI state updates.',
-          'Secure communication with a centralized MySQL database via a lightweight PHP REST API layer.',
-          'Local persistent storage and notification scheduler alerting students prior to imminent submission deadlines.'
+          'Medical image augmentation (rotation, zoom, affine shifts) and pixel normalization.',
+          'Transfer learning architecture leveraging ImageNet pre-trained EfficientNetB0 convolutional backbone.',
+          'Fine-tuning dense classification heads with Dropout regularization and Batch Normalization.',
+          'Comprehensive multi-class evaluation utilizing Loss/Accuracy learning curves, ROC-AUC, and Confusion Matrix.'
         ],
-        result: 'Tested in simulation environments with high UI responsiveness, clean state synchronization across multi-course task queries, and low memory consumption.',
-        status: 'Mobile Concept & Prototype',
-        githubNotice: 'Flutter codebase and API contracts available in author academic portfolio archive.'
+        result: 'Achieved high classification accuracy in discriminating radiologic COVID-19 pulmonary infiltrates from normal lung parenchyma.',
+        status: 'Medical Deep Learning Research — Google Colab'
       }
     },
     'proj-05': {
       number: '05',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/Flutter-Kasir',
       image: 'assets/images/project-05.svg',
-      technologies: ['Laravel', 'PHP', 'Bootstrap', 'MySQL', 'HTML5', 'CSS3'],
+      technologies: ['Flutter', 'Dart', 'Supabase', 'REST API', 'Cross-Platform'],
       id: {
-        title: 'Sistem Informasi Perpustakaan',
-        category: 'Pengembangan Web',
-        subtitle: 'Sistem Informasi Katalog Buku & Administrasi Sirkulasi Perpustakaan',
-        description: 'Sistem informasi perpustakaan berbasis web yang dikembangkan untuk mendukung pengelolaan data buku dan administrasi perpustakaan.',
-        overview: 'Dibangun untuk memodernisasi tata kelola sirkulasi buku pada lingkungan institusi pendidikan. Mencakup modul pencatatan katalog buku, pendaftaran anggota, peminjaman dan pengembalian buku, serta penghitungan denda keterlambatan secara otomatis.',
+        title: 'Flutter-Kasir',
+        category: 'Aplikasi Mobile / POS',
+        subtitle: 'Aplikasi Kasir Point of Sale (POS) Mobile Berbasis Flutter & Supabase',
+        description: 'Aplikasi POS mobile modern untuk pencatatan transaksi ritel, pengelolaan stok produk, keranjang belanja, dan sinkronisasi cloud dengan Supabase.',
+        overview: 'Aplikasi kasir (Point of Sale) cross-platform yang dibangun dengan Flutter untuk mendukung efisiensi operasional UMKM ritel. Mendukung katalog produk, keranjang belanja real-time, pencatatan transaksi, dan penyimpanan data cloud terintegrasi Supabase.',
         methods: [
-          'Fungsionalitas CRUD terpadu untuk data inventaris buku, riwayat sirkulasi, klasifikasi pengarang, dan keanggotaan peminjam.',
-          'Perancangan skema relasional pada basis data MySQL dengan foreign key constraints dan integritas referensial.',
-          'Pengembangan logika bisnis backend dengan PHP memanfaatkan keunggulan routing dan sekuritas Laravel framework.',
-          'Antarmuka administrasi responsif dan user-friendly yang dibangun menggunakan Bootstrap framework.'
+          'Perancangan arsitektur antarmuka mobile yang intuitif dan responsif menggunakan Flutter framework.',
+          'Pengelolaan state aplikasi untuk manajemen keranjang transaksi dan kalkulasi total otomatis.',
+          'Integrasi backend database dan autentikasi cloud menggunakan Supabase.',
+          'Pengujian fitur CRUD inventori produk dan riwayat transaksi kasir.'
         ],
-        result: 'Mempermudah proses inventarisasi dan pencarian buku secara instan berdasarkan ISBN, judul, atau nama pengarang dengan status ketersediaan real-time.',
-        status: 'Proyek Sistem Informasi Web',
-        githubNotice: 'Implementasi kode sumber dapat diakses untuk kepentingan verifikasi akademik.'
+        result: 'Menghadirkan aplikasi kasir mobile yang ringan, cepat, dan siap digunakan dengan sinkronisasi data cloud yang andal.',
+        status: 'Proyek Aplikasi Mobile'
       },
       en: {
-        title: 'Library Management System',
-        category: 'Web Development',
-        subtitle: 'Academic Book Cataloging & Library Administration System',
-        description: 'A web-based library information system developed to support book data management and library administration.',
-        overview: 'Developed to modernize traditional university or institutional library workflows. It encompasses book cataloging, member registration, circulation tracking, and overdue penalty monitoring through an elegant web portal.',
+        title: 'Flutter-Kasir',
+        category: 'Mobile Application / POS',
+        subtitle: 'Mobile Point of Sale (POS) Application Built with Flutter & Supabase',
+        description: 'A cross-platform mobile POS application streamlining retail transactions, stock management, live shopping cart calculation, and cloud sync via Supabase.',
+        overview: 'Cross-platform Point of Sale mobile client engineered with Flutter to enhance operational agility for retail merchants. Features dynamic product catalogs, real-time cart state management, checkout logs, and Supabase cloud persistence.',
         methods: [
-          'Comprehensive CRUD functionality for catalog items, circulation loans, author indexing, and borrower classifications.',
-          'Relational schema design implemented with MySQL, featuring foreign key constraints and transactional integrity.',
-          'Backend business logic implemented in PHP utilizing the Laravel framework for security and routing efficiency.',
-          'Clean, accessible, and responsive administration user interface crafted with Bootstrap.'
+          'Intuitive and responsive mobile UI architecture built with Flutter reactive widgets.',
+          'Application state management governing transactional cart calculation and receipt generation.',
+          'Cloud database integration and backend authentication powered by Supabase.',
+          'End-to-end CRUD verification across product catalogs and historical transaction archives.'
         ],
-        result: 'Provides complete administrative control with instant query searching across book ISBN, author, and availability status.',
-        status: 'Information System Project',
-        githubNotice: 'Academic implementation codebase available for review.'
+        result: 'Delivered an agile, production-ready mobile cashier system with robust cloud synchronization.',
+        status: 'Mobile Application Project'
       }
     },
     'proj-06': {
       number: '06',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/sistem-manajemen-perpustakaan',
       image: 'assets/images/project-06.svg',
-      technologies: ['Python', 'Scikit-learn', 'SMOTE', 'Fuzzy KNN', 'NumPy', 'Matplotlib'],
+      technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'Blade', 'MVC Architecture'],
       id: {
-        title: 'Klasifikasi Kanker Payudara (WDBC)',
-        category: 'Machine Learning',
-        subtitle: 'Analisis Fitur Diagnostik Medis dengan Penyeimbangan Kelas SMOTE & Fuzzy K-NN',
-        description: 'Proyek machine learning yang berfokus pada klasifikasi kanker payudara menggunakan Wisconsin Diagnostic Breast Cancer dataset.',
-        overview: 'Meneliti tantangan pada dataset diagnostik medis di mana ketidakseimbangan kelas (class imbalance) serta batas keputusan yang ambigu dapat memicu kesalahan klasifikasi yang fatal. Studi ini menerapkan teknik oversampling sintetis dan tetangga terdekat berbasis fuzzy untuk meningkatkan sensitivitas diagnosis.',
+        title: 'Library Management System',
+        category: 'Pengembangan Web',
+        subtitle: 'Sistem Informasi Manajemen Perpustakaan Berbasis Web dengan Laravel',
+        description: 'Platform manajemen perpustakaan digital untuk otomasi katalog buku, sirkulasi peminjaman, perhitungan denda keterlambatan, dan manajemen anggota.',
+        overview: 'Sistem informasi tata kelola perpustakaan berbasis web yang mengotomasi operasional harian perpustakaan: inventarisasi koleksi buku, registrasi keanggotaan, pencatatan peminjaman/pengembalian, serta kalkulasi denda otomatis.',
         methods: [
-          'Pra-pemrosesan data, standarisasi fitur numerik melalui z-score scaling, serta reduksi multikolinearitas data WDBC.',
-          'Penanganan ketimpangan kelas menggunakan Synthetic Minority Over-sampling Technique (SMOTE) untuk menghilangkan bias klasifikasi.',
-          'Klasifikasi menggunakan Fuzzy K-Nearest Neighbors (Fuzzy KNN) yang menghitung derajat keanggotaan fuzzy sampel daripada penentuan jarak biner yang kaku.',
-          'Evaluasi kinerja menyeluruh menggunakan Confusion Matrix, Precision, Recall, F1-Score, dan analisis kurva ROC-AUC.'
+          'Pemodelan basis data relasional MySQL ternormalisasi untuk entitas buku, anggota, dan transaksi sirkulasi.',
+          'Implementasi pola arsitektur Model-View-Controller (MVC) menggunakan framework Laravel.',
+          'Penerapan hak akses pengguna berbasis peran (Role-Based Access Control) antara Admin dan Siswa/Anggota.',
+          'Pengembangan fitur pencarian terindeks dan filter kategori buku untuk kemudahan temu balik informasi.'
         ],
-        result: 'Menunjukkan peningkatan sensitivitas deteksi dan kestabilan diagnostik yang lebih tinggi, efektif menurunkan angka false negatives pada klasifikasi medis berisiko tinggi.',
-        status: 'Proyek Riset Machine Learning',
-        githubNotice: 'Jupyter Notebook eksperimen dan log metrik evaluasi dapat diakses atas permintaan akademik.'
+        result: 'Mempercepat proses sirkulasi peminjaman, mencegah kehilangan inventaris, dan mempermudah pelaporan berkala.',
+        status: 'Proyek Rekayasa Perangkat Lunak'
       },
       en: {
-        title: 'Breast Cancer Classification',
-        category: 'Machine Learning',
-        subtitle: 'Diagnostic Feature Analysis with SMOTE Class Balancing & Fuzzy KNN',
-        description: 'A machine learning project focused on breast cancer classification using the Wisconsin Diagnostic Breast Cancer dataset.',
-        overview: 'Focuses on medical diagnostic classification where dataset class imbalances and borderline diagnostic ambiguities pose critical challenges. The study applies advanced re-sampling and fuzzy neighborhood metrics to enhance malignant vs. benign discrimination.',
+        title: 'Library Management System',
+        category: 'Web Development',
+        subtitle: 'Digital Library Cataloging & Book Circulation Platform Built with Laravel',
+        description: 'A web-based library management platform incorporating book cataloging, circulation tracking, overdue fine calculation, and role-based access.',
+        overview: 'An administrative information system managing complete digital library workflows: collection cataloging, member registration, circulation tracking, and automated overdue penalty calculations.',
         methods: [
-          'Data preprocessing, feature scaling via z-score standardization, and collinearity reduction on the Wisconsin Diagnostic Breast Cancer (WDBC) dataset.',
-          'Class imbalance mitigation through Synthetic Minority Over-sampling Technique (SMOTE) to eliminate classifier bias.',
-          'Classification using Fuzzy K-Nearest Neighbors (Fuzzy KNN), calculating fuzzy class membership values rather than crisp distance heuristics.',
-          'Rigorous model evaluation through Confusion Matrix, Precision, Recall, F1-Score, and ROC-AUC curve analysis.'
+          'Normalized MySQL relational database modeling capturing book copies, categories, and borrow records.',
+          'Application of the Laravel MVC architectural design pattern for clean codebase separation.',
+          'Role-based access control (RBAC) differentiating administrative privileges from student reader accounts.',
+          'Development of indexed query filters for real-time book title and author searches.'
         ],
-        result: 'Demonstrated superior sensitivity and diagnostic classification stability, effectively reducing false negative rates in high-stakes medical categorization.',
-        status: 'Machine Learning Research Project',
-        githubNotice: 'Jupyter Notebook and diagnostic evaluation logs accessible upon request.'
+        result: 'Decreased circulation logging turnaround time and provided transparent audit trails for book inventories.',
+        status: 'Software Engineering Project'
+      }
+    },
+    'proj-07': {
+      number: '07',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/web-api-laundry',
+      image: 'assets/images/project-07.svg',
+      technologies: ['Laravel', 'PHP', 'RESTful API', 'MySQL', 'Postman'],
+      id: {
+        title: 'Laundry Management System',
+        category: 'Web Development / API',
+        subtitle: 'Web Service & RESTful API Manajemen Operasional Layanan Laundry',
+        description: 'Sistem backend API untuk otomasi alur transaksi laundry, pelacakan status bertahap, perhitungan berat dan tarif, serta integrasi Postman.',
+        overview: 'Backend web service RESTful API berbasis Laravel untuk manajemen operasional bisnis laundry. Menyediakan endpoint lengkap untuk registrasi pesanan, perhitungan tarif berbasis berat/paket layanan, tracking status cucian bertahap, dan riwayat transaksi.',
+        methods: [
+          'Perancangan RESTful API endpoint dengan standar status code HTTP dan JSON response terstruktur.',
+          'Validasi data request terpusat untuk integritas transaksi penerimaan cucian hingga pembayaran.',
+          'Pelacakan siklus status pesanan bertahap (baru, proses cuci, setrika, siap ambil, selesai).',
+          'Dokumentasi dan pengujian otomatisasi endpoint memanfaatkan Postman Collection terintegrasi.'
+        ],
+        result: 'Menghasilkan arsitektur backend yang tangguh, modular, dan siap diintegrasikan dengan aplikasi mobile maupun web client.',
+        status: 'Proyek Backend & Web Service'
+      },
+      en: {
+        title: 'Laundry Management System',
+        category: 'Web Development / API',
+        subtitle: 'Laundry Operations Management Web Service & RESTful API Architecture',
+        description: 'A backend RESTful API automating laundry transactional intake, multistage wash-dry-iron tracking, weight-based billing, and Postman collections.',
+        overview: 'Laravel-powered backend web service supporting automated laundry service lifecycles: intake logging, weight-based tiered billing, progressive stage tracking (received, washing, ironing, ready, collected), and receipt auditing.',
+        methods: [
+          'RESTful endpoint engineering adhering to standardized HTTP status conventions and structured JSON envelopes.',
+          'Centralized request validation ensuring data integrity across customer orders and billing calculations.',
+          'Stateful order progression tracking spanning weigh-in, washing, ironing, and pickup.',
+          'Complete API schema documentation and automated endpoint testing via bundled Postman Collection.'
+        ],
+        result: 'Delivered an agile, robust backend service ready for seamless client frontend and mobile application consumption.',
+        status: 'Backend & Web Service Project'
+      }
+    },
+    'proj-08': {
+      number: '08',
+      platform: 'github',
+      url: 'https://github.com/Anisya2030/campuscare-api',
+      image: 'assets/images/project-08.svg',
+      technologies: ['Laravel', 'PHP', 'RESTful API', 'MySQL', 'Eloquent ORM'],
+      id: {
+        title: 'CampusCare API',
+        category: 'Web Development / API',
+        subtitle: 'RESTful API Sistem Pengaduan, Verifikasi, & Penanganan Aspirasi Kampus',
+        description: 'Backend API untuk sistem pengaduan fasilitas dan aspirasi mahasiswa, mencakup alur verifikasi laporan, penugasan unit, dukungan komunitas, dan progres penyelesaian.',
+        overview: 'RESTful API berbasis Laravel yang dirancang untuk mendukung tata kelola pelaporan masalah, aspirasi, dan fasilitas di lingkungan kampus. Menyediakan endpoint untuk pencatatan keluhan (complaint), verifikasi/penolakan oleh staf, pemberian dukungan (supporters), penugasan penanganan ke unit pelaksana, pelacakan progres tindak lanjut, hingga umpan balik (feedback) dan statistik dashboard.',
+        methods: [
+          'Arsitektur RESTful API dengan Laravel mengelola resource complaints, assignments, updates, feedbacks, dan dashboard stats.',
+          'Alur verifikasi status laporan (pending, verified, rejected) untuk memastikan validitas pengaduan.',
+          'Fitur dukungan mahasiswa (support/supporters) untuk mengukur urgensi fasilitas yang dilaporkan.',
+          'Sistem tracking progres penanganan bertahap hingga penyelesaian akhir disertai pengumpulan feedback.'
+        ],
+        result: 'Menyediakan fondasi backend transparan, terstruktur, dan teruji untuk platform layanan pengaduan kampus modern.',
+        status: 'Proyek Backend & RESTful API'
+      },
+      en: {
+        title: 'CampusCare API',
+        category: 'Web Development / API',
+        subtitle: 'Campus Complaint & Aspiration Management RESTful API Architecture',
+        description: 'Backend RESTful API for campus facility complaints and student aspirations, featuring report verification, unit task assignments, peer support, and resolution tracking.',
+        overview: 'A specialized Laravel RESTful API architected for transparent campus issue reporting and civic resolution. Manages formal complaints, administrative verification or rejection workflows, community supporter tallies, departmental task assignments, progressive resolution updates, user feedback loops, and executive dashboard metrics.',
+        methods: [
+          'Engineered RESTful resource endpoints managing complaints, assignments, progress updates, feedbacks, and stats.',
+          'Administrative review workflow implementing verified and rejected state transitions for complaint triage.',
+          'Student endorsement system (supporters count) reflecting community urgency for facility remediations.',
+          'Step-by-step progress update logging leading to final resolution completion and constituent feedback collection.'
+        ],
+        result: 'Established an accountable, verifiable, and decoupled backend foundation for digital campus governance.',
+        status: 'Backend & RESTful API Project'
       }
     }
   };
 
   // --------------------------------------------------------------------------
-  // 2. Language State Management & Global Modal State
+  // 2. Language State Management & Dynamic CV Switching
   // --------------------------------------------------------------------------
   let currentlyViewedProjectId = null;
-  let projectDetailModal = null;
-  let projectDetailModalEl = null;
 
+  // Default language is strictly Indonesian ('id') unless explicitly saved
   let currentLang = 'id';
   try {
-    currentLang = localStorage.getItem('anisya_portfolio_lang') || 'id';
+    const saved = localStorage.getItem('anisya_portfolio_lang');
+    if (saved === 'id' || saved === 'en') {
+      currentLang = saved;
+    } else {
+      currentLang = 'id';
+      localStorage.setItem('anisya_portfolio_lang', 'id');
+    }
   } catch (e) {
     console.warn('localStorage not accessible, defaulting to id:', e);
+    currentLang = 'id';
   }
 
   function getCurrentLang() {
     return currentLang;
+  }
+
+  function updateCvDownloadLinks(lang) {
+    const isEn = lang === 'en';
+    const cvFile = isEn ? 'assets/documents/Cv_Anisya EN.pdf' : 'assets/documents/Cv_Anisya ID.pdf';
+    const cvName = isEn ? 'Cv_Anisya EN.pdf' : 'Cv_Anisya ID.pdf';
+    document.querySelectorAll('.btn-download-cv').forEach(btn => {
+      btn.setAttribute('href', cvFile);
+      btn.setAttribute('download', cvName);
+    });
+  }
+
+  function updateFormPlaceholders(lang) {
+    const nameInput = document.getElementById('senderName');
+    const emailInput = document.getElementById('senderEmail');
+    const messageInput = document.getElementById('senderMessage');
+    const purposeSelect = document.getElementById('senderPurpose');
+
+    if (nameInput) {
+      nameInput.placeholder = lang === 'id'
+        ? 'misal: Harry Potter / Tim Rekrut'
+        : 'e.g. Harry Potter / Recruitment Team';
+    }
+
+    if (emailInput) {
+      emailInput.placeholder = lang === 'id'
+        ? 'misal: kontak@instansi.id'
+        : 'e.g. contact@institution.org';
+    }
+
+    if (messageInput) {
+      messageInput.placeholder = lang === 'id'
+        ? 'Tuliskan pesan Anda di sini...'
+        : 'Write your message here...';
+    }
+
+    if (purposeSelect) {
+      const options = purposeSelect.options;
+      if (options.length >= 4) {
+        if (lang === 'id') {
+          options[0].text = 'Peluang Rekayasa Perangkat Lunak / Magang';
+          options[0].value = 'Peluang Rekayasa Perangkat Lunak / Magang';
+          options[1].text = 'Kolaborasi Riset Akademik / Sinyal EEG';
+          options[1].value = 'Kolaborasi Riset Akademik / Sinyal EEG';
+          options[2].text = 'Studi Pascasarjana / Informasi Beasiswa';
+          options[2].value = 'Studi Pascasarjana / Informasi Beasiswa';
+          options[3].text = 'Pertanyaan Profesional Umum';
+          options[3].value = 'Pertanyaan Profesional Umum';
+        } else {
+          options[0].text = 'Software Engineering / Internship Opportunity';
+          options[0].value = 'Software Engineering / Internship Opportunity';
+          options[1].text = 'Academic / EEG Research Collaboration';
+          options[1].value = 'Academic / EEG Research Collaboration';
+          options[2].text = 'Postgraduate Studies / Scholarship Inquiry';
+          options[2].value = 'Postgraduate Studies / Scholarship Inquiry';
+          options[3].text = 'General Professional Inquiry';
+          options[3].value = 'General Professional Inquiry';
+        }
+      }
+    }
   }
 
   function setLanguage(lang) {
@@ -262,66 +402,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.documentElement.lang = lang;
 
-    // Update active state on all language switcher buttons
-    document.querySelectorAll('.lang-btn').forEach(btn => {
+    // Update active pill button state on both desktop and mobile
+    document.querySelectorAll('.lang-pill-btn').forEach(btn => {
       const btnLang = btn.getAttribute('data-lang');
       const isActive = btnLang === lang;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 
-    // Update dynamic placeholders on form elements
+    // Update CV download links to match active language
+    updateCvDownloadLinks(lang);
+
+    // Update form elements placeholders
     updateFormPlaceholders(lang);
 
-    // If modal is currently open, refresh its content in the newly chosen language
-    refreshOpenModal(lang);
-  }
-
-  function updateFormPlaceholders(lang) {
-    const nameInput = document.getElementById('senderName');
-    const emailInput = document.getElementById('senderEmail');
-    const messageInput = document.getElementById('senderMessage');
-    const purposeSelect = document.getElementById('senderPurpose');
-
-    if (nameInput) {
-      nameInput.placeholder = lang === 'id' 
-        ? 'misal: Dr. Budi Santoso / Tim Rekruter' 
-        : 'e.g. Dr. Jane Smith / Recruiter';
-    }
-
-    if (emailInput) {
-      emailInput.placeholder = lang === 'id' 
-        ? 'misal: kontak@instansi.id' 
-        : 'e.g. contact@institution.org';
-    }
-
-    if (messageInput) {
-      messageInput.placeholder = lang === 'id' 
-        ? 'Tuliskan pesan Anda di sini...' 
-        : 'Write your message here...';
-    }
-
-    // Update options inside purpose select
-    if (purposeSelect) {
-      const options = purposeSelect.options;
-      if (options.length >= 4) {
-        if (lang === 'id') {
-          options[0].text = 'Peluang Rekayasa Perangkat Lunak / Magang';
-          options[1].text = 'Kolaborasi Riset Akademik / Sinyal EEG';
-          options[2].text = 'Studi Pascasarjana / Informasi Beasiswa';
-          options[3].text = 'Pertanyaan Profesional Umum';
-        } else {
-          options[0].text = 'Software Engineering / Internship Opportunity';
-          options[1].text = 'Academic / EEG Research Collaboration';
-          options[2].text = 'Postgraduate Studies / Scholarship Inquiry';
-          options[3].text = 'General Professional Inquiry';
-        }
-      }
+    // Refresh project modal if open
+    if (currentlyViewedProjectId && projectDetailModalEl?.classList.contains('show')) {
+      renderProjectModal(currentlyViewedProjectId, lang);
     }
   }
 
-  // Bind language switcher clicks
-  document.querySelectorAll('.lang-btn').forEach(btn => {
+  // Bind language switcher clicks (both desktop and mobile)
+  document.querySelectorAll('.lang-pill-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetLang = btn.getAttribute('data-lang');
       if (targetLang && targetLang !== currentLang) {
@@ -329,9 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // Initialize language on load
-  setLanguage(currentLang);
 
   // --------------------------------------------------------------------------
   // 3. Sticky Navbar & Back to Top Action
@@ -342,13 +441,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
-    if (scrollY > 30) {
+    if (scrollY > 25) {
       navbar?.classList.add('scrolled');
     } else {
       navbar?.classList.remove('scrolled');
     }
 
-    if (scrollY > 400) {
+    if (scrollY > 350) {
       backToTopBtn?.classList.add('visible');
     } else {
       backToTopBtn?.classList.remove('visible');
@@ -362,28 +461,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mobile menu close on nav link click
+  // Mobile menu close on nav link or mobile CV click
   const navLinks = document.querySelectorAll('.nav-link-editorial');
   const navbarCollapse = document.getElementById('navbarEditorialContent');
+  const mobileNavDownloadCvBtn = document.getElementById('mobileNavDownloadCvBtn');
+
+  function closeMobileNavbar() {
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
+    }
+  }
 
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-        if (bsCollapse) {
-          bsCollapse.hide();
-        }
+    link.addEventListener('click', closeMobileNavbar);
+  });
+
+  mobileNavDownloadCvBtn?.addEventListener('click', closeMobileNavbar);
+
+  // Close mobile nav when clicking outside navbar
+  document.addEventListener('click', (e) => {
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      const isInsideNavbar = e.target.closest('#mainNavbar');
+      if (!isInsideNavbar) {
+        closeMobileNavbar();
       }
-    });
+    }
   });
 
   // --------------------------------------------------------------------------
-  // 4. Scrollspy Active Navigation Indicator
+  // 4. Scrollspy Active Navigation Indicator (10 Sections)
   // --------------------------------------------------------------------------
   const sections = document.querySelectorAll('section[id]');
-  
+
   function updateScrollSpy() {
-    const scrollPosition = window.scrollY + 140;
+    const scrollPosition = window.scrollY + 120;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -428,7 +542,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('revealed'));
   }
 
-  // Fallback: Ensure elements in initial viewport are visible immediately
   const revealInViewport = () => {
     revealElements.forEach(el => {
       const rect = el.getBoundingClientRect();
@@ -459,24 +572,20 @@ document.addEventListener('DOMContentLoaded', () => {
       projectCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
         if (filterValue === 'all' || cardCategory === filterValue) {
-          card.style.display = 'block';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 10);
+          card.style.display = '';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
         } else {
+          card.style.display = 'none';
           card.style.opacity = '0';
           card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 200);
         }
       });
     });
   });
 
   // --------------------------------------------------------------------------
-  // 6b. Certifications Category Filtering
+  // 7. Certifications Category Filtering (Preview Gallery)
   // --------------------------------------------------------------------------
   const certFilterButtons = document.querySelectorAll('.cert-filter-btn');
   const certCards = document.querySelectorAll('.cert-grid-item');
@@ -508,15 +617,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
-  // 7. Dynamic Project Details Modal (Bilingual)
+  // 8. Project Details Modal (Bilingual)
   // --------------------------------------------------------------------------
-  projectDetailModalEl = document.getElementById('projectDetailModal');
+  const projectDetailModalEl = document.getElementById('projectDetailModal');
+  let projectDetailModal = null;
   try {
     if (typeof bootstrap !== 'undefined' && bootstrap.Modal && projectDetailModalEl) {
       projectDetailModal = new bootstrap.Modal(projectDetailModalEl);
     }
   } catch (e) {
-    console.warn('Bootstrap modal init warning:', e);
+    console.warn('Bootstrap project modal init warning:', e);
   }
 
   const modalIndex = document.getElementById('modalProjectIndex');
@@ -540,7 +650,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalCategory) modalCategory.textContent = content.category;
     if (modalTitle) modalTitle.textContent = content.title;
     if (modalSubtitle) modalSubtitle.textContent = content.subtitle;
-    
+
     if (modalImage) {
       modalImage.src = project.image;
       modalImage.alt = `${content.title} Diagram`;
@@ -571,17 +681,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (modalStatus) modalStatus.textContent = content.status;
 
-    if (modalGithubBtn) {
-      modalGithubBtn.onclick = () => {
-        const alertPrefix = lang === 'id' ? 'Repositori GitHub' : 'GitHub Repository';
-        alert(`[${alertPrefix}]\n\n${content.githubNotice}`);
-      };
-    }
-  }
+    const modalAction = document.getElementById('modalActionBtn') || modalGithubBtn;
+    const modalActionIcon = document.getElementById('modalActionIcon');
+    const modalActionText = document.getElementById('modalActionText');
 
-  function refreshOpenModal(lang) {
-    if (currentlyViewedProjectId && projectDetailModalEl?.classList.contains('show')) {
-      renderProjectModal(currentlyViewedProjectId, lang);
+    if (modalAction) {
+      if (project.platform === 'colab') {
+        modalAction.setAttribute('href', project.url);
+        modalAction.setAttribute('target', '_blank');
+        modalAction.setAttribute('rel', 'noopener noreferrer');
+        modalAction.className = 'btn btn-sm btn-project-colab text-white';
+        if (modalActionIcon) modalActionIcon.className = 'bi bi-code-square me-1';
+        if (modalActionText) {
+          modalActionText.textContent = lang === 'id' ? 'Buka di Google Colab' : 'Open in Google Colab';
+        }
+      } else if (project.platform === 'github') {
+        modalAction.setAttribute('href', project.url);
+        modalAction.setAttribute('target', '_blank');
+        modalAction.setAttribute('rel', 'noopener noreferrer');
+        modalAction.className = 'btn btn-sm btn-editorial-primary text-white';
+        if (modalActionIcon) modalActionIcon.className = 'bi bi-github me-1';
+        if (modalActionText) {
+          modalActionText.textContent = lang === 'id' ? 'Lihat di GitHub' : 'View on GitHub';
+        }
+      }
     }
   }
 
@@ -595,35 +718,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Project card GitHub notice
-  document.querySelectorAll('.btn-project-github').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const projId = btn.getAttribute('data-project');
-      const project = projectsData[projId];
-      const lang = getCurrentLang();
-      const content = project ? (project[lang] || project.id) : null;
-
-      if (content) {
-        const alertPrefix = lang === 'id' ? 'Repositori GitHub' : 'GitHub Repository Placeholder';
-        alert(`[${alertPrefix}]\n\n${content.title}\n\n${content.githubNotice}`);
-      } else {
-        alert(lang === 'id' 
-          ? 'Repositori kode akademik tersedia melalui kontak penyusun.' 
-          : 'Academic project repository placeholder. Replace with actual URL in HTML.');
-      }
-    });
-  });
-
   // --------------------------------------------------------------------------
-  // 8. Copy Email to Clipboard
+  // 9. Copy Email to Clipboard (Verified Email: nisnisya284@gmail.com)
   // --------------------------------------------------------------------------
   const copyEmailBtn = document.getElementById('copyEmailBtn');
   const emailTextEl = document.getElementById('emailTextValue');
 
   copyEmailBtn?.addEventListener('click', async (e) => {
     e.preventDefault();
-    const emailToCopy = emailTextEl ? emailTextEl.textContent.trim() : 'anisya.student@example.com';
+    const emailToCopy = emailTextEl ? emailTextEl.textContent.trim() : 'nisnisya284@gmail.com';
     const lang = getCurrentLang();
 
     try {
@@ -654,56 +757,96 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --------------------------------------------------------------------------
-  // 9. Download CV & Certificate Toast Notification
+  // 10. CV Download Notification Toast
   // --------------------------------------------------------------------------
-  const cvDownloadButtons = document.querySelectorAll('.btn-download-cv, .btn-download-cert');
-  cvDownloadButtons.forEach(btn => {
+  const cvButtons = document.querySelectorAll('.btn-download-cv');
+  cvButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const feedbackToast = document.getElementById('cvFeedbackToast');
-      if (feedbackToast) {
-        feedbackToast.classList.add('show');
-        setTimeout(() => {
-          feedbackToast.classList.remove('show');
-        }, 4000);
+      const toastEl = document.getElementById('cvFeedbackToast');
+      if (toastEl && typeof bootstrap !== 'undefined' && bootstrap.Toast) {
+        const toast = new bootstrap.Toast(toastEl, { delay: 3500 });
+        toast.show();
       }
     });
   });
 
   // --------------------------------------------------------------------------
-  // 10. Contact Inquiry Form (Validation & Mailto Trigger)
+  // 11. Contact Form Submission (Formspree Asynchronous Integration)
   // --------------------------------------------------------------------------
   const contactForm = document.getElementById('portfolioContactForm');
   const formSuccessAlert = document.getElementById('formSuccessAlert');
+  const formErrorAlert = document.getElementById('formErrorAlert');
+  const contactSubmitBtn = document.getElementById('contactSubmitBtn');
 
-  contactForm?.addEventListener('submit', (e) => {
+  contactForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const lang = getCurrentLang();
 
-    const senderName = document.getElementById('senderName')?.value.trim();
-    const senderEmail = document.getElementById('senderEmail')?.value.trim();
-    const senderPurpose = document.getElementById('senderPurpose')?.value.trim();
-    const senderMessage = document.getElementById('senderMessage')?.value.trim();
+    // Hide any previously displayed alert messages
+    if (formSuccessAlert) formSuccessAlert.classList.add('d-none');
+    if (formErrorAlert) formErrorAlert.classList.add('d-none');
 
-    if (!senderName || !senderEmail || !senderMessage) {
-      alert(lang === 'id' 
-        ? 'Mohon lengkapi semua kolom yang wajib diisi (Nama, Email, Pesan).'
-        : 'Please fill in all required fields (Name, Email, Message).');
+    // Browser HTML5 validation
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
       return;
     }
 
-    const recipient = 'anisya.student@example.com';
-    const subject = encodeURIComponent(`[Portfolio Inquiry - ${senderPurpose}] from ${senderName}`);
-    const body = encodeURIComponent(
-      `Hello Anisya,\n\nName: ${senderName}\nEmail: ${senderEmail}\nSubject: ${senderPurpose}\n\nMessage:\n${senderMessage}\n\n---\nSent via Anisya Personal Portfolio Website`
-    );
-
-    if (formSuccessAlert) {
-      formSuccessAlert.classList.remove('d-none');
-      contactForm.reset();
+    // Set UI to loading state & prevent duplicate submission
+    const textSpan = contactSubmitBtn?.querySelector('.btn-text-content');
+    const loadSpan = contactSubmitBtn?.querySelector('.btn-loading-content');
+    if (contactSubmitBtn) {
+      contactSubmitBtn.disabled = true;
+      if (textSpan && loadSpan) {
+        textSpan.classList.add('d-none');
+        loadSpan.classList.remove('d-none');
+      }
     }
 
-    setTimeout(() => {
-      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    }, 600);
+    try {
+      const endpoint = contactForm.getAttribute('action') || 'https://formspree.io/f/mqpprqey';
+      const formData = new FormData(contactForm);
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // Successful submission: clear inputs and display success message
+        contactForm.reset();
+        if (formSuccessAlert) {
+          formSuccessAlert.classList.remove('d-none');
+          formSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      } else {
+        // Server returned an error status (e.g. 4xx, 5xx)
+        if (formErrorAlert) {
+          formErrorAlert.classList.remove('d-none');
+          formErrorAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    } catch (error) {
+      // Network or connection failure
+      console.error('Contact Formspree submission error:', error);
+      if (formErrorAlert) {
+        formErrorAlert.classList.remove('d-none');
+        formErrorAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } finally {
+      // Restore submit button state
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = false;
+        if (textSpan && loadSpan) {
+          textSpan.classList.remove('d-none');
+          loadSpan.classList.add('d-none');
+        }
+      }
+    }
   });
+
+  // Initialize language on startup (defaults to 'id')
+  setLanguage(currentLang);
 });

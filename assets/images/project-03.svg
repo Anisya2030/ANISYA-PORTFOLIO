@@ -4,65 +4,32 @@
       <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#EAE8E1" stroke-width="0.8"/>
     </pattern>
   </defs>
-
-  <!-- Background Base -->
   <rect width="800" height="240" fill="#FAF9F6"/>
   <rect width="800" height="240" fill="url(#grid_03)"/>
-
-  <!-- Top bar / Editorial Header -->
   <line x1="30" y1="26" x2="770" y2="26" stroke="#E2E0D8" stroke-width="1"/>
-  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 03 // WEB DEVELOPMENT</text>
-  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Portfolio Dossier</text>
-
-  <!-- Center Graphic Diagram -->
-  
-        <!-- Web Architecture Visual -->
-        <g transform="translate(200, 110)">
-          <!-- Browser Frame -->
-          <rect x="-130" y="-60" width="260" height="120" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
-          <rect x="-130" y="-60" width="260" height="24" rx="6" fill="#F1F0EB"/>
-          <circle cx="-115" cy="-48" r="4" fill="#E2E0D8"/>
-          <circle cx="-103" cy="-48" r="4" fill="#E2E0D8"/>
-          <circle cx="-91" cy="-48" r="4" fill="#E2E0D8"/>
-          <text x="0" y="-44" text-anchor="middle" font-family="monospace" font-size="9" fill="#777B80">laundry.app/dashboard</text>
-          <!-- Mock Table -->
-          <rect x="-115" y="-22" width="230" height="16" fill="#FAF9F6"/>
-          <text x="-105" y="-10" font-family="sans-serif" font-size="9" font-weight="bold" fill="#30343B">Order #1024 • Wash &amp; Fold • Completed</text>
-          <rect x="-115" y="0" width="230" height="16" fill="#FFFFFF"/>
-          <text x="-105" y="12" font-family="sans-serif" font-size="9" fill="#777B80">Order #1025 • Dry Clean • Processing</text>
-          <rect x="-115" y="22" width="230" height="16" fill="#FAF9F6"/>
-          <text x="-105" y="34" font-family="sans-serif" font-size="9" fill="#777B80">Order #1026 • Premium Care • Queued</text>
-        </g>
-        <!-- Arrow -->
-        <path d="M 355 110 L 405 110 M 395 102 L 405 110 L 395 118" stroke="#B8C5B5" stroke-width="2" fill="none"/>
-        <!-- API & DB Card -->
-        <g transform="translate(500, 110)">
-          <rect x="-80" y="-60" width="160" height="120" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
-          <text x="0" y="-35" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#9BAFC0">REST API • 200 OK</text>
-          <rect x="-60" y="-15" width="120" height="24" rx="4" fill="#F1F0EB"/>
-          <text x="0" y="1" text-anchor="middle" font-family="monospace" font-size="9" fill="#30343B">POST /api/orders</text>
-          <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#777B80">SQLite Relational DB</text>
-        </g>
-        
-
-  <!-- Footer Tag Strip -->
+  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 03 // MACHINE LEARNING</text>
+  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Google Colab Research</text>
+  <g transform="translate(200, 110)">
+    <rect x="-120" y="-55" width="240" height="110" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#30343B">Diagnostic Biopsy Dataset</text>
+    <rect x="-95" y="-15" width="190" height="20" rx="4" fill="#F1F0EB"/>
+    <text x="0" y="-1" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Imbalanced Class Distribution</text>
+    <rect x="-95" y="12" width="190" height="24" rx="4" fill="#EAF3F8"/>
+    <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="bold" fill="#2C5B84">SMOTE Oversampling</text>
+  </g>
+  <path d="M 345 110 L 415 110 M 405 102 L 415 110 L 405 118" stroke="#B8C5B5" stroke-width="2" fill="none"/>
+  <g transform="translate(540, 110)">
+    <rect x="-100" y="-55" width="200" height="110" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#30343B">Fuzzy KNN Classifier</text>
+    <rect x="-80" y="-12" width="160" height="20" rx="4" fill="#F8F7F3"/>
+    <text x="0" y="2" text-anchor="middle" font-family="monospace" font-size="9" fill="#256A49">Membership Degrees</text>
+    <rect x="-80" y="15" width="160" height="22" rx="4" fill="#EBF5F0"/>
+    <text x="0" y="30" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#256A49">Optimal Recall &amp; F1-Score</text>
+  </g>
   <line x1="30" y1="195" x2="770" y2="195" stroke="#E2E0D8" stroke-width="1"/>
-  
-        <g transform="translate(40, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Laravel</text>
-        </g>
-        <g transform="translate(150, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">PHP</text>
-        </g>
-        <g transform="translate(260, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">SQLite</text>
-        </g>
-        <g transform="translate(370, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Postman</text>
-        </g>
-  <text x="760" y="222" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#777B80">Academic &amp; Applied Project</text>
+  <g transform="translate(40, 208)"><rect x="0" y="0" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="45" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Python</text></g>
+  <g transform="translate(140, 208)"><rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="50" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Google Colab</text></g>
+  <g transform="translate(250, 208)"><rect x="0" y="0" width="80" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="40" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">SMOTE</text></g>
+  <g transform="translate(340, 208)"><rect x="0" y="0" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="45" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Fuzzy KNN</text></g>
+  <text x="760" y="222" text-anchor="end" font-family="sans-serif" font-size="9.5" fill="#777B80">Biomedical ML Research</text>
 </svg>

@@ -4,70 +4,32 @@
       <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#EAE8E1" stroke-width="0.8"/>
     </pattern>
   </defs>
-
-  <!-- Background Base -->
   <rect width="800" height="240" fill="#FAF9F6"/>
   <rect width="800" height="240" fill="url(#grid_06)"/>
-
-  <!-- Top bar / Editorial Header -->
   <line x1="30" y1="26" x2="770" y2="26" stroke="#E2E0D8" stroke-width="1"/>
-  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 06 // MACHINE LEARNING</text>
-  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">Portfolio Dossier</text>
-
-  <!-- Center Graphic Diagram -->
-  
-        <!-- Breast Cancer Classification Visual -->
-        <g transform="translate(200, 110)">
-          <!-- Scatter Plot Frame -->
-          <rect x="-120" y="-60" width="240" height="120" rx="6" fill="#FFFFFF" stroke="#DCD9D0" stroke-width="1.5"/>
-          <line x1="-95" y1="40" x2="95" y2="40" stroke="#777B80" stroke-width="1"/>
-          <line x1="-95" y1="40" x2="-95" y2="-40" stroke="#777B80" stroke-width="1"/>
-          <!-- Data points (Malignant / Benign) -->
-          <circle cx="-60" cy="15" r="4" fill="#9BAFC0"/>
-          <circle cx="-45" cy="22" r="4" fill="#9BAFC0"/>
-          <circle cx="-50" cy="5" r="4" fill="#9BAFC0"/>
-          <circle cx="-30" cy="-10" r="4" fill="#9BAFC0"/>
-          <circle cx="-15" cy="12" r="4" fill="#9BAFC0"/>
-          <!-- Class 2 with SMOTE synthetic points -->
-          <circle cx="20" cy="-20" r="4" fill="#B8C5B5"/>
-          <circle cx="35" cy="-10" r="4" fill="#B8C5B5"/>
-          <circle cx="50" cy="-28" r="4" fill="#B8C5B5"/>
-          <circle cx="65" cy="-18" r="4" fill="#B8C5B5"/>
-          <!-- SMOTE synthetic dashed connection -->
-          <circle cx="35" cy="-24" r="3.5" fill="none" stroke="#B8C5B5" stroke-dasharray="2,2" stroke-width="1.5"/>
-          <text x="0" y="52" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">WDBC Dataset • SMOTE Oversampling</text>
-        </g>
-        <!-- Arrow -->
-        <path d="M 345 110 L 395 110 M 385 102 L 395 110 L 385 118" stroke="#9BAFC0" stroke-width="2" fill="none"/>
-        <!-- Fuzzy KNN Classifier Card -->
-        <g transform="translate(490, 110)">
-          <rect x="-85" y="-60" width="170" height="120" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
-          <text x="0" y="-30" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#30343B">Fuzzy K-NN</text>
-          <text x="0" y="-12" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Membership Degree μ(x)</text>
-          <rect x="-60" y="5" width="120" height="20" rx="10" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="0" y="19" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#30343B">Optimized Metric</text>
-          <text x="0" y="42" text-anchor="middle" font-family="sans-serif" font-size="8.5" fill="#777B80">Scikit-learn • Python</text>
-        </g>
-        
-
-  <!-- Footer Tag Strip -->
+  <text x="40" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#777B80" letter-spacing="1">PROJECT 06 // WEB DEVELOPMENT</text>
+  <text x="760" y="20" text-anchor="end" font-family="'Newsreader', Georgia, serif" font-size="12" font-style="italic" fill="#9BAFC0">GitHub Repository</text>
+  <g transform="translate(200, 110)">
+    <rect x="-120" y="-55" width="240" height="110" rx="6" fill="#FFFFFF" stroke="#9BAFC0" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#30343B">Digital Library Catalog</text>
+    <rect x="-100" y="-15" width="200" height="20" rx="4" fill="#F1F0EB"/>
+    <text x="0" y="-1" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777B80">Borrowing &amp; Return Flow</text>
+    <rect x="-100" y="12" width="200" height="24" rx="4" fill="#EAF3F8"/>
+    <text x="0" y="28" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="bold" fill="#2C5B84">Automated Fine Calculation</text>
+  </g>
+  <path d="M 345 110 L 415 110 M 405 102 L 415 110 L 405 118" stroke="#B8C5B5" stroke-width="2" fill="none"/>
+  <g transform="translate(530, 110)">
+    <rect x="-100" y="-55" width="200" height="110" rx="6" fill="#FFFFFF" stroke="#B8C5B5" stroke-width="1.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#FF2D20">Laravel MVC</text>
+    <rect x="-80" y="-12" width="160" height="20" rx="4" fill="#F8F7F3"/>
+    <text x="0" y="2" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">MySQL Relational DB</text>
+    <rect x="-80" y="15" width="160" height="22" rx="4" fill="#EAF3F8"/>
+    <text x="0" y="30" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#2C5B84">Role-Based Access Control</text>
+  </g>
   <line x1="30" y1="195" x2="770" y2="195" stroke="#E2E0D8" stroke-width="1"/>
-  
-        <g transform="translate(40, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Python</text>
-        </g>
-        <g transform="translate(150, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Scikit-learn</text>
-        </g>
-        <g transform="translate(260, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">SMOTE</text>
-        </g>
-        <g transform="translate(370, 208)">
-          <rect x="0" y="0" width="100" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/>
-          <text x="50" y="15" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#30343B">Fuzzy KNN</text>
-        </g>
-  <text x="760" y="222" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#777B80">Academic &amp; Applied Project</text>
+  <g transform="translate(40, 208)"><rect x="0" y="0" width="80" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="40" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Laravel</text></g>
+  <g transform="translate(130, 208)"><rect x="0" y="0" width="60" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="30" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">PHP</text></g>
+  <g transform="translate(200, 208)"><rect x="0" y="0" width="80" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="40" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">MySQL</text></g>
+  <g transform="translate(290, 208)"><rect x="0" y="0" width="90" height="22" rx="4" fill="#FAF9F6" stroke="#E2E0D8"/><text x="45" y="15" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#30343B">Bootstrap</text></g>
+  <text x="760" y="222" text-anchor="end" font-family="sans-serif" font-size="9.5" fill="#777B80">Information System Project</text>
 </svg>
